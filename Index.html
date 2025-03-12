@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rule-Based Chatbot</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Chatbot Icon */
+        .chatbot-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #007bff;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .chatbot-icon img {
+            width: 80%;
+            height: 80%;
+            border-radius: 50%;
+        }
+
+        /* Chatbot Container */
+        .chatbot-container {
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            width: 300px;
+            height: 400px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: none;
+            flex-direction: column;
+        }
+
+        .chatbot-header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chatbot-header h3 {
+            margin: 0;
+        }
+
+        .chatbot-header button {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .chatbot-body {
+            flex: 1;
+            padding: 10px;
+            overflow-y: auto;
+            background-color: #f9f9f9;
+        }
+
+        .chatbot-input {
+            display: flex;
+            padding: 10px;
+            background-color: #fff;
+            border-top: 1px solid #ddd;
+        }
+
+        .chatbot-input input {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .chatbot-input button {
+            padding: 8px 12px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Message Styles */
+        .message {
+            margin-bottom: 10px;
+            padding: 8px;
+            border-radius: 5px;
+            max-width: 80%;
+        }
+
+        .user-message {
+            background-color: #007bff;
+            color: #fff;
+            align-self: flex-end;
+        }
+
+        .bot-message {
+            background-color: #ddd;
+            color: #000;
+            align-self: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <!-- Chatbot Icon -->
+    <div class="chatbot-icon" id="chatbotIcon">
+        <img src="chatbot-icon.png" alt="Chatbot Icon" id="iconImage">
+    </div>
+
+    <!-- Chatbot Container -->
+    <div class="chatbot-container" id="chatbotContainer">
+        <div class="chatbot-header">
+            <h3>Business Chatbot</h3>
+            <button id="closeChatbot">×</button>
+        </div>
+        <div class="chatbot-body" id="chatbotBody">
+            <!-- Chat messages will appear here -->
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="userInput" placeholder="Type your message...">
+            <button id="sendButton">Send</button>
+        </div>
+    </div>
+
+    <script>
+        // Chatbot Data
+        const businessDetails = {
+            name: "My Business",
+            address: "123 Business Street, City, Country",
+            contact: "+123 456 7890",
+            services: ["Service 1", "Service 2", "Service 3"]
+        };
+
+        const qaPairs = {
+            "hello": "Hi, how can I help you?",
+            "what are your services": `Our services include: ${businessDetails.services.join(", ")}.`,
+            "what is your address": `Our address is: ${businessDetails.address}.`,
+            "what is your contact": `You can contact us at: ${businessDetails.contact}.`,
+            "what is your name": `We are ${businessDetails.name}.`
+        };
+
+        // DOM Elements
+        const chatbotIcon = document.getElementById("chatbotIcon");
+        const chatbotContainer = document.getElementById("chatbotContainer");
+        const closeChatbot = document.getElementById("closeChatbot");
+        const chatbotBody = document.getElementById("chatbotBody");
+        const userInput = document.getElementById("userInput");
+        const sendButton = document.getElementById("sendButton");
+
+        // Toggle Chatbot
+        chatbotIcon.addEventListener("click", () => {
+            chatbotContainer.style.display = "flex";
+        });
+
+        closeChatbot.addEventListener("click", () => {
+            chatbotContainer.style.display = "none";
+        });
+
+        // Send Message
+        sendButton.addEventListener("click", sendMessage);
+        userInput.addEventListener("keypress", (e) => {
+            if (e.key === "Enter") sendMessage();
+        });
+
+        function sendMessage() {
+            const userText = userInput.value.trim().toLowerCase();
+            if (userText === "") return;
+
+            // Display User Message
+            const userMessage = document.createElement("div");
+            userMessage.classList.add("message", "user-message");
+            userMessage.textContent = userText;
+            chatbotBody.appendChild(userMessage);
+
+            // Get Bot Response
+            let botResponse = qaPairs[userText] || "Sorry, I don't understand that. Can you please rephrase?";
+            const botMessage = document.createElement("div");
+            botMessage.classList.add("message", "bot-message");
+            botMessage.textContent = botResponse;
+            chatbotBody.appendChild(botMessage);
+
+            // Clear Input
+            userInput.value = "";
+            chatbotBody.scrollTop = chatbotBody.scrollHeight;
+        }
+    </script>
+</body>
+</html>
