@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -147,10 +148,23 @@
     <script>
         // Chatbot Data
         const businessDetails = {
-            name: "My Business",
-            address: "123 Business Street, City, Country",
-            contact: "+123 456 7890",
-            services: ["Service 1", "Service 2", "Service 3"]
+            name: "Pak Pipes International Karachi",
+            address: " Scheme 33 Grey Noor Tower Karachi",
+            contact: " umarvortex@gmail.com",
+            shopTime: {
+                regular: "11 a.m. - 6 p.m. Saturday to Thursday",
+                friday: "3:00 p.m. - 6:00 p.m. Friday"
+            },
+            services: [
+                "Leading supplier in Karachi of poly pipes",
+                "Garden pipe",
+                "PVC pipes",
+                "Gas pipes",
+                "Poly yellow",
+                "Poly black",
+                "Other pipes"
+            ],
+            delivery: "We deliver high quality pipes in all over Karachi within 3 to 10 hours or less than 24 hours depending on the location."
         };
 
         const qaPairs = {
@@ -158,7 +172,9 @@
             "what are your services": `Our services include: ${businessDetails.services.join(", ")}.`,
             "what is your address": `Our address is: ${businessDetails.address}.`,
             "what is your contact": `You can contact us at: ${businessDetails.contact}.`,
-            "what is your name": `We are ${businessDetails.name}.`
+            "what is your name": `We are ${businessDetails.name}.`,
+            "what are your shop timings": `Our shop timings are: ${businessDetails.shopTime.regular} (Regular), ${businessDetails.shopTime.friday} (Friday).`,
+            "what is your delivery time": `${businessDetails.delivery}.`
         };
 
         // DOM Elements
