@@ -6,6 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rule-Based Chatbot</title>
     <style>
+
+/* Mobile Devices ke liye Full Screen Chatbot */
+@media only screen and (max-width: 450px) {
+    .chatbot-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        bottom: auto;
+        right: auto;
+    }
+
+    .chatbot-icon {
+        display: none; /* Mobile par chatbot icon ko hide karein */
+    }
+
+    .chatbot-header {
+        border-radius: 0;
+    }
+
+    .chatbot-body {
+        flex: 1;
+        padding: 10px;
+        overflow-y: auto;
+        background-color: #f9f9f9;
+    }
+
+    .chatbot-input {
+        border-top: 1px solid #ddd;
+    }
+}
+        
+
+      /* Mobile Devices ke liye Full Screen Chatbot */
+@media only screen and (max-width: 600px) {
+    .chatbot-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        bottom: auto;
+        right: auto;
+    }
+
+    .chatbot-icon {
+        display: none; /* Mobile par chatbot icon ko hide karein */
+    }
+
+    .chatbot-header {
+        border-radius: 0;
+    }
+
+    .chatbot-body {
+        flex: 1;
+        padding: 10px;
+        overflow-y: auto;
+        background-color: #f9f9f9;
+    }
+
+    .chatbot-input {
+        border-top: 1px solid #ddd;
+    }
+}
+        
         /* General Styles */
         body {
             font-family: Arial, sans-serif;
