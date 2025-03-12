@@ -28,6 +28,25 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
+        /* Shining Line Effect */
+@keyframes shine {
+    0% {
+        box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.9);
+    }
+    100% {
+        box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.7);
+    }
+}
+
+.chatbot-icon img {
+    animation: shine 5s infinite;
+}
+
+
+        
         .chatbot-icon img {
             width: 60px;
             height: 60px;
