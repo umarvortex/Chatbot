@@ -147,80 +147,95 @@
 
     <script>
         // Chatbot Data
-        const businessDetails = {
-            name: "Pak Pipes International Karachi",
-            address: " Scheme 33 Grey Noor Tower Karachi",
-            contact: " umarvortex@gmail.com",
-            shopTime: {
-                regular: "11 a.m. - 6 p.m. Saturday to Thursday",
-                friday: "3:00 p.m. - 6:00 p.m. Friday"
-            },
-            services: [
-                "Leading supplier in Karachi of poly pipes",
-                "Garden pipe",
-                "PVC pipes",
-                "Gas pipes",
-                "Poly yellow",
-                "Poly black",
-                "Other pipes"
-            ],
-            delivery: "We deliver high quality pipes in all over Karachi within 3 to 10 hours or less than 24 hours depending on the location."
-        };
+        // Chatbot Data
+const businessDetails = {
+    name: "Pak Pipes International Karachi",
+    address: "Scheme 33 Grey Noor Tower Karachi",
+    contact: "umarvortex@gmail.com",
+    shopTime: {
+        regular: "11 a.m. - 6 p.m. Saturday to Thursday",
+        friday: "3:00 p.m. - 6:00 p.m. Friday"
+    },
+    services: [
+        "Leading supplier in Karachi of poly pipes",
+        "Garden pipe",
+        "PVC pipes",
+        "Gas pipes",
+        "Poly yellow",
+        "Poly black",
+        "Other pipes"
+    ],
+    delivery: "We deliver high quality pipes in all over Karachi within 3 to 10 hours or less than 24 hours depending on the location."
+};
 
-        const qaPairs = {
-            "hello": "Hi, how can I help you?",
-            "what are your services": `Our services include: ${businessDetails.services.join(", ")}.`,
-            "what is your address": `Our address is: ${businessDetails.address}.`,
-            "what is your contact": `You can contact us at: ${businessDetails.contact}.`,
-            "what is your name": `We are ${businessDetails.name}.`,
-            "what are your shop timings": `Our shop timings are: ${businessDetails.shopTime.regular} (Regular), ${businessDetails.shopTime.friday} (Friday).`,
-            "what is your delivery time": `${businessDetails.delivery}.`
-        };
+function getBotResponse(userText) {
+    // Convert input to lowercase for better matching
+    userText = userText.toLowerCase();
+    
+    // Greetings
+    if (userText.match(/^(hi|hello|hey|assalam|salam)/i)) {
+        return "Hello! How can I assist you today with our pipe solutions?";
+    }
 
-        // DOM Elements
-        const chatbotIcon = document.getElementById("chatbotIcon");
-        const chatbotContainer = document.getElementById("chatbotContainer");
-        const closeChatbot = document.getElementById("closeChatbot");
-        const chatbotBody = document.getElementById("chatbotBody");
-        const userInput = document.getElementById("userInput");
-        const sendButton = document.getElementById("sendButton");
-
-        // Toggle Chatbot
-        chatbotIcon.addEventListener("click", () => {
-            chatbotContainer.style.display = "flex";
-        });
-
-        closeChatbot.addEventListener("click", () => {
-            chatbotContainer.style.display = "none";
-        });
-
-        // Send Message
-        sendButton.addEventListener("click", sendMessage);
-        userInput.addEventListener("keypress", (e) => {
-            if (e.key === "Enter") sendMessage();
-        });
-
-        function sendMessage() {
-            const userText = userInput.value.trim().toLowerCase();
-            if (userText === "") return;
-
-            // Display User Message
-            const userMessage = document.createElement("div");
-            userMessage.classList.add("message", "user-message");
-            userMessage.textContent = userText;
-            chatbotBody.appendChild(userMessage);
-
-            // Get Bot Response
-            let botResponse = qaPairs[userText] || "Sorry, I don't understand that. Can you please rephrase?";
-            const botMessage = document.createElement("div");
-            botMessage.classList.add("message", "bot-message");
-            botMessage.textContent = botResponse;
-            chatbotBody.appendChild(botMessage);
-
-            // Clear Input
-            userInput.value = "";
-            chatbotBody.scrollTop = chatbotBody.scrollHeight;
+    // Time related queries
+    if (userText.includes('time') || userText.includes('timing') || userText.includes('hours')) {
+        if (userText.includes('friday')) {
+            return `On Fridays, we're open ${businessDetails.shopTime.friday}`;
         }
+        return `Our regular business hours are ${businessDetails.shopTime.regular}`;
+    }
+
+    // Service related queries
+    if (userText.includes('service') || userText.includes('product') || userText.includes('pipe')) {
+        return `We offer the following services:\n${businessDetails.services.join("\n- ")}`;
+    }
+
+    // Contact related queries
+    if (userText.includes('contact') || userText.includes('email') || userText.includes('reach')) {
+        return `You can contact us at ${businessDetails.contact}`;
+    }
+
+    // Location/Address queries
+    if (userText.includes('where') || userText.includes('location') || userText.includes('address')) {
+        return `We are located at: ${businessDetails.address}`;
+    }
+
+    // Delivery queries
+    if (userText.includes('deliver') || userText.includes('shipping') || userText.includes('send')) {
+        return businessDetails.delivery;
+    }
+
+    // Company name queries
+    if (userText.includes('company') || userText.includes('name') || userText.includes('who')) {
+        return `We are ${businessDetails.name}, your trusted pipe supplier in Karachi.`;
+    }
+
+    // Default response for unrecognized queries
+    return "I'm not sure about that. Would you like to know about our services, business hours, or delivery options?";
+}
+
+// Update the sendMessage function to use the new response system
+function sendMessage() {
+    const userText = userInput.value.trim();
+    if (userText === "") return;
+
+    // Display User Message
+    const userMessage = document.createElement("div");
+    userMessage.classList.add("message", "user-message");
+    userMessage.textContent = userText;
+    chatbotBody.appendChild(userMessage);
+
+    // Get Bot Response using new function
+    const botResponse = getBotResponse(userText);
+    const botMessage = document.createElement("div");
+    botMessage.classList.add("message", "bot-message");
+    botMessage.textContent = botResponse;
+    chatbotBody.appendChild(botMessage);
+
+    // Clear Input
+    userInput.value = "";
+    chatbotBody.scrollTop = chatbotBody.scrollHeight;
+}
     </script>
 </body>
 </html>
