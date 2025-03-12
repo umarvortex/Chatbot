@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +21,7 @@
             width: 60px;
             height: 60px;
             border-radius: 50%;
-            background-color: #007bff;
+            background-color: #39FF14; /* Neon Green */
             cursor: pointer;
             display: flex;
             align-items: center;
@@ -29,19 +30,18 @@
             animation: shine 5s infinite;
         }
 
-        
-@keyframes shine {
-    0% {
-        box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.7);
-    }
-    50% {
-        box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.9);
-    }
-    100% {
-        box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.7);
-    }
-}
-        
+        @keyframes shine {
+            0% {
+                box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.7);
+            }
+            50% {
+                box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.9);
+            }
+            100% {
+                box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.7);
+            }
+        }
+
         .chatbot-icon img {
             width: 60px;
             height: 60px;
@@ -64,7 +64,7 @@
         }
 
         .chatbot-header {
-            background-color: #007bff;
+            background-color: #39FF14; /* Neon Green */
             color: #fff;
             padding: 10px;
             border-top-left-radius: 10px;
@@ -110,7 +110,7 @@
 
         .chatbot-input button {
             padding: 8px 12px;
-            background-color: #007bff;
+            background-color: #39FF14; /* Neon Green */
             color: #fff;
             border: none;
             border-radius: 5px;
@@ -126,10 +126,10 @@
         }
 
         .user-message {
-            background-color: #007bff;
+            background-color: #39FF14; /* Neon Green */
             color: #fff;
             align-self: flex-end;
-            text-align: right
+            text-align: right;
         }
 
         .bot-message {
@@ -148,8 +148,11 @@
     <!-- Chatbot Container -->
     <div class="chatbot-container" id="chatbotContainer">
         <div class="chatbot-header">
-            <h3>Business Chatbot</h3>
-            <button id="closeChatbot">×</button>
+            <h3>🤖 Business Chatbot</h3>
+            <div>
+                <button id="refreshChatbot">🔄</button>
+                <button id="closeChatbot">×</button>
+            </div>
         </div>
         <div class="chatbot-body" id="chatbotBody">
             <!-- Chat messages will appear here -->
@@ -258,6 +261,11 @@
 
         document.getElementById('closeChatbot').addEventListener('click', function() {
             document.getElementById('chatbotContainer').style.display = 'none';
+        });
+
+        // Event listener for refresh button
+        document.getElementById('refreshChatbot').addEventListener('click', function() {
+            document.getElementById('chatbotBody').innerHTML = '';
         });
 
         // Event listener for send button
