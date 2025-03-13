@@ -4,249 +4,260 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rule-Based Chatbot</title>
-         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <title>Chatbot</title>
+    <style>
+        /* Chatbot Icon */
+        .chatbot-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #d200ff;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 9999;
+        }
+
+        .chatbot-icon img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+
+        /* Chatbot Container */
+        .chatbot-container {
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            width: 290px;
+            height: 450px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: none;
+            flex-direction: column;
+            z-index: 9999;
+            transition: all 0.3s ease;
+        }
+
+        .chatbot-container.full-screen {
+            width: 100%;
+            height: 100%;
+            bottom: 0;
+            right: 0;
+            border-radius: 0;
+        }
+
+        .chatbot-header {
+            background-color: #d200ff;
+            color: #fff;
+            padding: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chatbot-header h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .chatbot-header button {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        /* Chatbot Body */
+        .chatbot-body {
+            flex: 1;
+            padding: 10px;
+            overflow-y: auto;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Welcome Message */
+        .welcome-message {
+            text-align: center;
+            margin-top: 20px;
+            color: #2f2f32;
+        }
+
+        .welcome-logo {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+
+        /* Messages */
+        .message {
+            max-width: 80%;
+            padding: 8px 12px;
+            border-radius: 8px;
+            margin: 5px 0;
+            font-size: 14px;
+            word-wrap: break-word;
+        }
+
+        .user-message {
+            background-color: #d200ff;
+            color: #fff;
+            align-self: flex-end;
+        }
+
+        .bot-message {
+            background-color: #ddd;
+            color: #000;
+            align-self: flex-start;
+        }
+
+        /* Input Section */
+        .chatbot-input {
+            display: flex;
+            padding: 10px;
+            background-color: #fff;
+            border-top: 1px solid #ddd;
+        }
+
+        .welcome-message strong {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .chatbot-input input {
+            flex: 1;
+            padding: 8px;
+            border: 2px solid #d200ff;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .chatbot-input button {
+            padding: 8px 12px;
+            background-color: #d200ff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .chatbot-input button:hover {
+            background-color: #d200ff;
+        }
+
+        #refreshChatbot:hover {
+            background-color: #d200ff;
+        }
+    </style>
 </head>
 <body>
-    <style>
-    /* Chatbot Icon */
-    .chatbot-icon {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        background-color: #d200ff; 
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        z-index: 9999;
-    }
+    <!-- Chatbot Icon -->
+    <div class="chatbot-icon" id="chatbotIcon">
+        <img src="https://i.postimg.cc/c4MdHSpM/IMG-20250312-153058.jpg" alt="Chatbot Icon">
+    </div>
 
-    .chatbot-icon img {
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-    }
-
-    /* Chatbot Container */
-    .chatbot-container {
-        position: fixed;
-        bottom: 90px;
-        right: 20px;
-        width: 290px;
-        height: 450px;
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        display: none;
-        flex-direction: column;
-        z-index: 9999;
-    }
-
-    .chatbot-header {
-        background-color: #d200ff;
-        color: #fff;
-        padding: 10px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .chatbot-header h3 {
-        margin: 0;
-        font-size: 18px;
-    }
-
-    .chatbot-header button {
-        background: none;
-        border: none;
-        color: #fff;
-        font-size: 18px;
-        cursor: pointer;
-    }
-
-    /* Chatbot Body */
-    .chatbot-body {
-        flex: 1;
-        padding: 10px;
-        overflow-y: auto;
-        background-color: #f9f9f9;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* Welcome Message (DeepSeek style) */
-    .welcome-message {
-        text-align: center;
-        margin-top: 20px;
-        color: #2f2f32;
-    }
-
-    .welcome-logo {
-        width: 60px;
-        height: 60px;
-        margin-bottom: 10px;
-    }
-
-    /* Messages */
-    .message {
-        max-width: 80%;
-        padding: 8px 12px;
-        border-radius: 8px;
-        margin: 5px 0;
-        font-size: 14px;
-        word-wrap: break-word;
-    }
-
-    .user-message {
-        background-color: #d200ff;
-        color: #fff;
-        align-self: flex-end;
-    }
-
-    .bot-message {
-        background-color: #ddd;
-        color: #000;
-        align-self: flex-start;
-    }
-
-    /* Input Section */
-    .chatbot-input {
-        display: flex;
-        padding: 10px;
-        background-color: #fff;
-        border-top: 1px solid #ddd;
-    }
-
-    .welcome-message strong {
-        font-size: 18px;
-        font-weight: 600;
-    }
-
-    .chatbot-input input {
-        flex: 1;
-        padding: 8px;
-        border: 2px solid #d200ff;
-        border-radius: 5px;
-        margin-right: 10px;
-    }
-
-    .chatbot-input button {
-        padding: 8px 12px;
-        background-color: #d200ff;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background 0.3s;
-    }
-
-    .chatbot-input button:hover {
-        background-color: #d200ff;
-    }
-
-    #refreshChatbot:hover {
-        background-color: #d200ff;
-    }
-</style>
-
-<!-- Chatbot Icon -->
-<div class="chatbot-icon" id="chatbotIcon">
-    <img src="https://i.postimg.cc/c4MdHSpM/IMG-20250312-153058.jpg" alt="Chatbot Icon">
-</div>
-
-<!-- Chatbot Container -->
-<div class="chatbot-container" id="chatbotContainer">
-    <div class="chatbot-header">
-        <h3>PPI Assistant</h3>
-        <div>
-            <button id="refreshChatbot"> <i class="fa-sharp-duotone fa-solid fa-rotate"></i> </button>
-            <button id="closeChatbot"><i class="fa-solid fa-xmark"></i></button>
+    <!-- Chatbot Container -->
+    <div class="chatbot-container" id="chatbotContainer">
+        <div class="chatbot-header">
+            <h3>PPI Assistant</h3>
+            <div>
+                <button id="refreshChatbot"> <i class="fa-sharp-duotone fa-solid fa-rotate"></i> </button>
+                <button id="closeChatbot"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+        <div class="chatbot-body" id="chatbotBody">
+            <!-- Welcome Message -->
+            <div class="welcome-message" id="welcomeMessage">
+                <img src="https://i.postimg.cc/c4MdHSpM/IMG-20250312-153058.jpg" alt="Logo" class="welcome-logo">
+                <p><strong>Hi, I'm Vortex.</strong><br>How can I help you?</p>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="userInput" placeholder="Message Vortex...">
+            <button id="sendButton"> <i class="fas fa-paper-plane"></i> </button>
         </div>
     </div>
-    <div class="chatbot-body" id="chatbotBody">
-        <!-- Welcome Message -->
-        <div class="welcome-message" id="welcomeMessage">
-            <img src="https://i.postimg.cc/c4MdHSpM/IMG-20250312-153058.jpg" alt="Logo" class="welcome-logo">
-            <p><strong>Hi, I'm Vortex.</strong><br>How can I help you?</p>
-        </div>
-    </div>
-    <div class="chatbot-input">
-        <input type="text" id="userInput" placeholder="Message Vortex...">
-        <button id="sendButton"> <i class="fas fa-paper-plane"></i> </button>
-    </div>
-</div>
 
-<script>
-    function sendMessage() {
-        const userText = userInput.value.trim();
-        if (userText === "") return;
+    <script>
+        function sendMessage() {
+            const userText = userInput.value.trim();
+            if (userText === "") return;
 
-        // Hide Welcome Message on first message
-        document.getElementById("welcomeMessage").style.display = "none";
+            // Hide Welcome Message on first message
+            document.getElementById("welcomeMessage").style.display = "none";
 
-        // User Message
-        const userMessage = document.createElement("div");
-        userMessage.classList.add("message", "user-message");
-        userMessage.textContent = userText;
-        chatbotBody.appendChild(userMessage);
+            // User Message
+            const userMessage = document.createElement("div");
+            userMessage.classList.add("message", "user-message");
+            userMessage.textContent = userText;
+            chatbotBody.appendChild(userMessage);
 
-        // Bot Response
-        setTimeout(() => {
-            const botMessage = document.createElement("div");
-            botMessage.classList.add("message", "bot-message");
-            botMessage.textContent = getBotResponse(userText);
-            chatbotBody.appendChild(botMessage);
+            // Bot Response
+            setTimeout(() => {
+                const botMessage = document.createElement("div");
+                botMessage.classList.add("message", "bot-message");
+                botMessage.textContent = getBotResponse(userText);
+                chatbotBody.appendChild(botMessage);
 
+                chatbotBody.scrollTop = chatbotBody.scrollHeight;
+            }, 500);
+
+            // Clear Input
+            userInput.value = "";
             chatbotBody.scrollTop = chatbotBody.scrollHeight;
-        }, 500);
-
-        // Clear Input
-        userInput.value = "";
-        chatbotBody.scrollTop = chatbotBody.scrollHeight;
-    }
-
-    function getBotResponse(userText) {
-        userText = userText.toLowerCase();
-
-        if (userText.includes("hi") || userText.includes("hello") || userText.includes("salam")) {
-            return "Hello! How can I assist you today with our pipe solutions?";
         }
-        if (userText.includes("timing") || userText.includes("hours")) {
-            return "Our business hours are 11 AM - 6 PM (Mon-Sat).";
+
+        function getBotResponse(userText) {
+            userText = userText.toLowerCase();
+
+            if (userText.includes("hi") || userText.includes("hello") || userText.includes("salam")) {
+                return "Hello! How can I assist you today with our pipe solutions?";
+            }
+            if (userText.includes("timing") || userText.includes("hours")) {
+                return "Our business hours are 11 AM - 6 PM (Mon-Sat).";
+            }
+            if (userText.includes("contact") || userText.includes("email")) {
+                return "You can contact us at umarvortex@gmail.com.";
+            }
+            return "I'm not sure about that. Ask a different question or contact us umarvortex@gmail.com ?";
         }
-        if (userText.includes("contact") || userText.includes("email")) {
-            return "You can contact us at umarvortex@gmail.com.";
-        }
-        return "I'm not sure about that. Ask a different question or contact us umarvortex@gmail.com ?";
-    }
 
-    // Show/Hide Chatbot
-    document.getElementById("chatbotIcon").addEventListener("click", () => {
-        document.getElementById("chatbotContainer").style.display = "flex";
-    });
+        // Show/Hide Chatbot in full screen
+        document.getElementById("chatbotIcon").addEventListener("click", () => {
+            const chatbotContainer = document.getElementById("chatbotContainer");
+            chatbotContainer.classList.toggle("full-screen");
+            chatbotContainer.style.display = "flex";
+        });
 
-    document.getElementById("closeChatbot").addEventListener("click", () => {
-        document.getElementById("chatbotContainer").style.display = "none";
-    });
+        document.getElementById("closeChatbot").addEventListener("click", () => {
+            const chatbotContainer = document.getElementById("chatbotContainer");
+            chatbotContainer.classList.remove("full-screen");
+            chatbotContainer.style.display = "none";
+        });
 
-    // Event listener for refresh button
-    document.getElementById('refreshChatbot').addEventListener('click', function() {
-        document.getElementById('chatbotBody').innerHTML = '';
-    });
+        // Event listener for refresh button
+        document.getElementById('refreshChatbot').addEventListener('click', function() {
+            document.getElementById('chatbotBody').innerHTML = '';
+        });
 
-    document.getElementById("sendButton").addEventListener("click", sendMessage);
+        document.getElementById("sendButton").addEventListener("click", sendMessage);
 
-    document.getElementById("userInput").addEventListener("keypress", (event) => {
-        if (event.key === "Enter") sendMessage();
-    });
-</script>
+        document.getElementById("userInput").addEventListener("keypress", (event) => {
+            if (event.key === "Enter") sendMessage();
+        });
+    </script>
 </body>
 </html>
