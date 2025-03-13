@@ -6,59 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatbot</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/emoji-picker-element@1.8.0/dist/emoji-picker-element.min.css" rel="stylesheet">
-</head>
-<body>
-    <!-- Chatbot Icon -->
-    <div class="chatbot-icon" id="chatbotIcon">
-        <img src="https://i.postimg.cc/c4MdHSpM/IMG-20250312-153058.jpg" alt="Chatbot Icon">
-    </div>
-
-    <!-- Chatbot Container -->
-    <div class="chatbot-container" id="chatbotContainer">
-        <div class="chatbot-header">
-            <h3>Assistant </h3>
-            <div>
-                <button id="themeToggle"><i class="fas fa-moon"></i></button>
-                <button id="refreshChatbot"> <i class="fa-sharp-duotone fa-solid fa-rotate"></i> </button>
-                <button id="closeChatbot"><i class="fa-solid fa-xmark"></i></button>
-            </div>
-        </div>
-        <div class="chatbot-body" id="chatbotBody">
-            <!-- Welcome Message -->
-            <div class="welcome-message" id="welcomeMessage">
-                <img src="https://i.postimg.cc/gcN2brzt/file-3JcXkkveFfbKbu22pYjhJT-removebg-preview.png" alt="Logo" class="welcome-logo">
-                <p><strong>Hi, I'm Vortex.</strong><br>How can I help you today?</p>
-            </div>
-        </div>
-        <!-- Quick Replies -->
-        <div class="quick-replies" id="quickReplies">
-            <button onclick="sendQuickReply('What are your timings?')">Timings</button>
-            <button onclick="sendQuickReply('How can I contact you?')">Contact</button>
-            <button onclick="sendQuickReply('Hello')">Say Hi</button>
-        </div>
-        <!-- Typing Indicator -->
-        <div class="typing-indicator" id="typingIndicator">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <!-- Chatbot Input -->
-        <div class="chatbot-input">
-            <div class="input-wrapper">
-                <input type="text" id="userInput" placeholder="Message Vortex...">
-                <button id="emojiButton"><i class="fas fa-smile"></i></button>
-                <button id="voiceButton"><i class="fas fa-microphone"></i></button>
-                <button id="sendButton"><i class="fas fa-paper-plane"></i></button>
-            </div>
-            <input type="file" id="fileUpload" style="display: none;">
-            <button id="fileButton"><i class="fas fa-paperclip"></i></button>
-        </div>
-    </div>
-
-    <!-- Emoji Picker -->
-    <emoji-picker id="emojiPicker" style="display: none;"></emoji-picker>
-
     <style>
         * {
             font-family: 'Arial', sans-serif;
@@ -102,7 +49,7 @@
             right: 20px;
             width: 300px;
             height: 400px;
-        
+            background-color: #000000;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
             display: none;
@@ -117,7 +64,6 @@
             bottom: 0;
             right: 0;
             border-radius: 0;
-            background-color: #000000;
         }
 
         .chatbot-header {
@@ -170,8 +116,9 @@
 
         .welcome-message p,
         .welcome-message strong {
-            margin-top: 0; /* Remove top margin */
-            margin-bottom: 0; /* Remove bottom margin */
+            margin-top: 0;
+            margin-bottom: 0;
+            line-height: 2;
         }
 
         /* Messages */
@@ -191,7 +138,7 @@
         }
 
         .bot-message {
-            background-color: transparent; /* Fixed */
+            background-color: transparent;
             color: white;
             align-self: flex-start; 
         }
@@ -215,43 +162,44 @@
 
         .chatbot-input input {
             flex: 1;
-            padding: 12px 16px; /* Increased padding for better spacing */
-            padding-right: 40px; /* Add padding on the right for the button */
-            border: 2px solid #d200ff; /* Keep the border color consistent */
-            border-radius: 25px; /* More rounded corners for a modern look */
-            font-size: 14px; /* Slightly larger font size for readability */
-            background-color: #1a1a1a; /* Dark background for contrast */
-            color: #ffffff; /* White text color */
-            outline: none; /* Remove default outline */
-            transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
-            width: 100%; /* Ensure input takes full width */
+            padding: 12px 40px 12px 16px;
+            border: 2px solid #d200ff;
+            border-radius: 25px;
+            font-size: 14px;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            outline: none;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            width: 100%;
         }
 
         .chatbot-input input:focus {
-            border-color: #ff00ff; /* Change border color on focus */
-            box-shadow: 0 0 8px rgba(210, 0, 255, 0.6); /* Add a glowing effect on focus */
+            border-color: #ff00ff;
+            box-shadow: 0 0 8px rgba(210, 0, 255, 0.6);
         }
 
         .chatbot-input input::placeholder {
-            color: #c4c8cb; /* Placeholder text color */
-            opacity: 0.7; /* Slightly transparent placeholder */
+            color: #c4c8cb;
+            opacity: 0.7;
         }
 
         /* Send Button */
         #sendButton {
-            background: none; /* Remove background */
-            border: none; /* Remove border */
-            color: white; /* Change icon color to white (or any color you want) */
-            font-size: 18px; /* Adjust icon size */
-            cursor: pointer; /* Add pointer cursor */
-            padding: 0; /* Remove padding */
+            position: absolute;
+            right: 20px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            padding: 0;
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
         #sendButton:hover {
-            color: white; /* Change icon color on hover */
+            color: white;
         }
 
         /* Quick Replies */
@@ -274,7 +222,7 @@
 
         /* Typing Indicator */
         .typing-indicator {
-            display: none; /* Hide by default */
+            display: none;
             background-color: #1a1a1a;
             padding: 10px;
             border-radius: 8px;
@@ -304,24 +252,50 @@
             0%, 100% { opacity: 0.3; }
             50% { opacity: 1; }
         }
-
-        /* Light Mode */
-        .light-mode {
-            background-color: #ffffff;
-            color: #000000;
-        }
-
-        .light-mode .chatbot-container {
-            background-color: #f0f0f0;
-        }
-
-        .light-mode .chatbot-input input {
-            background-color: #ffffff;
-            color: #000000;
-        }
     </style>
+</head>
+<body>
+    <!-- Chatbot Icon -->
+    <div class="chatbot-icon" id="chatbotIcon">
+        <img src="https://i.postimg.cc/c4MdHSpM/IMG-20250312-153058.jpg" alt="Chatbot Icon">
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/emoji-picker-element@1.8.0/dist/emoji-picker-element.min.js"></script>
+    <!-- Chatbot Container -->
+    <div class="chatbot-container" id="chatbotContainer">
+        <div class="chatbot-header">
+            <h3>Assistant</h3>
+            <div>
+                <button id="closeChatbot"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+        <div class="chatbot-body" id="chatbotBody">
+            <!-- Welcome Message -->
+            <div class="welcome-message" id="welcomeMessage">
+                <img src="https://i.postimg.cc/gcN2brzt/file-3JcXkkveFfbKbu22pYjhJT-removebg-preview.png" alt="Logo" class="welcome-logo">
+                <p><strong>Hi, I'm Vortex.</strong><br>How can I help you today?</p>
+            </div>
+        </div>
+        <!-- Quick Replies -->
+        <div class="quick-replies" id="quickReplies">
+            <button onclick="sendQuickReply('What are your timings?')">Timings</button>
+            <button onclick="sendQuickReply('How can I contact you?')">Contact</button>
+            <button onclick="sendQuickReply('Hello')">Say Hi</button>
+        </div>
+        <!-- Typing Indicator -->
+        <div class="typing-indicator" id="typingIndicator">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <!-- Chatbot Input -->
+        <div class="chatbot-input">
+            <div class="input-wrapper">
+                <input type="text" id="userInput" placeholder="Message Vortex...">
+                <button id="sendButton"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
     <script>
         // Chatbot Functions
         const chatbotIcon = document.getElementById("chatbotIcon");
@@ -332,12 +306,6 @@
         const welcomeMessage = document.getElementById("welcomeMessage");
         const typingIndicator = document.getElementById("typingIndicator");
         const quickReplies = document.getElementById("quickReplies");
-        const themeToggle = document.getElementById("themeToggle");
-        const voiceButton = document.getElementById("voiceButton");
-        const emojiButton = document.getElementById("emojiButton");
-        const emojiPicker = document.getElementById("emojiPicker");
-        const fileUpload = document.getElementById("fileUpload");
-        const fileButton = document.getElementById("fileButton");
 
         // Load chat history from local storage
         function loadChat() {
@@ -410,60 +378,6 @@
             sendMessage();
         }
 
-        // Theme Toggle
-        themeToggle.addEventListener("click", () => {
-            document.body.classList.toggle("light-mode");
-            if (document.body.classList.contains("light-mode")) {
-                themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-            } else {
-                themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
-            }
-        });
-
-        // Voice Input
-        const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
-        recognition.lang = "en-US";
-
-        voiceButton.addEventListener("click", () => {
-            recognition.start();
-        });
-
-        recognition.onresult = (event) => {
-            const transcript = event.results[0][0].transcript;
-            userInput.value = transcript;
-            sendMessage();
-        };
-
-        // Emoji Picker
-        emojiButton.addEventListener("click", () => {
-            emojiPicker.style.display = emojiPicker.style.display === "none" ? "block" : "none";
-        });
-
-        emojiPicker.addEventListener("emoji-click", (event) => {
-            userInput.value += event.detail.unicode;
-            emojiPicker.style.display = "none";
-        });
-
-        // File Upload
-        fileButton.addEventListener("click", () => {
-            fileUpload.click();
-        });
-
-        fileUpload.addEventListener("change", (event) => {
-            const file = event.target.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = (e) => {
-                    const fileMessage = document.createElement("div");
-                    fileMessage.classList.add("message", "user-message");
-                    fileMessage.textContent = `File uploaded: ${file.name}`;
-                    chatbotBody.appendChild(fileMessage);
-                    saveChat(); // Save chat history
-                };
-                reader.readAsDataURL(file);
-            }
-        });
-
         // Show/Hide Chatbot
         chatbotIcon.addEventListener("click", () => {
             chatbotContainer.classList.toggle("full-screen");
@@ -486,6 +400,9 @@
         userInput.addEventListener("keypress", (event) => {
             if (event.key === "Enter") sendMessage();
         });
+
+        // Send Message on Button Click
+        sendButton.addEventListener("click", sendMessage);
 
         // Load chat history when page loads
         window.onload = loadChat;
