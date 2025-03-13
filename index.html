@@ -208,21 +208,31 @@
 
         /* Quick Replies */
         .quick-replies {
-            display: flex;
-            gap: 10px;
-            margin-top: 10px;
-            padding: 10px;
-        }
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    justify-content: center;
+}
 
-        .quick-replies button {
-            padding: 8px 12px;
-            background-color: #d200ff;
-            color: #fff;
-            border: none;
-            border-radius: 17px;
-            cursor: pointer;
-            font-size: 12px;
-        }
+.quick-replies button {
+    padding: 8px 12px;
+    background-color: rgba(210, 0, 255, 0.6); /* Light Transparent Purple */
+    color: rgba(255, 255, 255, 0.8); /* Light White Text */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light Border */
+    border-radius: 17px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(5px); /* Blur Effect */
+}
+
+.quick-replies button:hover {
+    background-color: rgba(210, 0, 255, 1); /* Full Color on Hover */
+    color: #ffffff;
+}
+
+
 
         /* Typing Indicator */
         .typing-indicator {
@@ -311,19 +321,12 @@
         const typingIndicator = document.getElementById("typingIndicator");
         const quickReplies = document.getElementById("quickReplies");
 
-        // Load chat history from local storage
-        function loadChat() {
-            const chatHistory = localStorage.getItem("chatHistory");
-            if (chatHistory) {
-                chatbotBody.innerHTML = chatHistory;
-            }
-        }
+        
+            
+        
 
-        // Save chat history to local storage
-        function saveChat() {
-            const chatBody = chatbotBody.innerHTML;
-            localStorage.setItem("chatHistory", chatBody);
-        }
+        
+        
 
         // Send message function
         function sendMessage() {
@@ -371,9 +374,9 @@
                 return "Our business hours are 11 AM - 6 PM (Mon-Sat).";
             }
             if (userText.includes("contact") || userText.includes("email")) {
-                return "You can contact us at umarvortex@gmail.com.";
+                return "You can contact us through website contact form or WhatsApp and email umarvortex@gmail.com ";
             }
-            return "I'm not sure about that. Ask a different question or contact us umarvortex@gmail.com ?";
+            return "I'm not sure about that. Ask a different question or contact us ?";
         }
 
         // Quick Replies
@@ -395,9 +398,7 @@
 
         // Refresh Chatbot
         document.getElementById("refreshChatbot").addEventListener("click", function() {
-            chatbotBody.innerHTML = ''; // Clear chat history
-            welcomeMessage.style.display = "block"; // Show welcome message
-            localStorage.removeItem("chatHistory"); // Clear local storage
+            
         });
 
         // Send Message on Enter
@@ -406,15 +407,13 @@
         });
 
         // Send Message on Button Click
-        sendButton.addEventListener("click", sendMessage);
-        sendButton.addEventListener("click", function (event) {
+        
+         sendButton.addEventListener("click", function (event) {
     event.preventDefault(); // Prevent unexpected behaviors
     sendMessage();
 });
 
 
-        // Load chat history when page loads
-        window.onload = loadChat;
     </script>
 </body>
 </html>
