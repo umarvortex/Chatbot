@@ -9,6 +9,16 @@
 </head>
 <body>
     <style>
+* {
+  font-family: 'Arial', sans-serif; /* Font family specify karein */
+  font-weight: bold; /* Bold text ke liye */
+ /* Font size set karein */
+  font-style: normal; /* Italic nahi banana hai to normal rakhein */
+   /* Text color set karein */
+  text-transform: uppercase; /* Agar text uppercase mein chahiye */
+}
+
+        
         /* Chatbot Icon */
         .chatbot-icon {
             position: fixed;
@@ -132,27 +142,27 @@
             display: flex;
             padding: 10px;
             background-color: black;
-            border-top: 1px solid #ddd;
+            border-top: none;
         }
 
         .welcome-message strong {
-            font-size: 19px;
+            font-size: 20px;
             font-weight: 700;
             color: white;
         }
 
         
         .welcome-message p {
-            font-size: 16px;
-            color: silver; 
-            line-height: 1.7;
+            font-size: 13.5px;
+            color: dark-silver; 
+            line-height: 1.8;
         }
 
         .chatbot-input input {
             flex: 1;
             padding: 8px;
             border: 2px solid #d200ff;
-            border-radius: 5px;
+            border-radius: 15px;
             margin-right: 10px;
         }
 
@@ -161,7 +171,7 @@
             background-color: #d200ff;
             color: #fff;
             border: none;
-            border-radius: 5px;
+            border-radius: 15px;
             cursor: pointer;
             transition: background 0.3s;
         }
@@ -183,7 +193,7 @@
     <!-- Chatbot Container -->
     <div class="chatbot-container" id="chatbotContainer">
         <div class="chatbot-header">
-            <h3>PPI Assistant</h3>
+            <h3>Assistant</h3>
             <div>
                 <button id="refreshChatbot"> <i class="fa-sharp-duotone fa-solid fa-rotate"></i> </button>
                 <button id="closeChatbot"><i class="fa-solid fa-xmark"></i></button>
@@ -193,7 +203,7 @@
             <!-- Welcome Message -->
             <div class="welcome-message" id="welcomeMessage">
                 <img src="https://i.postimg.cc/c4MdHSpM/IMG-20250312-153058.jpg" alt="Logo" class="welcome-logo">
-                <p><strong>Hi, I'm Vortex.</strong><br>How can I help you?</p>
+                <p><strong>Hi, I'm Vortex.</strong><br>How can I help you today?</p>
             </div>
         </div>
         <div class="chatbot-input">
