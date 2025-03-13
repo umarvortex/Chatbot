@@ -198,12 +198,27 @@
 
 .chatbot-input input {
   flex: 1;
-  padding: 8px;
-  border-radius: 17px;
+  padding: 12px 16px; /* Increased padding for better spacing */
+  border: 2px solid #d200ff; /* Keep the border color consistent */
+  border-radius: 25px; /* More rounded corners for a modern look */
   margin-right: 10px;
-  background-color: #4d4d4d;
-  color: #c4c8cb;
+  font-size: 14px; /* Slightly larger font size for readability */
+  background-color: #1a1a1a; /* Dark background for contrast */
+  color: #ffffff; /* White text color */
+  outline: none; /* Remove default outline */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
 }
+
+.chatbot-input input:focus {
+  border-color: #ff00ff; /* Change border color on focus */
+  box-shadow: 0 0 8px rgba(210, 0, 255, 0.6); /* Add a glowing effect on focus */
+}
+
+.chatbot-input input::placeholder {
+  color: #c4c8cb; /* Placeholder text color */
+  opacity: 0.7; /* Slightly transparent placeholder */
+}
+
 
 .chatbot-input button {
   padding: 8px 12px;
