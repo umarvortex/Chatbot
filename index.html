@@ -328,6 +328,14 @@
     // Show/Hide Chatbot
     chatbotIcon.addEventListener("click", () => {
         if (chatbotContainer.style.display === "none" || 
+chatbotContainer.style.display === "") {
+            chatbotContainer.style.display = "flex";
+        } else {
+            chatbotContainer.style.display = "none";
+        }
+    });
+
+    
 
 
 
