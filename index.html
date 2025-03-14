@@ -418,12 +418,12 @@ setTimeout(() => {
     saveChat(); // Save chat history
 
     // Reset processing flag before calling the next message
-    isProcessingMessage = false;
+    isProcessingMessage = true;
     
     // Process the next message in the queue
     processMessageQueue();
 }, 1500); // Simulate typing delay
-} 
+
 
 
 // Get bot response
