@@ -104,15 +104,23 @@
         /* Welcome Message */
         .welcome-message {
             text-align: center;
-            margin-top: 85px;
+            margin-top: 70px;
             color: white;
         }
 
         .welcome-logo {
-            width: 100px;
-            height: 100px;
-            margin-bottom: -5;
+            width: 90px;
+            height: 90px;
+            margin-bottom: -9;
         }
+    
+     .welcome-message strong {
+        font-size 14;
+} 
+
+       .welcome-message p {
+          font-size: 19;
+}
 
         .welcome-message p,
         .welcome-message strong {
@@ -327,17 +335,15 @@
     const quickReplies = document.getElementById("quickReplies");
 
     // Show/Hide Chatbot
-    chatbotIcon.addEventListener("click", () => {
-        if (chatbotContainer.style.display === "none" || 
-chatbotContainer.style.display === "") {
-            chatbotContainer.style.display = "flex";
-        } else {
-            chatbotContainer.style.display = "none";
-        }
-    });
-document.getElementById("closeChatbot").addEventListener("click", () => {
+chatbotIcon.addEventListener("click", () => {
+    if (chatbotContainer.style.display === "none" || chatbotContainer.style.display === "") {
+        chatbotContainer.style.display = "flex";
+        chatbotContainer.classList.add("full-screen");
+    } else {
         chatbotContainer.style.display = "none";
-    });
+        chatbotContainer.classList.remove("full-screen");
+    }
+});
     
 
 document.getElementById("fullScreenButton").addEventListener("click", () => {
