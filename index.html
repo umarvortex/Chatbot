@@ -281,6 +281,7 @@
             <h3>Assistant</h3>
             <div>
                 <button id="refreshChatbot"> <i class="fa-sharp-duotone fa-solid fa-rotate"></i> </button>
+               <button id="fullScreenButton"><i class="fa-solid fa-expand"></i></button>
                 <button id="closeChatbot"><i class="fa-solid fa-xmark"></i></button>
             </div>
         </div>
@@ -339,6 +340,10 @@ document.getElementById("closeChatbot").addEventListener("click", () => {
     });
     
 
+document.getElementById("fullScreenButton").addEventListener("click", () => {
+    const chatbotContainer = document.getElementById("chatbotContainer");
+    chatbotContainer.classList.toggle("full-screen");
+});
 
 
         
