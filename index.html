@@ -538,6 +538,39 @@ function saveChat() {
 
 
 
+
+
+
+
+    // Feedback Functionality
+    const feedbackButton = document.getElementById("feedbackButton");
+    const feedbackForm = document.getElementById("feedbackForm");
+    const feedbackText = document.getElementById("feedbackText");
+    const submitFeedback = document.getElementById("submitFeedback");
+    const cancelFeedback = document.getElementById("cancelFeedback");
+
+    feedbackButton.addEventListener("click", () => {
+        feedbackForm.style.display = "block";
+    });
+
+    cancelFeedback.addEventListener("click", () => {
+        feedbackForm.style.display = "none";
+        feedbackText.value = "";
+    });
+
+    submitFeedback.addEventListener("click", () => {
+        const feedback = feedbackText.value.trim();
+        if (feedback === "") return;
+
+        // Handle feedback submission (e.g., send to server or log it)
+        console.log("Feedback submitted:", feedback);
+
+        // Hide feedback form and clear the textarea
+        feedbackForm.style.display = "none";
+        feedbackText.value = "";
+    });
+
+
         
 </script>
     
