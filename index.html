@@ -411,7 +411,7 @@ document.addEventListener("DOMContentLoaded", function () {
             chatbotBody.appendChild(botMessage);
 
             chatbotBody.scrollTop = chatbotBody.scrollHeight;
-            isProcessingMessage = false;
+            isProcessingMessage = true;
             processMessageQueue();
         }, 1500);
     }
