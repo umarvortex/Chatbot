@@ -405,23 +405,26 @@ function processMessageQueue() {
     // Show Typing Indicator
     typingIndicator.style.display = "flex";
 
-    // Bot Response
-    setTimeout(() => {
-        typingIndicator.style.display = "none"; // Hide typing indicator
+  // Bot Response
+setTimeout(() => {
+    typingIndicator.style.display = "none"; // Hide typing indicator
 
-        const botMessage = document.createElement("div");
-        botMessage.classList.add("message", "bot-message");
-        botMessage.textContent = getBotResponse(userText);
-        chatbotBody.appendChild(botMessage);
+    const botMessage = document.createElement("div");
+    botMessage.classList.add("message", "bot-message");
+    botMessage.textContent = getBotResponse(userText);
+    chatbotBody.appendChild(botMessage);
 
-        chatbotBody.scrollTop = chatbotBody.scrollHeight;
-        saveChat(); // Save chat history
+    chatbotBody.scrollTop = chatbotBody.scrollHeight;
+    saveChat(); // Save chat history
 
-        // Process the next message in the queue
-        isProcessingMessage = false;
-        processMessageQueue();
-    }, 1500); // Simulate typing delay
-}
+    // Reset processing flag before calling the next message
+    isProcessingMessage = false;
+    
+    // Process the next message in the queue
+    processMessageQueue();
+}, 1500); // Simulate typing delay
+} 
+
 
 // Get bot response
 function getBotResponse(userText) {
