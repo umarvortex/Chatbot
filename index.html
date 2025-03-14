@@ -115,11 +115,11 @@
         }
     
      .welcome-message strong {
-        font-size 19;
+        font-size 20;;
 } 
 
        .welcome-message p {
-          font-size: 14;
+          font-size: 13;
 }
 
         .welcome-message p,
@@ -424,13 +424,13 @@ document.getElementById("fullScreenButton").addEventListener("click", () => {
         });
 
         // Refresh Chatbot
-        document.getElementById("refreshChatbot").addEventListener("click", function() {
         
-        chatbotBody.innerHTML = '';
-        
-        welcomeMessage.style.display = "block";
-      });
-            
+          document.getElementById("refreshChatbot").addEventListener("click", function() {
+    console.log("Refresh button clicked");
+    chatbotBody.innerHTML = '';
+    welcomeMessage.style.display = "block";
+    console.log("Welcome message should be visible");
+});  
         
 
         // Send Message on Enter
