@@ -114,36 +114,36 @@
         }
 
         .welcome-logo {
-            width: 90px;
-            height: 90px;
-            margin-bottom: -13;
-            position: relative;
-        }
+    width: 90px;
+    height: 90px;
+    margin-bottom: -13px;
+    position: relative;
+}
 
-        .welcome-logo::before,
-        .welcome-logo::after {
-            content: '';
-            position: absolute;
-            width: 15px;
-            height: 15px;
-            background-color: purple;
-            border-radius: 50%;
-            top: 30%;
-            animation: blink 4s infinite;
-        }
+.welcome-logo::before,
+.welcome-logo::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: purple;
+    border-radius: 50%;
+    top: 35%; /* Adjust this value to position the eyes vertically */
+    animation: blink 4s infinite;
+}
 
-        .welcome-logo::before {
-            left: 25%;
-        }
+.welcome-logo::before {
+    left: 20%; /* Adjust this value to position the left eye horizontally */
+}
 
-        .welcome-logo::after {
-            right: 25%;
-        }
+.welcome-logo::after {
+    right: 20%; /* Adjust this value to position the right eye horizontally */
+}
 
-        @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0; }
-        }
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
 
         .welcome-message strong {
             font-size: 18px;
