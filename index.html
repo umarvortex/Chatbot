@@ -440,18 +440,23 @@ function processMessageQueue() {
 
 // Get bot response
 
-async function getBotResponse(userText) {
-    if (userText.toLowerCase().includes("hi") || userText.includes("hello")) {
-        return "Hello! How can I assist you today?";
-    }
+function getBotResponse(userText) {
+    userText = userText.toLowerCase();
 
-    try {
-        const aiResponse = await getAIResponse(userText);
-        return aiResponse;
-    } catch (error) {
-        return "Sorry, I couldn't process that request.";
+    if (userText.includes("hi") || userText.includes("hello") || userText.includes("salam")) {
+        return "Hello! How can I assist you today with our pipe solutions?";
     }
+    if (userText.includes("timing") || userText.includes("hours")) {
+        return "Our business hours are 11 AM - 6 PM (Mon-Sat).";
+    }
+    if (userText.includes("contact") || userText.includes("email")) {
+        return "You can contact us through website contact form or WhatsApp and email umarvortex@gmail.com ";
+    }
+    return "Sorry, I couldn't process that request?";
 }
+    
+
+
 
 
 // Quick Replies
