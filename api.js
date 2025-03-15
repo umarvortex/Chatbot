@@ -1,5 +1,5 @@
 async function getAIResponse(userText) {
-    const response = await fetch('https://your-serverless-function-url.com', {
+    const response = await fetch('https://vortex.uma/rvortex.workers.dev', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
