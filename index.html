@@ -198,25 +198,33 @@
         } 
 
         /* Send Button */
-        #sendButton {
-            position: absolute;
-            right: 16px;
-            top: 50%;
-            transform: translateY(-50%);
-            background: #d200ff;
-            border-radius: 25;
-            color: white;
-            font-size: 14px;
-            cursor: pointer;
-            padding: 5px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+        <style>
+    /* Existing styles */
+    ...
 
-        #sendButton:hover {
-            color: d200ff;
-        }
+    /* Updated Send Button CSS */
+    #sendButton {
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #d200ff; /* Set your desired purple color here */
+        border: none;
+        color: white;
+        font-size: 13px;
+        cursor: pointer;
+        padding: 10px; /* Adjust padding as needed */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%; /* Makes the button circular */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better appearance */
+    }
+
+    #sendButton:hover {
+        color: white;
+        background: #a100cc; /* Optional: Change background color on hover for better UX */
+   } 
 
         /* Quick Replies */
         .quick-replies {
