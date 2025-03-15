@@ -292,7 +292,14 @@
 
 
 
+@keyframes blink {
+    0%, 100% { opacity: 1; } /* Open Eyes */
+    50% { opacity: 0; } /* Closed Eyes */
+}
 
+.welcome-logo {
+    animation: blink 2s infinite; /* 2 seconds per blink, infinite loop */
+}
 
 
 
