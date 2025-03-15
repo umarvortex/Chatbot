@@ -31,7 +31,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
             z-index: 9999;
         }
 
@@ -44,17 +44,17 @@
         /* Chatbot Container */
         .chatbot-container {
             position: fixed;
-            bottom: 87px;
-            right: 16px;
-            width: 290px;
-            height: 420px;
+            bottom: 84px;
+            right: 13px;
+            width: 295px;
+            height: 425px;
             background-color: #000000;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+            border-radius: 0px;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.6);
             display: none;
             flex-direction: column;
             z-index: 9999;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
         }
 
         .chatbot-container.full-screen {
@@ -78,21 +78,21 @@
 
         .chatbot-header h3 {
             margin: 0;
-            font-size: 17px;
+            font-size: 18px;
         }
 
         .chatbot-header button {
             background: none;
             border: none;
             color: #fff;
-            font-size: 15px;
+            font-size: 16px;
             cursor: pointer;
-            margin-right: 10px;     
+            margin-right: 9px;     
         }
 
         .chatbot-header button:last-child {
-             margin-right: 1;  
-             font-size: 18.5px;
+             margin-right: 0;  
+             font-size: 20px;
         }
 
         /* Chatbot Body */
@@ -114,40 +114,17 @@
         }
 
         .welcome-logo {
-    width: 90px;
-    height: 90px;
+    width: 95px;
+    height: 95px;
     margin-bottom: -13px;
     position: relative;
 }
 
-.welcome-logo::before,
-.welcome-logo::after {
-    content: '';
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    background-color: purple;
-    border-radius: 50%;
-    top: 35%; /* Adjust this value to position the eyes vertically */
-    animation: blink 4s infinite;
-}
 
-.welcome-logo::before {
-    left: 20%; /* Adjust this value to position the left eye horizontally */
-}
-
-.welcome-logo::after {
-    right: 20%; /* Adjust this value to position the right eye horizontally */
-}
-
-@keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
-}
 
         .welcome-message strong {
             font-size: 18px;
-            font-weight: 400;
+            font-weight: 600;
             color: white;
             line-height: 2;
         }
