@@ -443,6 +443,33 @@
         function getBotResponse(userText) {
             userText = userText.toLowerCase();
 
+
+
+// NLP Cleaning - Once at the top
+let doc = nlp(userText);
+let cleaned = doc.normalize().out('text');
+
+// Now use cleaned everywhere
+if (cleaned.includes("how are you")) {
+  return "I'm good! How about you?";
+}
+
+if (cleaned.includes("what's your name")) {
+  return "I'm your friendly chatbot assistant!";
+}
+
+if (cleaned.includes("thank you") || cleaned.includes("thanks")) {
+  return "You're welcome!";
+}
+
+// And so on...
+
+
+
+
+
+
+
                if (userText.includes("hi") || userText.includes("hello") || userText.includes("salam")) {
     return "Hey there How can I assist you today with our pipe solutions?";
 }
@@ -678,7 +705,7 @@ if (userText.includes("I am good")) {
 }
 
 
-if (userText.includes("What do you do?")) {
+if (userText.includes("What do you do")) {
   return "I am here to chat and assist you with whatever you need!";
 
 }
@@ -700,13 +727,13 @@ if (userText.includes("Nice to meet you")) {
 
 }
 
-if (userText.includes("What's up?")) {
+if (userText.includes("What's up")) {
   return "Just here ready to chat with you. What's up with you?";
 
 }
 
 
-if (userText.includes("How old are you?")) {
+if (userText.includes("How old are you")) {
   return "I'm ageless, but always happy to assist!";
 
 } 
@@ -989,5 +1016,10 @@ if (userText.includes("what's your favorite song")) {
         }  
 
     </script>
+
+
+<script src="https://unpkg.com/compromise"></script>
+
+
 </body>
 </html>
