@@ -328,8 +328,8 @@
         <!-- Quick Replies -->
         <div class="quick-replies" id="quickReplies">
             <button onclick="sendQuickReply('What are your timings?')">Timings</button>
-            <button onclick="sendQuickReply('How can I contact you?')">Contact</button>
-            <button onclick="sendQuickReply('Hello')">Say Hi</button>
+            <button onclick="sendQuickReply('What are your latest price?')">Price</button>
+            <button onclick="sendQuickReply('Do you provide warranty?')">Warranty</button>
         </div>
         <!-- Typing Indicator -->
         <div class="typing-indicator" id="typingIndicator">
@@ -459,8 +459,8 @@ if (userText.includes("pipes") || userText.includes("what pipes you sell")) {
     return "We provide a variety of pipes including PVC, UPVC, HDPE, and PPRC pipes.";
 }
 
-if (userText.includes("contact number") || userText.includes("phone number")) {
-    return "You can contact us at +92-3192017909.";
+if (userText.includes("contact") || userText.includes("phone number")) {
+    return "You can contact us at +92-3192017909 or  WhatsApp you will get both options in our website home section" .";
 }
 
 if (userText.includes("email") || userText.includes("email address")) {
@@ -468,7 +468,7 @@ if (userText.includes("email") || userText.includes("email address")) {
 }
 
 if (userText.includes("business hours") || userText.includes("timings")) {
-    return "Our business hours are  Saturday to Thursday , 11 AM to 6 PM and Friday 3 PM to 6PM.";
+    return "Our business hours are  Saturday to Thursday , 11:00 AM to 6:00 PM and Friday 3:00 PM to 6:00 PM.";
 }
 
 if (userText.includes("price ") || userText.includes("pricing")) {
