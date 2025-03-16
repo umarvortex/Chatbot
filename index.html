@@ -283,7 +283,6 @@
             padding: 8px;
             border-radius: 8px;
             margin: 16px 0;
-            margin-bottom: 70px;
             align-self: flex-start;
         }
 
@@ -351,18 +350,21 @@
                 <p><strong>Hi, I'm Vortex.</strong><br>How can I help you today?</p>
             </div>
         </div>
+
+ <!-- Typing Indicator -->
+        <div class="typing-indicator" id="typingIndicator">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
         <!-- Quick Replies -->
         <div class="quick-replies" id="quickReplies">
             <button onclick="sendQuickReply('What are your timings?')">Timings</button>
             <button onclick="sendQuickReply('What are your latest price?')">Price</button>
             <button onclick="sendQuickReply('Do you provide delivery?')">Delivery</button>
         </div>
-        <!-- Typing Indicator -->
-        <div class="typing-indicator" id="typingIndicator">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+       
         <!-- Chatbot Input -->
         <div class="chatbot-input">
             <div class="input-wrapper">
