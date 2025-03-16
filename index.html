@@ -444,14 +444,21 @@
 
         // Get bot response
         function getBotResponse(userText) {
-            userText = userText.toLowerCase();
+            userText = userText.toLowerCase().trim();
 
 
 
 
-               if (userText.includes("hi") || userText.includes("hello") || userText.includes("salam")) {
-    return "Hey there How can I assist you today with our pipe solutions?";
+               if (userText.includes("hi") || userText.includes("hello") || userText.includes("hey")) {
+    return "Hey there! How’s your day treating you? Hope everything’s going well! How can I assist you today with our top-quality pipe solutions?";
 }
+
+
+   if (userText.includes("asslamualaikum") || userText.includes("salam alaikum") ||  userText.includes("assalam alaikum") || userText.includes("salam")) {
+    return "Hey there! How’s your day treating you? Hope everything’s going well! How can I assist you today with our top-quality pipe solutions?";
+}
+
+
 
 if (userText.includes("your company name") || userText.includes("who are you")) {
     return "We are Pak Pipes International Karachi, trusted pipe suppliers.";
