@@ -276,16 +276,16 @@
             color: #ffffff;
         } 
 
-        /* Typing Indicator */
-        .typing-indicator {
-            display: none;
-            background-color: transparent;
-            padding: 8px;
-            border-radius: 8px;
-           margin: 16px 0;
-            margin-left: 20px; 
-            
-        }
+
+.typing-indicator {
+    display: none;
+    background-color: transparent;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 16px 0;
+    margin-left: 20px; /* Add this line */
+    align-self: flex-start;
+}
 
         .typing-indicator span {
             display: inline-block;
@@ -293,7 +293,7 @@
             height: 8px;
             background-color: #d200ff;
             border-radius: 50%;
-            margin: 0 2px;
+            
             
             animation: typing 1s infinite;
         }
