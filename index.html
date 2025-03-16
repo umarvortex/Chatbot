@@ -441,27 +441,10 @@
 
 
 
-// NLP Cleaning - Once at the top
-let doc = nlp(userText);
-let cleaned = doc.normalize().out('text');
 
-// Now use cleaned everywhere
-if (cleaned.includes("how are you")) {
-  return "I'm good! How about you?";
-}
-
-if (cleaned.includes("what's your name")) {
-  return "I'm your friendly chatbot assistant!";
-}
-
-if (cleaned.includes("thank you") || cleaned.includes("thanks")) {
-  return "You're welcome!";
-}
-
-// And so on...
-
-
-
+        // Get bot response
+        function getBotResponse(userText) {
+            userText = userText.toLowerCase();
 
 
 
