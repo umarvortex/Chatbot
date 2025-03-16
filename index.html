@@ -479,36 +479,31 @@
 
         // Get bot response
         function getBotResponse(userText) {
-            userText = userText.toLowerCase().trim();
+    userText = userText.toLowerCase().trim(); // Normalize input
 
+    if (userText.includes("hi") || userText.includes("hello") || userText.includes("hey")) {
+        return "Hey there! How’s your day treating you? Hope everything’s going well! How can I assist you today with our top-quality pipe solutions?";
+    }
 
+    if (userText.includes("asslamualaikum") || userText.includes("salam alaikum") || userText.includes("assalam alaikum") || userText.includes("salam")) {
+        return "Assalamualaikum! Hope you’re having a wonderful day by Allah’s blessings. How can I be of service to you today regarding our top-quality pipe solutions?";
+    }
 
+    if (userText.includes("your company name") || userText.includes("who are you")) {
+        return "We are Pak Pipes International Karachi, trusted pipe suppliers.";
+    }
 
-               if (userText.includes("hi") || userText.includes("hello") || userText.includes("hey")) {
-    return "Hey there! How’s your day treating you? Hope everything’s going well! How can I assist you today with our top-quality pipe solutions?";
-}
+    if (userText.includes("location") || userText.includes("where are you located")) {
+        return "We are based in KDA scheme 33 Grey Noor tower Karachi, Pakistan. Visit us anytime!";
+    }
 
+    if (userText.includes("pipes") || userText.includes("products") || userText.includes("services") || userText.includes("what pipes you sell")) {
+        return "We provide a variety of pipes including PVC, UPVC, HDPE, and PPRC pipes if you want to know about all our products in details just say VORTEX BHAI DETAILS and I'll share full Products special list here just for you.";
+    }
 
-   if (userText.includes("asslamualaikum") || userText.includes("salam alaikum") ||  userText.includes("assalam alaikum") || userText.includes("salam")) {
-    return "Assalamualaikum! Hope you’re having a wonderful day by Allah’s blessings. How can I be of service to you today regarding our top-quality pipe solutions?";
-}
-
-
-
-if (userText.includes("your company name") || userText.includes("who are you")) {
-    return "We are Pak Pipes International Karachi, trusted pipe suppliers.";
-}
-
-if (userText.includes("location") || userText.includes("where are you located")) {
-    return "We are based in KDA scheme 33 Grey Noor tower Karachi, Pakistan. Visit us anytime!";
-}
-
-if (userText.includes("pipes") ||  userText.includes("products") || userText.includes("services") || userText.includes("what pipes you sell")) {
-    return "We provide a variety of pipes including PVC, UPVC, HDPE, and PPRC pipes if you want to know about all our products in details just say VORTEX BHAI DETAILS and I'll share full Products special list here just for you.";
-}
-
-if (userText.includes("VORTEX BHAI DETAILS") || userText.includes("Vortex bhai details")) {
-    return `Here are the full details of all pipes:
+    // Updated condition for "VORTEX BHAI DETAILS"
+    if (userText.includes("vortex bhai details")) {
+        return `Here are the full details of all pipes:
 
 1. **Transparent Color Zebra Pipes**
    - Sizes: 2mm, 2.5mm, 3mm
@@ -561,7 +556,7 @@ if (userText.includes("VORTEX BHAI DETAILS") || userText.includes("Vortex bhai d
 17. **Bridgestone High Pressure Gas Hose**
     - Size: 8mm, Length: 300f, Weight: 12kg
 
-18. **Pona Flex Gas Hose (Korean Technology)**
+18. **Pona Flex Gas Hose (KTL)**
     - Length: 270f, Weight: 6kg
 
 19. **Yellow Poly National Pipes**
@@ -577,11 +572,9 @@ if (userText.includes("VORTEX BHAI DETAILS") || userText.includes("Vortex bhai d
     - Sizes: 1 inch to 8 inch
     - Pressure Ratings: PN6, PN8, PN10, PN12.5, PN16
 
-23. **Suction and Delivery Steel Wire Hose (National and China's)**
+23. **Suction and Delivery Steel Wire Hose (National)**
     - Sizes: 3/4 inch, 1 inch, 1_1/4 inch, 1_2/2 inch, 2 inch, 3 inch, 4 inch`;
-}
-
-
+    }
 
 if (userText.includes("contact") || userText.includes("phone number")) {
     return "You can contact us at +92-3192017909 or  WhatsApp you will get both options in our website home section.";
