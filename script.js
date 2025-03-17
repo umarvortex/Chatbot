@@ -40,6 +40,9 @@
                 processMessageQueue();
             }
 
+         
+     
+
             // Clear Input
             userInput.value = "";
             chatbotBody.scrollTop = chatbotBody.scrollHeight;
@@ -93,10 +96,36 @@ function processMessageQueue() {
 
 
 
+// Quick Replies
+        function sendQuickReply(text) {
+            userInput.value = text;
+            sendMessage();
+        }
+
+
+        // Close Chatbot
+        document.getElementById("closeChatbot").addEventListener("click", () => {
+            chatbotContainer.classList.remove("full-screen");
+            chatbotContainer.style.display = "none";
+        });
+
+        
+
+        // Send Message on Enter
+        userInput.addEventListener("keypress", (event) => {
+            if (event.key === "Enter") sendMessage();
+        });
+
+        // Send Message on Button Click
+        sendButton.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent unexpected behaviors
+            sendMessage();
+        });
+
 
         // Get bot response
         function getBotResponse(userText) {
-    userText = userText.toLowerCase().trim(); // Normalize input
+    userText = userText.toLowerCase().trim(); 
 
     if (userText.includes("hi") || userText.includes("hello") || userText.includes("hey")) {
         return "Hey there! How’s your day going? Hope everything’s going well! How can I assist you today with our top-quality pipe solutions?";
@@ -631,28 +660,4 @@ if (userText.includes("are you always online") || userText.includes("are you ava
 
 
 
-        // Quick Replies
-        function sendQuickReply(text) {
-            userInput.value = text;
-            sendMessage();
-        }
-
-
-        // Close Chatbot
-        document.getElementById("closeChatbot").addEventListener("click", () => {
-            chatbotContainer.classList.remove("full-screen");
-            chatbotContainer.style.display = "none";
-        });
-
         
-
-        // Send Message on Enter
-        userInput.addEventListener("keypress", (event) => {
-            if (event.key === "Enter") sendMessage();
-        });
-
-        // Send Message on Button Click
-        sendButton.addEventListener("click", function (event) {
-            event.preventDefault(); // Prevent unexpected behaviors
-            sendMessage();
-        });
