@@ -140,11 +140,11 @@
 
         /* Messages */
         .message {
-            max-width: 80%;
+            max-width: 100%;
             padding: 8px 12px;
-            border-radius: 20px;
+            border-radius: 15px;
             margin: 5px 0;
-            font-size: 15px;
+            font-size: 14px;
             word-wrap: break-word;
         }
 
@@ -152,7 +152,8 @@
             background-color: #d200ff;
             color: #fff;
             align-self: flex-end;     
-            filter: drop-shadow(0 0 8px #c421fe);
+            line-height: 1.5;
+            filter: drop-shadow(0 0 4px #c421fe);
         }
 
         
@@ -164,7 +165,7 @@
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     margin: 5px 0;
-    max-width: 70%;
+    max-width: 100%;
     word-wrap: break-word;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     font-family: 'Arial', sans-serif;
@@ -535,8 +536,8 @@
     }
 
     // Updated condition for "VORTEX BHAI DETAILS"
-    if (userText.includes("vortex bhai details")) {
-        return `Here are the full details of all pipes:
+   if (userText.includes("vortex bhai details")) {
+    return `Here are the full details of all pipes:
 
 1. **Transparent Color Zebra Pipes**
    - Sizes: 2mm, 2.5mm, 3mm
@@ -607,7 +608,7 @@
 
 23. **Suction and Delivery Steel Wire Hose (National)**
     - Sizes: 3/4 inch, 1 inch, 1_1/4 inch, 1_2/2 inch, 2 inch, 3 inch, 4 inch`;
-    }
+}
 
 if (userText.includes("contact") || userText.includes("phone number")) {
     return "You can contact us at +92-3192017909 or  WhatsApp you will get both options in our website home section.";
