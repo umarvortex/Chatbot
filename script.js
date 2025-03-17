@@ -158,7 +158,7 @@ if (userText.includes("contact") || userText.includes("phone number")) {
 }
 
 if (userText.includes("email") || userText.includes("email address")) {
-    return ".";
+    return "Our current email is umarvortex@gmail.com; however, please note that this is not the official business email address of Pak Pipes International Karachi.";
 }
 
 
@@ -208,11 +208,11 @@ if (userText.includes("discount") || userText.includes("any offer")) {
 }
 
 if (userText.includes("how to order") || userText.includes("order")) {
-    return "You can place an order via WhatsApp, call, email, or visiting our office if you want to order via WhatsApp or call you will find both options in our website home section.";
+    return "You can conveniently place your order through WhatsApp, phone call, email, or by visiting our office. For WhatsApp and call options, simply visit the Home section of our website — both contact methods are readily available there.";
 }
 
 if (userText.includes("about bussines") || userText.includes("bussines info")) {
-    return "Pak Pipes International Karachi powered by MEMON ONE TRADERS is serving the Karachi for over 2 years trusted by thousands costomers All over in Karachi visit us anytime at Grey Noor Tower!";
+    return "Pak Pipes International Karachi, powered by MEMON ONE TRADERS, has been proudly serving Karachi for over 2 years. Trusted by thousands of customers across the city, we welcome you to visit us anytime at Grey Noor Tower.";
 }
 
 if (userText.includes("pipe fitting") || userText.includes("accessories")) {
@@ -227,7 +227,7 @@ if (userText.includes("feedback") || userText.includes("complaint")) {
     return "We value your feedback! Please share your experience or any complaints with us via website contact form.";
 }
 
-if (userText.includes("return policy") || userText.includes("can I return")) {
+if (userText.includes("return") || userText.includes("can I return")) {
     return "Returns are accepted within 7 days for unopened, undamaged products.";
 }
 
@@ -243,7 +243,7 @@ if (userText.includes("why choose you") || userText.includes("benefits")) {
 }
 
 if (userText.includes("website") || userText.includes("official site")) {
-    return "Our website is www.pakpipesinternational.com.";
+    return "Our website is .";
 }
 
 if (userText.includes("ISO certified") || userText.includes("certification")) {
