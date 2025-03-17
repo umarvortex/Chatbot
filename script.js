@@ -646,7 +646,7 @@ if (userText.includes("what's your favorite song")) {
 }
 
 
-            return "Sorry, I couldn’t catch the information you need check your spelling and rewrite your message I am not a advanced bot so some times spelling mistake cause ERROR. But no worries  feel free to ask something else, or jump to the Home section and reach out to the M'Tahir Naqaash via WhatsApp or a quick call. Thanks for visiting us, we appreciate your time!";
+            return "Sorry, I couldn’t catch the information you need. Please check your spelling and rewrite your message. I am not an advanced bot, so sometimes spelling mistakes cause errors. But no worries feel free to ask something else, or jump to the Home section and reach out to the M'Tahir Naqaash via WhatsApp or a quick call. Thanks for visiting us.";
 
  }
 
