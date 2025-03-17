@@ -309,7 +309,7 @@ if (userText.includes("partnership") || userText.includes("become distributor"))
 
 
 
-if (userText.includes("track") || userText.includes("status")) {
+if (userText.includes("order track") || userText.includes("order status")) {
     return "To check your order status, feel free to call or WhatsApp us directly. Good news  our web team is currently working on an Order Tracking Feature OTF Soon, you'll be able to track your orders right here on our website!";
 
 }
@@ -381,10 +381,22 @@ if (userText.includes("What do you do")) {
 }
 
 
-if (userText.includes("oki")  ||     userText.includes("ok")  ||        userText.includes("oki")) {
-  return "Hmm nice you are great!";
+if (userText.includes("okay") || userText.includes("ok") || userText.includes("oki") || userText.includes("okk") || userText.includes("okay") || userText.includes("theek hai") || userText.includes("sahi") || userText.includes("han sahi hai")) {
 
+  let okReplies = [
+    "Hmm nice, you are great!",
+    "Alright, noted!",
+    "Okay, you are wonderful!",
+    "Perfect! Let me know if you need anything else.",
+    "Cool, I appreciate that!",
+    "You are really cool, thank you!"
+  ];
+
+  let randomReply = okReplies[Math.floor(Math.random() * okReplies.length)];
+  return randomReply;
 }
+
+
 
 if (userText.includes("You're welcome")) {
   return "Always happy to help!";
