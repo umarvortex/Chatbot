@@ -362,7 +362,18 @@ if (userText.includes("okay") || userText.includes("ok") || userText.includes("o
   return randomReply;
 }
 
-
+if (userText.includes("i am good") || userText.includes("i'm good") || userText.includes("i am fine") || userText.includes("i'm fine") || userText.includes("yeah I am good") || userText.includes("yeah I'm good")) {
+  
+  let goodReplies = [
+    "I'm glad to hear that!", 
+    "That's awesome, happy to know!",
+    "Feeling great, buddy!",
+    "Good vibes all around!"
+  ];
+  
+  let randomGoodReply = goodReplies[Math.floor(Math.random() * goodReplies.length)];
+  return randomGoodReply;
+}
 
 // 30. Do you love me?
 if (userText.includes("do you love me")) {
