@@ -631,7 +631,7 @@ if (userText.includes("are you always online") || userText.includes("are you ava
 
             return "Sorry, I couldn’t catch the information you need Please recheck your spelling or feel free to ask something else, for more details jump to the Home section and reach out to the M'Tahir Naqaash via WhatsApp or a quick call.";
  }
-
+} 
 
 
         // Quick Replies
@@ -639,7 +639,7 @@ if (userText.includes("are you always online") || userText.includes("are you ava
             userInput.value = text;
             sendMessage();
         }
-} 
+
 
         // Close Chatbot
         document.getElementById("closeChatbot").addEventListener("click", () => {
