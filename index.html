@@ -543,78 +543,33 @@
     }
 
     // Updated condition for "VORTEX BHAI DETAILS"
-  if (userText.includes("vortex bhai details")) {
-    return `Here are the full details of all pipes:\n
-1. **Transparent Color Zebra Pipes**\n
-   - Sizes: 2mm, 2.5mm, 3mm\n
-\n
-2. **Super Green Pipes**\n
-   - Sizes: 3mm, 4mm\n
-\n
-3. **Red Poly with White Line Pipes**\n
-   - Sizes: 3/4 inch, 1 inch\n
-\n
-4. **Poly Back Pipes**\n
-   - Sizes: 1/2 inch, 1 inch, 1"1"2, 3 inch, 4 inch, 5 inch\n
-\n
-5. **Braded Bravo Dagha Pipes**\n
-   - Sizes: 3/4 inch, 1 inch\n
-\n
-6. **Super Transparent Garden Pipes**\n
-   - Sizes: 1 inch (4mm, 3mm), 3/4 inch (3mm, 4mm)\n
-\n
-7. **Gas Pipes**\n
-   - Sizes: 2mm, 2.5mm, 3mm, 4mm\n
-\n
-8. **Garden Pipes**\n
-   - (General category, no specific sizes mentioned)\n
-\n
-9. **Level Pipes**\n
-   - Sizes: 2 sot, 2.5 sot\n
-\n
-10. **Fire Hose**\n
-    - Sizes: 2 inch to 6 inch\n
-\n
-11. **Clear Garden Transparent Hose Pipes**\n
-    - Sizes: 1 inch, 2mm\n
-\n
-12. **Poly Pipes**\n
-    - Sizes: 1/2 inch, 3/4 inch, 1 inch\n
-\n
-13. **Zebra Band Pipes**\n
-    - Sizes: 2mm, 2.5mm\n
-\n
-14. **Vinyl Section Pipes (Imported)**\n
-    - Sizes: 1 inch, 2 inch\n
-\n
-15. **Parker Pressure Gas Hose**\n
-    - Size: 8mm, Length: 100mm, Weight: 12kg\n
-\n
-16. **Commando Pressure Gas Hose**\n
-    - Size: 8mm, Length: 300f, Weight: 11.5kg\n
-\n
-17. **Bridgestone High Pressure Gas Hose**\n
-    - Size: 8mm, Length: 300f, Weight: 12kg\n
-\n
-18. **Pona Flex Gas Hose (KTL)**\n
-    - Length: 270f, Weight: 6kg\n
-\n
-19. **Yellow Poly National Pipes**\n
-    - Sizes: 1/2 inch, 3/4 inch, 1 inch, 2 inch\n
-\n
-20. **Caterpillars Gas Hose**\n
-    - Length: 300f\n
-\n
-21. **Pure Garden Pipes**\n
-    - Sizes: 1 inch, 1_1/4 inch, 1_1/2 inch, 2 inch, 2.5mm, 3mm\n
-\n
-22. **PE 100 National Pipes**\n
-    - Sizes: 1 inch to 8 inch\n
-    - Pressure Ratings: PN6, PN8, PN10, PN12.5, PN16\n
-\n
-23. **Suction and Delivery Steel Wire Hose (National)**\n
-    - Sizes: 3/4 inch, 1 inch, 1_1/4 inch, 1_2/2 inch, 2 inch, 3 inch, 4 inch\n`;
-}
+ if (userText.toLowerCase().trim().includes("vortex bhai details")) {
+    return `Here are the full details of all pipes:\n\n
+1. **Transparent Color Zebra Pipes** - Sizes: 2mm, 2.5mm, 3mm\n
+2. **Super Green Pipes** - Sizes: 3mm, 4mm\n
+3. **Red Poly with White Line Pipes** - Sizes: 3/4 inch, 1 inch\n
+4. **Poly Back Pipes** - Sizes: 1/2 inch, 1 inch, 1"1"2, 3 inch, 4 inch, 5 inch\n
+5. **Braded Bravo Dagha Pipes** - Sizes: 3/4 inch, 1 inch\n
+6. **Super Transparent Garden Pipes** - Sizes: 1 inch (4mm, 3mm), 3/4 inch (3mm, 4mm)\n
+7. **Gas Pipes** - Sizes: 2mm, 2.5mm, 3mm, 4mm\n
+8. **Garden Pipes** - (General category, no specific sizes mentioned)\n
+9. **Level Pipes** - Sizes: 2 sot, 2.5 sot\n
+10. **Fire Hose** - Sizes: 2 inch to 6 inch\n
+11. **Clear Garden Transparent Hose Pipes** - Sizes: 1 inch, 2mm\n
+12. **Poly Pipes** - Sizes: 1/2 inch, 3/4 inch, 1 inch\n
+13. **Zebra Band Pipes** - Sizes: 2mm, 2.5mm\n
+14. **Vinyl Section Pipes (Imported)** - Sizes: 1 inch, 2 inch\n
+15. **Parker Pressure Gas Hose** - Size: 8mm, Length: 100mm, Weight: 12kg\n
+16. **Commando Pressure Gas Hose** - Size: 8mm, Length: 300f, Weight: 11.5kg\n
+17. **Bridgestone High Pressure Gas Hose** - Size: 8mm, Length: 300f, Weight: 12kg\n
+18. **Pona Flex Gas Hose (KTL)** - Length: 270f, Weight: 6kg\n
+19. **Yellow Poly National Pipes** - Sizes: 1/2 inch, 3/4 inch, 1 inch, 2 inch\n
+20. **Caterpillars Gas Hose** - Length: 300f\n
+21. **Pure Garden Pipes** - Sizes: 1 inch, 1_1/4 inch, 1_1/2 inch, 2 inch, 2.5mm, 3mm\n
+22. **PE 100 National Pipes** - Sizes: 1 inch to 8 inch, Pressure Ratings: PN6, PN8, PN10, PN12.5, PN16\n
+23. **Suction and Delivery Steel Wire Hose (National)** - Sizes: 3/4 inch, 1 inch, 1_1/4 inch, 1_2/2 inch, 2 inch, 3 inch, 4 inch\n
+`;
+} 
 
 if (userText.includes("contact") || userText.includes("phone number")) {
     return "You can contact us at +92-3192017909 or  WhatsApp you will get both options in our website home section.";
