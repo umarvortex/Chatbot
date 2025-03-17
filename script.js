@@ -183,7 +183,7 @@ if (userText.includes("minimum order") || userText.includes("MOQ")) {
 
 }
 
-if (userText.includes("payment") || userText.includes("how to pay")) {
+if (userText.includes("payment") || userText.includes("pay")) {
     return "We accept payments via cash and bank transfer only.";
 }
 
@@ -199,7 +199,7 @@ if (userText.includes("PVC vs UPVC") || userText.includes("difference between PV
     return "PVC is flexible and used for drainage, UPVC is rigid and used for water supply.";
 }
 
-if (userText.includes("best pipe for water") || userText.includes("recommend pipe")) {
+if (userText.includes("water") || userText.includes("recommend")) {
     return "For water supply, UPVC or PPRC pipes are highly recommended.";
 }
 
@@ -211,11 +211,11 @@ if (userText.includes("how to order") || userText.includes("order")) {
     return "You can conveniently place your order through WhatsApp, phone call, email, or by visiting our office. For WhatsApp and call options, simply visit the Home section of our website — both contact methods are readily available there.";
 }
 
-if (userText.includes("about bussines") || userText.includes("bussines info")) {
+if (userText.includes("about") || userText.includes("bussines info")) {
     return "Pak Pipes International Karachi, powered by MEMON ONE TRADERS, has been proudly serving Karachi for over 2 years. Trusted by thousands of customers across the city, we welcome you to visit us anytime at Grey Noor Tower.";
 }
 
-if (userText.includes("pipe fitting") || userText.includes("accessories")) {
+if (userText.includes("fitting") || userText.includes("accessories")) {
     return "Yes, we provide pipe fittings and accessories along with pipes.";
 }
 
@@ -233,11 +233,11 @@ if (userText.includes("return") || userText.includes("can I return")) {
 
 
 
-if (userText.includes("installation service") || userText.includes("do you install")) {
+if (userText.includes("installation") || userText.includes("do you install")) {
     return "We can connect you with trusted installation partners.";
 }
 
-if (userText.includes("why choose you") || userText.includes("benefits")) {
+if (userText.includes("choose") || userText.includes("benefits")) {
     return "We offer high-quality products, competitive pricing, and excellent customer service.";
 }
 
@@ -249,27 +249,25 @@ if (userText.includes("ISO certified") || userText.includes("certification")) {
     return "Yes, we deal in ISO certified products only.";
 }
 
-if (userText.includes("how long delivery takes") || userText.includes("delivery time")) {
+if (userText.includes("how long") || userText.includes("take")) {
     return "Delivery usually takes 3 to 9 hour or less within Karachi, depends on the location and situation.";
 }
 
-if (userText.includes("bulk order") || userText.includes("large quantity")) {
+if (userText.includes("bulk") || userText.includes("bulks")) {
     return "Yes, we handle bulk orders efficiently. Contact us for special pricing.";
 }
 
-if (userText.includes("pipe sizes available") || userText.includes("what sizes")) {
-    return "We have a variety of sizes, from ½ inch to 12 inches.";
-}
 
-if (userText.includes("pipe material quality") || userText.includes("are your pipes durable")) {
+
+if (userText.includes("material") || userText.includes("meterial")) {
     return "We provide premium quality pipes made from top-grade raw materials.";
 }
 
 if (userText.includes("social media") || userText.includes("Facebook page")) {
-    return "I don't have any  information in my memory maybe we'll add social media later.";
+    return "I don't have any  information in my memory maybe we'll add social media soon.";
 }
 
-if (userText.includes("bussines start") || userText.includes("since when")) {
+if (userText.includes("start") || userText.includes("since")) {
     return "Our bussines started in 2022 and has been growing ever since.";
 }
 
@@ -281,7 +279,7 @@ if (userText.includes("trusted by") || userText.includes("clients")) {
     return "We are trusted by numerous construction companies and contractors.";
 }
 
-if (userText.includes("pipe thickness") || userText.includes("pipe grade")) {
+if (userText.includes("thickness") || userText.includes("grade")) {
     return "We offer multiple grades and thicknesses as per customer requirements.";
 }
 
@@ -289,13 +287,13 @@ if (userText.includes("technical support") || userText.includes("help with specs
     return "Our team is always ready to provide technical guidance and specifications email us at umarvortex@gmail.com.";
 }
 
-if (userText.includes("partnership") || userText.includes("become distributor")) {
+if (userText.includes("partnership") || userText.includes("distributor")) {
     return "Contact us for dealership and partnership opportunities.";
 }
 
 
 
-if (userText.includes("order track") || userText.includes("order status")) {
+if (userText.includes("track") || userText.includes("order status")) {
     return "To check your order status, feel free to call or WhatsApp us directly. Good news  our web team is currently working on an Order Tracking Feature OTF Soon, you'll be able to track your orders right here on our website!";
 }
 
@@ -305,7 +303,7 @@ if (userText.includes("sustainability") || userText.includes("eco-friendly")) {
     return "Our pipes are manufactured keeping eco-friendliness and safety in mind.";
 }
 
-if (userText.includes("largest project") || userText.includes("biggest client")) {
+if (userText.includes("largest") || userText.includes("biggest")) {
     return "We have proudly supplied pipes for numerous large-scale government and private projects. Additionally, our products are trusted by countless shops and industrial sectors across Karachi.";
 }
 
@@ -313,23 +311,23 @@ if (userText.includes("replacement policy") || userText.includes("exchange")) {
     return "Faulty products are replaced free of charge under warranty.";
 }
 
-if (userText.includes("color") || userText.includes("do you have color pipes")) {
+if (userText.includes("color") || userText.includes("do you have color")) {
     return "We provide standard orange, yellow, black,  green, red, colored pipes what's your favorite.";
 }
 
-if (userText.includes("delivery charges") || userText.includes("free delivery") || userText.includes("free")) {
+if (userText.includes("charges") || userText.includes("free delivery") || userText.includes("free")) {
     return "Our delivery charges are calculated according to the delivery location and the volume of your order. We aim to provide cost-effective delivery solutions while ensuring prompt and reliable service.";
 }
 
-if (userText.includes("pipe testing") || userText.includes("quality check")) {
+if (userText.includes("testing") || userText.includes("quality check")) {
     return "At Pak Pipes International Karachi, we ensure that all our products undergo thorough and strict quality testing before they are delivered. Our commitment to quality control guarantees that every pipe meets high industry standards, providing our customers with reliable and durable solutions.";
 }
 
-if (userText.includes("how long pipes last") || userText.includes("pipe lifespan")) {
+if (userText.includes("last") || userText.includes("life span")) {
     return "Our pipes are designed to last over 20+ years under standard conditions.";
 }
 
-if (userText.includes("trusted supplier") || userText.includes("why trust you")) {
+if (userText.includes("trusted") || userText.includes("trust")) {
     return "Our commitment to quality and customer satisfaction makes us a trusted supplier.";
 }
 
