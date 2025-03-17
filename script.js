@@ -3,8 +3,7 @@
         const chatbotContainer = document.getElementById("chatbotContainer");
         const chatbotBody = document.getElementById("chatbotBody");
         const userInput = document.getElementById("userInput");
-        const sendButton = document.getElementById("sendButton");
-        const refreshChatbot = document.getElementById("refreshChatbot");
+        const sendButton = document.getElementById("sendButton");     
         const welcomeMessage = document.getElementById("welcomeMessage");
         const typingIndicator = document.getElementById("typingIndicator");
         const quickReplies = document.getElementById("quickReplies");
@@ -630,11 +629,6 @@ if (userText.includes("are you always online") || userText.includes("are you ava
   return replies[Math.floor(Math.random() * replies.length)];
 }
 
-
-
-
-
-
             return "Sorry, I couldn’t catch the information you need Please recheck your spelling or feel free to ask something else, for more details jump to the Home section and reach out to the M'Tahir Naqaash via WhatsApp or a quick call.";
  }
 
@@ -652,13 +646,7 @@ if (userText.includes("are you always online") || userText.includes("are you ava
             chatbotContainer.style.display = "none";
         });
 
-        // Refresh Chatbot
-        document.getElementById("refreshChatbot").addEventListener("click", function() {
-            console.log("Refresh button clicked");
-            chatbotBody.innerHTML = '';
-            welcomeMessage.style.display = "block";
-            console.log("Welcome message should be visible");
-        });
+        
 
         // Send Message on Enter
         userInput.addEventListener("keypress", (event) => {
@@ -671,11 +659,7 @@ if (userText.includes("are you always online") || userText.includes("are you ava
             sendMessage();
         });
 
-        // Save Chat History (Optional)
-        function saveChat() {
-            // Implement chat saving logic here
-            console.log("Chat saved!");
-        }  
+          
 
 
 
