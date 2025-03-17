@@ -78,7 +78,7 @@
 
                 const botMessage = document.createElement("div");
                 botMessage.classList.add("message", "bot-message");
-                botMessage.textContent = getBotResponse(userText);
+                botMessage.innerHTML = getBotResponse(userText);
                 chatbotBody.appendChild(botMessage);
 
                 chatbotBody.scrollTop = chatbotBody.scrollHeight;
