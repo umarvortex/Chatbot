@@ -66,6 +66,17 @@
             border-radius: 0;
         }
 
+        /* Full screen on mobile devices */
+        @media only screen and (max-width: 600px) {
+            .chatbot-container {
+                width: 100%;
+                height: 100%;
+                bottom: 0;
+                right: 0;
+                border-radius: 0;
+            }
+        }
+
         .chatbot-header {
             background-color: #d200ff;
             color: #fff;
@@ -89,12 +100,12 @@
             color: #fff;
             font-size: 14px;
             cursor: pointer;
-            margin-right: 8px;     
+            margin-right: 8px;
         }
 
         .chatbot-header button:last-child {
-             margin-right: 0;  
-             font-size: 19px;
+            margin-right: 0;
+            font-size: 19px;
         }
 
         /* Chatbot Body */
@@ -116,14 +127,12 @@
         }
 
         .welcome-logo {
-    width: 95px;
-    height: 95px;
-    margin-bottom: -14px;
-    position: relative;
-   filter: drop-shadow(0 0 3px #c421fe);
-}
-
-
+            width: 95px;
+            height: 95px;
+            margin-bottom: -14px;
+            position: relative;
+            filter: drop-shadow(0 0 3px #c421fe);
+        }
 
         .welcome-message strong {
             font-size: 18px;
@@ -134,7 +143,7 @@
 
         .welcome-message p {
             font-size: 14px;
-            color: #c4c8cb; 
+            color: #c4c8cb;
             line-height: 2;
         }
 
@@ -152,50 +161,44 @@
         .user-message {
             background-color: #d200ff;
             color: #fff;
-            align-self: flex-end;     
+            align-self: flex-end;
             line-height: 1.5;
             margin-bottom: 20px;
             filter: drop-shadow(0 0 4px #c421fe);
         }
 
-        
-     .bot-message {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: white;
-    align-self: flex-start;
-    padding: 10px 15px;
-    border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    margin: 10px 0 20px;
-    max-width: 95%;
-    word-wrap: break-word;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    font-family: 'Arial', sans-serif;
-    font-size: 14px;
-    line-height: 1.5;
-    animation: fadeIn 0.3s ease-in-out;
-}
+        .bot-message {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            align-self: flex-start;
+            padding: 10px 15px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            margin: 10px 0 20px;
+            max-width: 95%;
+            word-wrap: break-word;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-family: 'Arial', sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            animation: fadeIn 0.3s ease-in-out;
+        }
 
-.bot-message:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.3);
-}
+        .bot-message:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-
-
-   
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
         /* Input Section */
         .chatbot-input {
@@ -236,53 +239,31 @@
         .chatbot-input input::placeholder {
             color: #c4c8cb;
             opacity: 0.5;
-        } 
+        }
 
-   
+        #sendButton {
+            position: absolute;
+            right: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: transparent;
+            border: none;
+            color: #d200ff;
+            font-size: 17px;
+            cursor: pointer;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            filter: drop-shadow(0 0 9px #c421fe);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
 
-   
-    
-    
-
-   
-        
-    
-
-    /* Updated Send Button CSS */
-    #sendButton {
-        position: absolute;
-        right: 14px;
-        top: 50%;
-        transform: translateY(-50%);
-        background: transparent;
-        border: none;
-        color: #d200ff;
-        font-size: 17px;
-        cursor: pointer;
-        padding: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        filter: drop-shadow(0 0 9px #c421fe);
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: transform 0.2s ease;
-    }
-
-   
-    
-
-    #sendButton:hover {
-        color: #d200ff;
-        
-    }
-
-
- 
-    
-
-    
-  
+        #sendButton:hover {
+            color: #d200ff;
+        }
 
         /* Quick Replies */
         .quick-replies {
@@ -291,44 +272,37 @@
             margin-top: 10px;
             padding: 10px;
             justify-content: center;
-           filter: drop-shadow(0 0 4px #c421fe);
-           
+            filter: drop-shadow(0 0 4px #c421fe);
         }
 
         .quick-replies button {
             padding: 8px 12px;
             background-color: rgba(255, 255, 255, 0.1);
-    color: white;
-    
-   
-    border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-   
-    
-    word-wrap: break-word;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    font-family: 'Arial', sans-serif;
-    font-size: 14px;
-   
-    animation: fadeIn 0.3s ease-in-out;
+            color: white;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            word-wrap: break-word;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-family: 'Arial', sans-serif;
+            font-size: 14px;
+            animation: fadeIn 0.3s ease-in-out;
         }
 
         .quick-replies button:hover {
             background-color: rgba(210, 0, 255, 0.4); /* Full Color on Hover */
             color: #ffffff;
-        } 
+        }
 
-
-.typing-indicator {
-    display: none;
-    background-color: transparent;
-    padding: 8px;
-    border-radius: 8px;
-    margin: 16px 0;
-    margin-left: 20px; /* Add this line */
-    align-self: flex-start;
-    margin-bottom: 75px;
-}
+        .typing-indicator {
+            display: none;
+            background-color: transparent;
+            padding: 8px;
+            border-radius: 8px;
+            margin: 16px 0;
+            margin-left: 20px; /* Add this line */
+            align-self: flex-start;
+            margin-bottom: 75px;
+        }
 
         .typing-indicator span {
             display: inline-block;
@@ -336,13 +310,13 @@
             height: 8px;
             background-color: #d200ff;
             border-radius: 50%;
-           margin-right: 4px;
+            margin-right: 4px;
             animation: typing 1s infinite;
         }
 
         .typing-indicator span:last-child {
             margin-right: 0;
-       }
+        }
 
         .typing-indicator span:nth-child(2) {
             animation-delay: 0.2s;
@@ -357,22 +331,13 @@
             50% { opacity: 1; }
         }
 
-
-
-
-.chatbot-header img {
-        width: 35px; 
-        height: 35px; 
-        vertical-align: middle; 
-        margin-right: 6px;     
-        filter: drop-shadow(0 0 4px #c421fe);
-        
-} 
-
-
-
-
-
+        .chatbot-header img {
+            width: 35px;
+            height: 35px;
+            vertical-align: middle;
+            margin-right: 6px;
+            filter: drop-shadow(0 0 4px #c421fe);
+        }
     </style>
 </head>
 <body>
@@ -384,10 +349,10 @@
     <!-- Chatbot Container -->
     <div class="chatbot-container" id="chatbotContainer">
         <div class="chatbot-header">
-                        <h3> Bussines Chat Bot </h3>
+            <h3>Business Chat Bot</h3>
             <div>
                 <button id="refreshChatbot"> <i class="fa-sharp-duotone fa-solid fa-rotate"></i> </button>
-               <button id="fullScreenButton"><i class="fa-solid fa-expand"></i></button>
+                <button id="fullScreenButton"><i class="fa-solid fa-expand"></i></button>
                 <button id="closeChatbot"><i class="fa-solid fa-xmark"></i></button>
             </div>
         </div>
@@ -399,7 +364,7 @@
             </div>
         </div>
 
- <!-- Typing Indicator -->
+        <!-- Typing Indicator -->
         <div class="typing-indicator" id="typingIndicator">
             <span></span>
             <span></span>
@@ -412,7 +377,7 @@
             <button onclick="sendQuickReply('What are your latest price?')">Price</button>
             <button onclick="sendQuickReply('Do you provide delivery?')">Delivery</button>
         </div>
-       
+
         <!-- Chatbot Input -->
         <div class="chatbot-input">
             <div class="input-wrapper">
@@ -422,17 +387,25 @@
         </div>
     </div>
 
-   
-
-
-
-
-<script src="https://unpkg.com/compromise"></script>
-
-    
-   
+    <script src="https://unpkg.com/compromise"></script>
     <script src="script.js"></script>
-
-
 </body>
 </html>
+  
+
+
+
+   
+
+        
+
+
+ 
+    
+
+    
+        
+
+
+
+
