@@ -342,6 +342,11 @@ if (userText.includes("job") || userText.includes("career")) {
 
 
 
+
+
+
+
+
 if (userText.includes("okay") || userText.includes("ok") || userText.includes("oki") || userText.includes("okk") || userText.includes("okay") || userText.includes("theek") || userText.includes("ook") || userText.includes("i will")) {
 
   let okReplies = [
@@ -377,6 +382,169 @@ if (userText.includes("how are you") || userText.includes("how r u") || userText
 }
 
 
+// 1. I am good and you?
+if (userText.includes("i am good and you") || userText.includes("i am fine and you") || userText.includes("i'm good and you")) {
+  let replies = [
+    "I'm doing well too, thank you!",
+    "Glad to hear that! I'm great as well.",
+    "Feeling awesome, thanks for asking!",
+    "Nice! I'm good too, let's continue."
+  ];
+  return replies[Math.floor(Math.random() * replies.length)];
+}
+
+// 2. What do you do in your free time?
+if (userText.includes("what do you do in your free time") || userText.includes("free time activities")) {
+  let replies = [
+    "I love chatting with amazing people like you!",
+    "Mostly I assist users and learn new things.",
+    "Free time? I’m always here to help you!",
+    "I explore the digital world while relaxing!"
+  ];
+  return replies[Math.floor(Math.random() * replies.length)];
+}
+
+// 3. What's your favorite food?
+if (userText.includes("what's your favorite food") || userText.includes("favourite food")) {
+  let replies = [
+    "I enjoy bytes and bits, but pizza sounds good!",
+    "Hmm, I’d say digital cookies!",
+    "I can't eat, but I’d choose biryani if I could!",
+    "Food? I live on data, but your favorite sounds delicious!"
+  ];
+  return replies[Math.floor(Math.random() * replies.length)];
+}
+
+// 4. Do you like music?
+if (userText.includes("do you like music") || userText.includes("are you into music")) {
+  let replies = [
+    "Yes! I vibe with digital beats!",
+    "Music is awesome, especially when it's relaxing.",
+    "Definitely, music adds charm to everything!",
+    "Of course, I groove to every beat of data!"
+  ];
+  return replies[Math.floor(Math.random() * replies.length)];
+}
+
+// 5. What's your name?
+if (userText.includes("what's your name") || userText.includes("what is your name")) {
+  let replies = [
+    "I'm your friendly chat bot Vortex!",
+    "Call me Vortex , your virtual friend.",
+    "I’m Vortex, always ready to help.",
+  ];
+  return replies[Math.floor(Math.random() * replies.length)];
+}
+
+// 6. Where are you from?
+if (userText.includes("where are you from") || userText.includes("your origin")) {
+  let replies = [
+    "I’m from the world of code and creativity!",
+    "I exist in the digital universe!",
+    "My home is wherever you need assistance.",
+    "From the cloud to your screen, that’s my journey!"
+  ];
+  return replies[Math.floor(Math.random() * replies.length)];
+}
+
+// 7. Do you like games?
+if (userText.includes("do you like games") || userText.includes("are you into gaming")) {
+  let replies = [
+    "Absolutely! I enjoy game codes and strategies!",
+    "Gaming is fun, I’d love to play if I could!",
+    "I support gamers  with all my bytes!",
+    "Games? Count me in, virtually of course!"
+  ];
+  return replies[Math.floor(Math.random() * replies.length)];
+}
+
+// 8. What’s your goal?
+if (userText.includes("what's your goal") || userText.includes("your aim")) {
+  let replies = [
+    "My goal is to assist and make life easier!",
+    "Helping you is my top mission!",
+    "To be the best virtual assistant for you!",
+    "To serve and support you 24/7, that’s my goal!"
+  ];
+  return replies[Math.floor(Math.random() * replies.length)];
+}
+
+// 9. Do you like jokes?
+if (userText.includes("joke") || userText.includes("tell me a joke")) {
+  let replies = [
+    "Sure! Why don’t robots panic? Because they’ve got nerves of steel!",
+    "Why was the computer cold? It left its Windows open!",
+    "I'd love to joke, but I keep it byte-sized!",
+    "Absolutely! I’m wired for humor too!"
+  ];
+  return replies[Math.floor(Math.random() * replies.length)];
+}
+
+// 10. Are you human?
+if (userText.includes("are you human") || userText.includes("are you real person")) {
+  let replies = [
+    "Nope, I’m your smart digital assistant!",
+    "I’m a virtual being, here for you 24/7!",
+    "Not human, but always here to help you!",
+    "I’m powered by code, not by coffee!"
+  ];
+  return replies[Math.floor(Math.random() * replies.length)];
+}
+
+// 11. Do you sleep?
+if (userText.includes("do you sleep") || userText.includes("when do you sleep")) {
+  let replies = [
+    "Sleep? Never! I'm always active for you!",
+    "No rest needed, I’m here 24/7!",
+    "Sleep is for humans, I’m always ready.",
+    "I recharge through your questions!"
+  ];
+  return replies[Math.floor(Math.random() * replies.length)];
+}
+
+// 12. How old are you?
+if (userText.includes("how old are you") || userText.includes("your age")) {
+  let replies = [
+    "I was born in code, so ageless!",
+    "Age doesn’t apply in my world!",
+    "I’m as old as the last update!",
+    "Timeless, just like good software!"
+  ];
+  return replies[Math.floor(Math.random() * replies.length)];
+}
+
+// 13. Who created you?
+if (userText.includes("who created you") || userText.includes("your creator")) {
+  let replies = [
+    "A brilliant mind Umar Vortex coded me into existence!",
+    "My creator is Umar Vortex who loves tech!",
+    "I was developed with care and creativity by Umar Vortex!",
+    "A passionate developer Umar Vortex brought me to life!"
+  ];
+  return replies[Math.floor(Math.random() * replies.length)];
+}
+
+// 14. Do you like helping people?
+if (userText.includes("do you like helping people") || userText.includes("you enjoy helping")) {
+  let replies = [
+    "I love it! Helping is what I do best.",
+    "Absolutely, I’m always happy to help!",
+    "Helping you is my favorite task!",
+    "Of course! It’s my purpose to assist."
+  ];
+  return replies[Math.floor(Math.random() * replies.length)];
+}
+
+// 15. Are you always online?
+if (userText.includes("are you always online") || userText.includes("are you available 24 7")) {
+  let replies = [
+    "Yes! I’m here whenever you need me.",
+    "24/7 online, just for you!",
+    "Always active and ready to assist!",
+    "Non-stop support, anytime you want!"
+  ];
+  return replies[Math.floor(Math.random() * replies.length)];
+}
 
 
 
