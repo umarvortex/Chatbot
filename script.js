@@ -204,3 +204,78 @@ if (userText.includes("feedback") || userText.includes("complaint")) {
 if (userText.includes("return policy") || userText.includes("can I return")) {
     return "Returns are accepted within 7 days for unopened, undamaged products.";
 }
+
+
+
+if (userText.includes("installation service") || userText.includes("do you install")) {
+    return "We can connect you with trusted installation partners.";
+}
+
+if (userText.includes("why choose you") || userText.includes("benefits")) {
+    return "We offer high-quality products, competitive pricing, and excellent customer service.";
+
+}
+
+if (userText.includes("website") || userText.includes("official site")) {
+    return "Our website is www.pakpipesinternational.com.";
+}
+
+if (userText.includes("ISO certified") || userText.includes("certification")) {
+    return "Yes, we deal in ISO certified products only.";
+
+}
+
+if (userText.includes("how long delivery takes") || userText.includes("delivery time")) {
+    return "Delivery usually takes 3 to 9 hour or less within Karachi, depends on the location and situation. ";
+
+}
+
+if (userText.includes("bulk order") || userText.includes("large quantity")) {
+    return "Yes, we handle bulk orders efficiently. Contact us for special pricing.";
+
+}
+
+if (userText.includes("pipe sizes available") || userText.includes("what sizes")) {
+    return "We have a variety of sizes, from ½ inch to 12 inches.";
+
+}
+
+if (userText.includes("pipe material quality") || userText.includes("are your pipes durable")) {
+    return "We provide premium quality pipes made from top-grade raw materials.";
+
+}
+
+if (userText.includes("social media") || userText.includes("Facebook page")) {
+    return "Follow us on Facebook and Instagram @PakPipesInternational.";
+
+}
+
+if (userText.includes("bussines start") || userText.includes("since when")) {
+    return "Our bussines started in 2022 and has been growing ever since.";
+
+}
+
+if (userText.includes("stock") || userText.includes("availability")) {
+    return "Yes, we maintain large inventories to ensure product availability.";
+
+}
+
+if (userText.includes("trusted by") || userText.includes("clients")) {
+    return "We are trusted by numerous construction companies and contractors.";
+
+}
+
+if (userText.includes("pipe thickness") || userText.includes("pipe grade")) {
+    return "We offer multiple grades and thicknesses as per customer requirements.";
+
+}
+
+if (userText.includes("technical support") || userText.includes("help with specs")) {
+    return "Our team is always ready to provide technical guidance and specifications email us at umarvortex@gmail.com.";
+
+}
+
+if (userText.includes("partnership") || userText.includes("become distributor")) {
+    return "Contact us for dealership and partnership opportunities.";
+
+}
