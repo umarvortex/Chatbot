@@ -114,17 +114,17 @@ const botMessage = document.createElement("div");
     }
 
     if (userText.includes("pipes") || userText.includes("product") || userText.includes("service") || userText.includes("what pipes you sell")) {
-        return "We provide a variety of pipes including PVC, UPVC, HDPE, and PPRC pipes,if you want to know about all our products  just massage <strong>'List'</strong> and I'll share all available Products list here for you.";
+        return "We provide a variety of pipes including PVC, UPVC, HDPE, and PPRC pipes,if you want to know about all our products  just massage <strong>List</strong> and I'll share all available Products list here for you.";
   }
 
 
 
-if (userText.includes("list")) {
+if (userText.includes("list") || userText.includes("List") ||  userText.includes("LIST")){
     return `<strong>Here is the list of all available pipes:</strong><br><br>
 <strong>1. Transparent Color Zebra Pipes</strong><br>
 <strong>2. Super Green Pipes</strong><br>
 <strong>3. Red Poly with White Line Pipes</strong><br>
-<strong>4. Poly Back Pipes</strong><br>
+<strong>4. Poly Black Pipes</strong><br>
 <strong>5. Braded Bravo Dagha Pipes</strong><br>
 <strong>6. Super Transparent Garden Pipes</strong><br>
 <strong>7. Gas Pipes</strong><br>
@@ -162,7 +162,7 @@ if (userText.includes("email") || userText.includes("email address")) {
 }
 
 
-if (userText.includes("business hours") || userText.includes("timings")) {
+if (userText.includes("hours") || userText.includes("timings")) {
     return "We’re open from Saturday to Thursday, 11:00 AM to 6:00 PM, and on Friday, from 3:00 PM to 6:00 PM. Feel free to contact us anytime within these hours.";
 }
 
@@ -187,7 +187,7 @@ if (userText.includes("payment") || userText.includes("pay")) {
     return "We accept payments via cash and bank transfer only.";
 }
 
-if (userText.includes("custom orders") || userText.includes("special sizes")) {
+if (userText.includes("custom") || userText.includes("special sizes")) {
     return "Yes, we can arrange custom pipe sizes on request.";
 }
 
@@ -259,7 +259,7 @@ if (userText.includes("bulk") || userText.includes("bulks")) {
 
 
 
-if (userText.includes("material") || userText.includes("meterial")) {
+if (userText.includes("material") || userText.includes("materials")) {
     return "We provide premium quality pipes made from top-grade raw materials.";
 }
 
@@ -267,7 +267,7 @@ if (userText.includes("social media") || userText.includes("Facebook page")) {
     return "I don't have any  information in my memory maybe we'll add social media soon.";
 }
 
-if (userText.includes("start") || userText.includes("since")) {
+if (userText.includes("start") || userText.includes("started")) {
     return "Our bussines started in 2022 and has been growing ever since.";
 }
 
@@ -293,8 +293,8 @@ if (userText.includes("partnership") || userText.includes("distributor")) {
 
 
 
-if (userText.includes("track") || userText.includes("order status")) {
-    return "To check your order status, feel free to call or WhatsApp us directly. Good news  our web team is currently working on an Order Tracking Feature OTF Soon, you'll be able to track your orders right here on our website!";
+if (userText.includes("track") || userText.includes("status")) {
+    return "To check your order status, feel free to call or WhatsApp us directly.";
 }
 
 
@@ -383,7 +383,7 @@ if (userText.includes("how are you") || userText.includes("how r u") || userText
 
 
 
-            return "Sorry, I couldn’t catch the information you need. Please check your spelling and rewrite your message. I am not an advanced bot, so sometimes spelling mistakes cause errors. But no worries feel free to ask something else, or jump to the Home section and reach out to the M'Tahir Naqaash via WhatsApp or a quick call. Thanks for visiting us.";
+            return "Sorry, I couldn’t catch the information you need Please recheck your spelling or feel free to ask something else, for more details jump to the Home section and reach out to the M'Tahir Naqaash via WhatsApp or a quick call.";
  }
 
 
