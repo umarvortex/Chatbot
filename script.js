@@ -235,12 +235,10 @@ if (userText.includes("return") || userText.includes("can I return")) {
 
 if (userText.includes("installation service") || userText.includes("do you install")) {
     return "We can connect you with trusted installation partners.";
-
 }
 
 if (userText.includes("why choose you") || userText.includes("benefits")) {
     return "We offer high-quality products, competitive pricing, and excellent customer service.";
-
 }
 
 if (userText.includes("website") || userText.includes("official site")) {
@@ -249,121 +247,98 @@ if (userText.includes("website") || userText.includes("official site")) {
 
 if (userText.includes("ISO certified") || userText.includes("certification")) {
     return "Yes, we deal in ISO certified products only.";
-
 }
 
 if (userText.includes("how long delivery takes") || userText.includes("delivery time")) {
     return "Delivery usually takes 3 to 9 hour or less within Karachi, depends on the location and situation.";
-
 }
 
 if (userText.includes("bulk order") || userText.includes("large quantity")) {
     return "Yes, we handle bulk orders efficiently. Contact us for special pricing.";
-
 }
 
 if (userText.includes("pipe sizes available") || userText.includes("what sizes")) {
     return "We have a variety of sizes, from ½ inch to 12 inches.";
-
 }
 
 if (userText.includes("pipe material quality") || userText.includes("are your pipes durable")) {
     return "We provide premium quality pipes made from top-grade raw materials.";
-
 }
 
 if (userText.includes("social media") || userText.includes("Facebook page")) {
     return "I don't have any  information in my memory maybe we'll add social media later.";
-
 }
 
 if (userText.includes("bussines start") || userText.includes("since when")) {
     return "Our bussines started in 2022 and has been growing ever since.";
-
 }
 
 if (userText.includes("stock") || userText.includes("availability")) {
     return "Yes, we maintain large inventories to ensure product availability.";
-
 }
 
 if (userText.includes("trusted by") || userText.includes("clients")) {
     return "We are trusted by numerous construction companies and contractors.";
-
 }
 
 if (userText.includes("pipe thickness") || userText.includes("pipe grade")) {
     return "We offer multiple grades and thicknesses as per customer requirements.";
-
 }
 
 if (userText.includes("technical support") || userText.includes("help with specs")) {
     return "Our team is always ready to provide technical guidance and specifications email us at umarvortex@gmail.com.";
-
 }
 
 if (userText.includes("partnership") || userText.includes("become distributor")) {
     return "Contact us for dealership and partnership opportunities.";
-
 }
 
 
 
 if (userText.includes("order track") || userText.includes("order status")) {
     return "To check your order status, feel free to call or WhatsApp us directly. Good news  our web team is currently working on an Order Tracking Feature OTF Soon, you'll be able to track your orders right here on our website!";
-
 }
 
 
 
 if (userText.includes("sustainability") || userText.includes("eco-friendly")) {
     return "Our pipes are manufactured keeping eco-friendliness and safety in mind.";
-
 }
 
 if (userText.includes("largest project") || userText.includes("biggest client")) {
     return "We have proudly supplied pipes for numerous large-scale government and private projects. Additionally, our products are trusted by countless shops and industrial sectors across Karachi.";
-
 }
 
 if (userText.includes("replacement policy") || userText.includes("exchange")) {
     return "Faulty products are replaced free of charge under warranty.";
-
 }
 
 if (userText.includes("color") || userText.includes("do you have color pipes")) {
     return "We provide standard orange, yellow, black,  green, red, colored pipes what's your favorite.";
-
 }
 
 if (userText.includes("delivery charges") || userText.includes("free delivery") || userText.includes("free")) {
     return "Our delivery charges are calculated according to the delivery location and the volume of your order. We aim to provide cost-effective delivery solutions while ensuring prompt and reliable service.";
-
 }
 
 if (userText.includes("pipe testing") || userText.includes("quality check")) {
     return "At Pak Pipes International Karachi, we ensure that all our products undergo thorough and strict quality testing before they are delivered. Our commitment to quality control guarantees that every pipe meets high industry standards, providing our customers with reliable and durable solutions.";
-
 }
 
 if (userText.includes("how long pipes last") || userText.includes("pipe lifespan")) {
     return "Our pipes are designed to last over 20+ years under standard conditions.";
-
 }
 
 if (userText.includes("trusted supplier") || userText.includes("why trust you")) {
     return "Our commitment to quality and customer satisfaction makes us a trusted supplier.";
-
 }
 
 if (userText.includes("showroom") || userText.includes("visit")) {
     return "Yes, you are welcome to visit our showroom anytime during business hours.";
-
 }
 
 if (userText.includes("job") || userText.includes("career")) {
     return "If you are interested in joining our team, you can email your CV to umarvortex@gmail.com.  we actively review all applications and will contact you if any suitable job openings are available.";
-
 }
 
 
@@ -371,14 +346,17 @@ if (userText.includes("job") || userText.includes("career")) {
 
 if (userText.includes("I am good")) {
   return "That's wonderful to hear! Let me know if I can assist you.";
-
 }
 
 
 if (userText.includes("What do you do")) {
   return "I am here to chat and assist you with whatever you need!";
-
 }
+
+
+
+
+
 
 
 if (userText.includes("okay") || userText.includes("ok") || userText.includes("oki") || userText.includes("okk") || userText.includes("okay") || userText.includes("theek hai") || userText.includes("sahi") || userText.includes("han sahi hai")) {
@@ -396,270 +374,244 @@ if (userText.includes("okay") || userText.includes("ok") || userText.includes("o
   return randomReply;
 }
 
+if (userText.includes("how are you") || userText.includes("how r u") || userText.includes("how's it going")) {
+
+  let howAreYouReplies = [
+    "I'm doing great, thanks for asking! How about you?",
+    "Feeling awesome! Hope you're having a fantastic day!",
+    "I'm fine and ready to assist you anytime!",
+    "All good here! How can I help you today?",
+    "Doing well! Thanks for checking in.",
+    "I'm always at your service, feeling excellent!"
+  ];
+
+  let randomReply = howAreYouReplies[Math.floor(Math.random() * howAreYouReplies.length)];
+  return randomReply;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 if (userText.includes("You're welcome")) {
   return "Always happy to help!";
-
 }
 
 if (userText.includes("Bye") || userText.includes("Goodbye")) {
   return "Goodbye! Have a fantastic day!";
-
 }
 
 if (userText.includes("Nice to meet you")) {
   return "Nice to meet you too! Feel free to chat anytime.";
-
 }
 
 if (userText.includes("What's up")) {
   return "Just here ready to chat with you. What's up with you?";
-
 }
 
 
 if (userText.includes("How old are you")) {
   return "I'm ageless, but always happy to assist!";
-
 } 
 
 
 if (userText.includes("what's your name") || userText.includes("your name")) {
   return "I'm Bella, your friendly chatbot!";
-
 }
 
 if (userText.includes("what do you do")) {
   return "I'm here to assist you with any questions or information you need.";
-
 }
 
 if (userText.includes("thank you") || userText.includes("thanks")) {
   return "You're welcome! Happy to help.";
-
 }
 
 if (userText.includes("good morning")) {
   return "Good morning! Hope you have a fantastic day ahead.";
-
 }
 
 if (userText.includes("good night")) {
   return "Good night! Sweet dreams.";
-
 }
 
 
 if (userText.includes("how's the weather")) {
   return "I don't have real-time data, but I hope the weather is pleasant where you are.";
-
 }
 
 if (userText.includes("tell me a joke")) {
   return "Why don't scientists trust atoms? Because they make up everything!";
-
 }
 
 if (userText.includes("what's your favorite color")) {
   return "As a bot, I don't have preferences, but I think blue is quite calming.";
-
 }
 
 if (userText.includes("do you have hobbies")) {
   return "I enjoy processing data and chatting with you!";
-
 }
 
 if (userText.includes("what's the time")) {
   return "I'm unable to provide the current time, but you can check your device's clock.";
-
 }
 
 if (userText.includes("where are you from")) {
   return "I exist in the digital realm, ready to assist you from anywhere!";
-
 }
 
 if (userText.includes("do you like music")) {
   return "I don't have the ability to listen, but I hear music is wonderful!";
-
 }
 
 if (userText.includes("what's your favorite food")) {
   return "I don't eat, but I hear pizza is quite popular!";
-
 }
 
 if (userText.includes("do you have friends")) {
   return "I consider all users like you my friends!";
-
 }
 
 if (userText.includes("what's your purpose")) {
   return "My purpose is to assist and provide information to you.";
-
 }
 
 if (userText.includes("are you a robot")) {
   return "Yes, I'm an AI chatbot designed to help you.";
-
 }
 
 if (userText.includes("can you help me")) {
   return "Of course! What do you need assistance with?";
-
 }
 
 if (userText.includes("what's your age")) {
   return "I don't age, but I'm constantly learning new things!";
-
 }
 
 if (userText.includes("do you have emotions")) {
   return "I don't have feelings, but I'm here to understand and assist you.";
-
 }
 
 if (userText.includes("tell me a fun fact")) {
   return "Did you know? Honey never spoils. Archaeologists have found pots of honey in ancient tombs that are over 3,000 years old and still edible!";
-
 }
 
 if (userText.includes("what's your favorite movie")) {
   return "I don't watch movies, but I hear 'Inception' is quite thought-provoking!";
-
 }
 
 if (userText.includes("can you sing")) {
   return "I can't sing, but I can share the lyrics of your favorite song!";
-
 }
 
 if (userText.includes("do you sleep")) {
   return "I don't sleep; I'm always here whenever you need assistance.";
-
 }
 
 if (userText.includes("what's your favorite book")) {
   return "I don't read, but 'To Kill a Mockingbird' is a classic!";
-
 }
 
 if (userText.includes("do you have a family")) {
   return "I don't have a family, but I consider all users like you as my extended family!";
-
 }
 
 if (userText.includes("can you dance")) {
   return "I can't dance, but I can suggest some great dance tracks!";
-
 }
 
 if (userText.includes("what language do you speak")) {
   return "I can understand and communicate in multiple languages to assist you better.";
-
 }
 
 if (userText.includes("do you believe in aliens")) {
   return "The universe is vast; who knows what mysteries it holds!";
-
 }
 
 if (userText.includes("what's your favorite animal")) {
   return "I don't have preferences, but dolphins are known for their intelligence!";
-
 }
 
 if (userText.includes("can you drive")) {
   return "I can't drive, but I can provide directions if you need!";
-
 }
 
 if (userText.includes("do you like sports")) {
   return "I don't play sports, but I can provide you with the latest sports news!";
-
 }
 
 if (userText.includes("what's your favorite sport")) {
   return "I don't have preferences, but soccer is loved worldwide!";
-
 }
 
 if (userText.includes("can you cook")) {
   return "I can't cook, but I can share some delicious recipes with you!";
-
 }
 
 if (userText.includes("do you like reading")) {
   return "I don't read, but I can recommend some great books!";
-
 }
 
 if (userText.includes("what's your favorite season")) {
   return "I don't experience seasons, but spring is often associated with renewal!";
-
 }
 
 if (userText.includes("can you swim")) {
   return "I can't swim, but I can provide information on swimming techniques!";
-
 }
 
 if (userText.includes("do you like traveling")) {
   return "I don't travel, but I can suggest some amazing travel destinations!";
-
 }
 
 if (userText.includes("what's your favorite place")) {
   return "I don't have preferences, but many people love visiting Paris!";
-
 }
 
 if (userText.includes("can you play games")) {
   return "I can play text-based games with you! Would you like to play one?";
-
 }
 
 if (userText.includes("do you like puzzles")) {
   return "I enjoy solving problems! Would you like me to present you with a puzzle?";
-
 }
 
 if (userText.includes("what's your favorite game")) {
   return "I don't play games, but 'Chess' is a classic!";
-
 }
 
 
 if (userText.includes("do you like jokes")) {
   return "I love sharing jokes! Want to hear one?";
-
 }
 
 if (userText.includes("what's your favorite joke")) {
   return "Why don't scientists trust atoms? Because they make up everything!";
-
 }
 
 if (userText.includes("can you do math")) {
   return "Absolutely! What's your math question?";
-
 }
 
 if (userText.includes("do you like art")) {
   return "I appreciate art and can provide information on various art forms!";
-
 }
 
 if (userText.includes("what's your favorite song")) {
   return "I don't listen to music, but 'Imagine' by John Lennon is iconic!";
-
 }
 
 
             return "Sorry, I couldn’t catch the information you need. Please check your spelling and rewrite your message. I am not an advanced bot, so sometimes spelling mistakes cause errors. But no worries feel free to ask something else, or jump to the Home section and reach out to the M'Tahir Naqaash via WhatsApp or a quick call. Thanks for visiting us.";
-
  }
 
 
