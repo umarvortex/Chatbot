@@ -155,11 +155,44 @@
             filter: drop-shadow(0 0 8px #c421fe);
         }
 
-        .bot-message {
-            background-color: transparent;
-            color: white;
-            align-self: flex-start; 
-        }
+        
+     .bot-message {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    align-self: flex-start;
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 5px 0;
+    max-width: 70%;
+    word-wrap: break-word;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.bot-message:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+   
 
         /* Input Section */
         .chatbot-input {
