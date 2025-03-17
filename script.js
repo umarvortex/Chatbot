@@ -113,7 +113,7 @@ const botMessage = document.createElement("div");
         return "Pak Pipes International is proudly based in KDA Scheme 33, Grey Noor Tower, Karachi, Pakistan. You’re welcome to visit us anytime.";
     }
 
-    if (userText.includes("tell me about pipies") || userText.includes("products") || userText.includes("services") || userText.includes("what pipes you sell")) {
+    if (userText.includes("pipes") || userText.includes("products") || userText.includes("services") || userText.includes("what pipes you sell")) {
         return "We provide a variety of pipes including PVC, UPVC, HDPE, and PPRC pipes if you want to know about all our products  just say <strong>List</strong> and I'll share full Products list here for you.";
     }
 
@@ -235,6 +235,7 @@ if (userText.includes("return") || userText.includes("can I return")) {
 
 if (userText.includes("installation service") || userText.includes("do you install")) {
     return "We can connect you with trusted installation partners.";
+
 }
 
 if (userText.includes("why choose you") || userText.includes("benefits")) {
@@ -243,7 +244,7 @@ if (userText.includes("why choose you") || userText.includes("benefits")) {
 }
 
 if (userText.includes("website") || userText.includes("official site")) {
-    return "Our website is .";
+    return "Visit our official website at https://umarvortex.github.io/Pak-Pipes-International-Karachi/. Alternatively, you can simply search <strong>Pak Pipes International Karachi</strong> on Google to locate us quickly.";
 }
 
 if (userText.includes("ISO certified") || userText.includes("certification")) {
@@ -252,7 +253,7 @@ if (userText.includes("ISO certified") || userText.includes("certification")) {
 }
 
 if (userText.includes("how long delivery takes") || userText.includes("delivery time")) {
-    return "Delivery usually takes 3 to 9 hour or less within Karachi, depends on the location and situation. ";
+    return "Delivery usually takes 3 to 9 hour or less within Karachi, depends on the location and situation.";
 
 }
 
@@ -272,7 +273,7 @@ if (userText.includes("pipe material quality") || userText.includes("are your pi
 }
 
 if (userText.includes("social media") || userText.includes("Facebook page")) {
-    return "Follow us on Facebook and Instagram @PakPipesInternational.";
+    return "I don't have any  information in my memory maybe we'll add social media later.";
 
 }
 
@@ -308,15 +309,12 @@ if (userText.includes("partnership") || userText.includes("become distributor"))
 
 
 
-if (userText.includes("track order") || userText.includes("order status")) {
+if (userText.includes("track") || userText.includes("status")) {
     return "To check your order status, feel free to call or WhatsApp us directly. Good news  our web team is currently working on an Order Tracking Feature OTF Soon, you'll be able to track your orders right here on our website!";
 
 }
 
-if (userText.includes("pipe usage") || userText.includes("where to use")) {
-    return "Our pipes are ideal for plumbing, drainage, industrial, and agricultural uses.";
 
-}
 
 if (userText.includes("sustainability") || userText.includes("eco-friendly")) {
     return "Our pipes are manufactured keeping eco-friendliness and safety in mind.";
@@ -324,27 +322,27 @@ if (userText.includes("sustainability") || userText.includes("eco-friendly")) {
 }
 
 if (userText.includes("largest project") || userText.includes("biggest client")) {
-    return "We’ve supplied pipes to several large-scale government and private projects.";
+    return "We have proudly supplied pipes for numerous large-scale government and private projects. Additionally, our products are trusted by countless shops and industrial sectors across Karachi.";
 
 }
 
-if (userText.includes("replacement policy") || userText.includes("exchange product")) {
+if (userText.includes("replacement policy") || userText.includes("exchange")) {
     return "Faulty products are replaced free of charge under warranty.";
 
 }
 
 if (userText.includes("color") || userText.includes("do you have color pipes")) {
-    return "We provide standard orange, yellow, black,  and green colored pipes what's your favorite.";
+    return "We provide standard orange, yellow, black,  green, red, colored pipes what's your favorite.";
 
 }
 
-if (userText.includes("delivery charges") || userText.includes("is delivery free")) {
-    return "Delivery charges depend on location and order size.";
+if (userText.includes("delivery charges") || (userText.includes("free delivery") || userText.includes("free")) {
+    return "Our delivery charges are calculated according to the delivery location and the volume of your order. We aim to provide cost-effective delivery solutions while ensuring prompt and reliable service.";
 
 }
 
 if (userText.includes("pipe testing") || userText.includes("quality check")) {
-    return "All our products undergo strict quality testing before delivery.";
+    return "At Pak Pipes International Karachi, we ensure that all our products undergo thorough and strict quality testing before they are delivered. Our commitment to quality control guarantees that every pipe meets high industry standards, providing our customers with reliable and durable solutions.";
 
 }
 
@@ -358,20 +356,16 @@ if (userText.includes("trusted supplier") || userText.includes("why trust you"))
 
 }
 
-if (userText.includes("showroom") || userText.includes("can I visit")) {
+if (userText.includes("showroom") || userText.includes("visit")) {
     return "Yes, you are welcome to visit our showroom anytime during business hours.";
 
 }
 
-if (userText.includes("any job opening") || userText.includes("career")) {
-    return "You can email us your CV at umarvortex@gmail.com for any job openings.";
+if (userText.includes("job") || userText.includes("career")) {
+    return "If you are interested in joining our team, you can email your CV to umarvortex@gmail.com.  we actively review all applications and will contact you if any suitable job openings are available.";
 
 }
 
-if (userText.includes("CSR activities") || userText.includes("social responsibility")) {
-    return "We regularly contribute to community development and CSR initiatives.";
-
-}
 
 
 
@@ -387,6 +381,10 @@ if (userText.includes("What do you do")) {
 }
 
 
+if (userText.includes("oki")  ||     userText.includes("ok")  ||        userText.includes("oki")) {
+  return "Hmm nice you are great!";
+
+}
 
 if (userText.includes("You're welcome")) {
   return "Always happy to help!";
