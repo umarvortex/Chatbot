@@ -341,11 +341,6 @@ if (userText.includes("job") || userText.includes("career")) {
 
 
 
-
-
-
-
-
 if (userText.includes("okay") || userText.includes("ok") || userText.includes("oki") || userText.includes("okk") || userText.includes("okay") || userText.includes("theek") || userText.includes("ook") || userText.includes("i will")) {
 
   let okReplies = [
@@ -631,7 +626,7 @@ if (userText.includes("are you always online") || userText.includes("are you ava
 
             return "Sorry, I couldn’t catch the information you need Please recheck your spelling or feel free to ask something else, for more details jump to the Home section and reach out to the M'Tahir Naqaash via WhatsApp or a quick call.";
  }
-} 
+
 
 
         // Quick Replies
@@ -659,11 +654,3 @@ if (userText.includes("are you always online") || userText.includes("are you ava
             event.preventDefault(); // Prevent unexpected behaviors
             sendMessage();
         });
-
-          
-
-
-
-
-
-
