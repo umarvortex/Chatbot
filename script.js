@@ -639,6 +639,7 @@ if (userText.includes("are you always online") || userText.includes("are you ava
             userInput.value = text;
             sendMessage();
         }
+} 
 
         // Close Chatbot
         document.getElementById("closeChatbot").addEventListener("click", () => {
