@@ -119,7 +119,7 @@ const botMessage = document.createElement("div");
 
 
 
-if (userText.includes("List")) {
+if (userText.includes("list")) {
     return `<strong>Here is the list of all available pipes:</strong><br><br>
 <strong>1. Transparent Color Zebra Pipes</strong><br>
 <strong>2. Super Green Pipes</strong><br>
