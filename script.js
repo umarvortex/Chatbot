@@ -120,30 +120,30 @@ const botMessage = document.createElement("div");
 
 
 if (userText.includes("vortex bhai details")) {
-    return `<strong>Here are the full details of all pipes:</strong><br><br>
-<strong>1. Transparent Color Zebra Pipes</strong><br>- Sizes: 2mm, 2.5mm, 3mm<br><br>
-<strong>2. Super Green Pipes</strong><br>- Sizes: 3mm, 4mm<br><br>
-<strong>3. Red Poly with White Line Pipes</strong><br>- Sizes: 3/4 inch, 1 inch<br><br>
-<strong>4. Poly Back Pipes</strong><br>- Sizes: 1/2 inch, 1 inch, 1"1"2, 3 inch, 4 inch, 5 inch<br><br>
-<strong>5. Braded Bravo Dagha Pipes</strong><br>- Sizes: 3/4 inch, 1 inch<br><br>
-<strong>6. Super Transparent Garden Pipes</strong><br>- Sizes: 1 inch (4mm, 3mm), 3/4 inch (3mm, 4mm)<br><br>
-<strong>7. Gas Pipes</strong><br>- Sizes: 2mm, 2.5mm, 3mm, 4mm<br><br>
-<strong>8. Garden Pipes</strong><br>- (General category, no specific sizes mentioned)<br><br>
-<strong>9. Level Pipes</strong><br>- Sizes: 2 sot, 2.5 sot<br><br>
-<strong>10. Fire Hose</strong><br>- Sizes: 2 inch to 6 inch<br><br>
-<strong>11. Clear Garden Transparent Hose Pipes</strong><br>- Sizes: 1 inch, 2mm<br><br>
-<strong>12. Poly Pipes</strong><br>- Sizes: 1/2 inch, 3/4 inch, 1 inch<br><br>
-<strong>13. Zebra Band Pipes</strong><br>- Sizes: 2mm, 2.5mm<br><br>
-<strong>14. Vinyl Section Pipes (Imported)</strong><br>- Sizes: 1 inch, 2 inch<br><br>
-<strong>15. Parker Pressure Gas Hose</strong><br>- Size: 8mm, Length: 100mm, Weight: 12kg<br><br>
-<strong>16. Commando Pressure Gas Hose</strong><br>- Size: 8mm, Length: 300f, Weight: 11.5kg<br><br>
-<strong>17. Bridgestone High Pressure Gas Hose</strong><br>- Size: 8mm, Length: 300f, Weight: 12kg<br><br>
-<strong>18. Pona Flex Gas Hose (KTL)</strong><br>- Length: 270f, Weight: 6kg<br><br>
-<strong>19. Yellow Poly National Pipes</strong><br>- Sizes: 1/2 inch, 3/4 inch, 1 inch, 2 inch<br><br>
-<strong>20. Caterpillars Gas Hose</strong><br>- Length: 300f<br><br>
-<strong>21. Pure Garden Pipes</strong><br>- Sizes: 1 inch, 1_1/4 inch, 1_1/2 inch, 2 inch, 2.5mm, 3mm<br><br>
-<strong>22. PE 100 National Pipes</strong><br>- Sizes: 1 inch to 8 inch<br>- Pressure Ratings: PN6, PN8, PN10, PN12.5, PN16<br><br>
-<strong>23. Suction and Delivery Steel Wire Hose (National)</strong><br>- Sizes: 3/4 inch, 1 inch, 1_1/4 inch, 1_2/2 inch, 2 inch, 3 inch, 4 inch`;
+    return `<strong>Here is the list of all available pipes:</strong><br><br>
+<strong>1. Transparent Color Zebra Pipes</strong><br>
+<strong>2. Super Green Pipes</strong><br>
+<strong>3. Red Poly with White Line Pipes</strong><br>
+<strong>4. Poly Back Pipes</strong><br>
+<strong>5. Braded Bravo Dagha Pipes</strong><br>
+<strong>6. Super Transparent Garden Pipes</strong><br>
+<strong>7. Gas Pipes</strong><br>
+<strong>8. Garden Pipes</strong><br>
+<strong>9. Level Pipes</strong><br>
+<strong>10. Fire Hose</strong><br>
+<strong>11. Clear Garden Transparent Hose Pipes</strong><br>
+<strong>12. Poly Pipes</strong><br>
+<strong>13. Zebra Band Pipes</strong><br>
+<strong>14. Vinyl Section Pipes (Imported)</strong><br>
+<strong>15. Parker Pressure Gas Hose</strong><br>
+<strong>16. Commando Pressure Gas Hose</strong><br>
+<strong>17. Bridgestone High Pressure Gas Hose</strong><br>
+<strong>18. Pona Flex Gas Hose (KTL)</strong><br>
+<strong>19. Yellow Poly National Pipes</strong><br>
+<strong>20. Caterpillars Gas Hose</strong><br>
+<strong>21. Pure Garden Pipes</strong><br>
+<strong>22. PE 100 National Pipes</strong><br>
+<strong>23. Suction and Delivery Steel Wire Hose (National)</strong>`;
 }
 
 
