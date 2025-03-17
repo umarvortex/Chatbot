@@ -106,14 +106,14 @@ const botMessage = document.createElement("div");
     }
 
     if (userText.includes("your company name") || userText.includes("who are you")) {
-        return "We are Pak Pipes International Karachi, trusted pipe suppliers.";
+        return "We are Pak Pipes International Karachi — your trusted and reliable pipe suppliers.";
     }
 
     if (userText.includes("location") || userText.includes("where are you located")) {
-        return "Pak Pipes International Karachi based in KDA scheme 33 Grey Noor tower Karachi, Pakistan.  Visit us anytime!";
+        return "Pak Pipes International is proudly based in KDA Scheme 33, Grey Noor Tower, Karachi, Pakistan. You’re welcome to visit us anytime.";
     }
 
-    if (userText.includes("pipes") || userText.includes("products") || userText.includes("services") || userText.includes("what pipes you sell")) {
+    if (userText.includes("tell me about pipies") || userText.includes("products") || userText.includes("services") || userText.includes("what pipes you sell")) {
         return "We provide a variety of pipes including PVC, UPVC, HDPE, and PPRC pipes if you want to know about all our products  just say <strong>List</strong> and I'll share full Products list here for you.";
     }
 
@@ -143,7 +143,8 @@ if (userText.includes("list")) {
 <strong>20. Caterpillars Gas Hose</strong><br>
 <strong>21. Pure Garden Pipes</strong><br>
 <strong>22. PE 100 National Pipes</strong><br>
-<strong>23. Suction and Delivery Steel Wire Hose (National and China's)</strong><br><br>`;
+<strong>23. Suction and Delivery Steel Wire Hose (National and China's)</strong><br><br>
+If you'd like detailed information about any pipe's size, length, width, or specifications, just share the pipe’s name, and I’ll provide you with all the details!`;
 }
 
 
@@ -153,11 +154,11 @@ if (userText.includes("list")) {
  
 
 if (userText.includes("contact") || userText.includes("phone number")) {
-    return "You can contact us at +92-3192017909 or  WhatsApp you will get both options in our website home section.";
+    return "You can reach us directly at +92-3192017909 or connect with us via WhatsApp. Both contact options are conveniently available in the Home section of our website.";
 }
 
 if (userText.includes("email") || userText.includes("email address")) {
-    return "Our email is umarvortex@gmail.com, but This is not a official bussines email address of Pak Pipes International Karachi.";
+    return ".";
 }
 
 
