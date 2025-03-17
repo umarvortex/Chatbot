@@ -114,12 +114,12 @@ const botMessage = document.createElement("div");
     }
 
     if (userText.includes("pipes") || userText.includes("product") || userText.includes("service") || userText.includes("what pipes you sell")) {
-        return "We provide a variety of pipes including PVC, UPVC, HDPE, and PPRC pipes,if you want to know about all our products  just massage <strong>'Products List'</strong> and I'll share full Products list here for you.";
+        return "We provide a variety of pipes including PVC, UPVC, HDPE, and PPRC pipes,if you want to know about all our products  just massage <strong>'List'</strong> and I'll share all available Products list here for you.";
   }
 
 
 
-if (userText.includes("products list") userText.includes("list")) {
+if (userText.includes("list")) {
     return `<strong>Here is the list of all available pipes:</strong><br><br>
 <strong>1. Transparent Color Zebra Pipes</strong><br>
 <strong>2. Super Green Pipes</strong><br>
