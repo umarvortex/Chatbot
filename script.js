@@ -362,6 +362,25 @@ if (userText.includes("okay") || userText.includes("ok") || userText.includes("o
   return randomReply;
 }
 
+
+if (userText.includes("thank") || userText.includes("thanks") || userText.includes("thank you") || userText.includes("thx")) {
+  
+  let thanksReplies = [
+    "You're always welcome!",
+    "My pleasure, happy to assist!",
+    "No problem at all, anytime!",
+    "Glad I could help!",
+    "Anytime! Feel free to ask more.",
+    "You're most welcome!",
+    "Always here to help you!",
+    "Cheers! Let me know if you need anything else.",
+  ];
+  
+  let randomThanks = thanksReplies[Math.floor(Math.random() * thanksReplies.length)];
+  return randomThanks;
+}
+
+
 if (userText.includes("i am good") || userText.includes("i'm good") || userText.includes("i am fine") || userText.includes("i'm fine") || userText.includes("yeah I am good") || userText.includes("yeah I'm good")) {
   
   let goodReplies = [
