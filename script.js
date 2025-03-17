@@ -78,7 +78,7 @@
 
 const botMessage = document.createElement("div");
                 botMessage.classList.add("message", "bot-message");
-                botMessage.textContent = getBotResponse(userText);
+                botMessage.innerHTML = getBotResponse(userText);
                 chatbotBody.appendChild(botMessage);
 
                 chatbotBody.scrollTop = chatbotBody.scrollHeight;
@@ -120,77 +120,31 @@ const botMessage = document.createElement("div");
 
 
 if (userText.includes("vortex bhai details")) {
-        return `Here are the full details of all pipes:
-1. Transparent Color Zebra Pipes
-   - Sizes: 2mm, 2.5mm, 3mm
-
-2. Super Green Pipes
-   - Sizes: 3mm, 4mm
-
-3. Red Poly with White Line Pipes
-   - Sizes: 3/4 inch, 1 inch
-
-4. Poly Back Pipes
-   - Sizes: 1/2 inch, 1 inch, 1"1"2, 3 inch, 4 inch, 5 inch
-
-5. Braded Bravo Dagha Pipes
-   - Sizes: 3/4 inch, 1 inch
-
-6. Super Transparent Garden Pipes
-   - Sizes: 1 inch (4mm, 3mm), 3/4 inch (3mm, 4mm)
-
-7. Gas Pipes
-   - Sizes: 2mm, 2.5mm, 3mm, 4mm
-
-8. Garden Pipes
-   - (General category, no specific sizes mentioned)
-
-9. Level Pipes
-   - Sizes: 2 sot, 2.5 sot
-
-10. Fire Hose
-    - Sizes: 2 inch to 6 inch
-
-11. Clear Garden Transparent Hose Pipes
-    - Sizes: 1 inch, 2mm
-
-12. Poly Pipes
-    - Sizes: 1/2 inch, 3/4 inch, 1 inch
-
-13. Zebra Band Pipes
-    - Sizes: 2mm, 2.5mm
-
-14. Vinyl Section Pipes (Imported)
-    - Sizes: 1 inch, 2 inch
-
-15. Parker Pressure Gas Hose
-    - Size: 8mm, Length: 100mm, Weight: 12kg
-
-16. Commando Pressure Gas Hose
-    - Size: 8mm, Length: 300f, Weight: 11.5kg
-
-17. Bridgestone High Pressure Gas Hose
-    - Size: 8mm, Length: 300f, Weight: 12kg
-
-18. Pona Flex Gas Hose (KTL)
-    - Length: 270f, Weight: 6kg
-
-19. Yellow Poly National Pipes
-    - Sizes: 1/2 inch, 3/4 inch, 1 inch, 2 inch
-
-20. Caterpillars Gas Hose
-    - Length: 300f
-
-21. Pure Garden Pipes
-    - Sizes: 1 inch, 1_1/4 inch, 1_1/2 inch, 2 inch, 2.5mm, 3mm
-
-22. PE 100 National Pipes
-    - Sizes: 1 inch to 8 inch
-    - Pressure Ratings: PN6, PN8, PN10, PN12.5, PN16
-
-23. Suction and Delivery Steel Wire Hose (National)
-    - Sizes: 3/4 inch, 1 inch, 1_1/4 inch, 1_2/2 inch, 2 inch, 3 inch, 4 inch`;
-    }
+    return `<strong>Here are the full details of all pipes:</strong><br><br>
+<strong>1. Transparent Color Zebra Pipes</strong><br>- Sizes: 2mm, 2.5mm, 3mm<br><br>
+<strong>2. Super Green Pipes</strong><br>- Sizes: 3mm, 4mm<br><br>
+<strong>3. Red Poly with White Line Pipes</strong><br>- Sizes: 3/4 inch, 1 inch<br><br>
+<strong>4. Poly Back Pipes</strong><br>- Sizes: 1/2 inch, 1 inch, 1"1"2, 3 inch, 4 inch, 5 inch<br><br>
+<strong>5. Braded Bravo Dagha Pipes</strong><br>- Sizes: 3/4 inch, 1 inch<br><br>
+<strong>6. Super Transparent Garden Pipes</strong><br>- Sizes: 1 inch (4mm, 3mm), 3/4 inch (3mm, 4mm)<br><br>
+<strong>7. Gas Pipes</strong><br>- Sizes: 2mm, 2.5mm, 3mm, 4mm<br><br>
+<strong>8. Garden Pipes</strong><br>- (General category, no specific sizes mentioned)<br><br>
+<strong>9. Level Pipes</strong><br>- Sizes: 2 sot, 2.5 sot<br><br>
+<strong>10. Fire Hose</strong><br>- Sizes: 2 inch to 6 inch<br><br>
+<strong>11. Clear Garden Transparent Hose Pipes</strong><br>- Sizes: 1 inch, 2mm<br><br>
+<strong>12. Poly Pipes</strong><br>- Sizes: 1/2 inch, 3/4 inch, 1 inch<br><br>
+<strong>13. Zebra Band Pipes</strong><br>- Sizes: 2mm, 2.5mm<br><br>
+<strong>14. Vinyl Section Pipes (Imported)</strong><br>- Sizes: 1 inch, 2 inch<br><br>
+<strong>15. Parker Pressure Gas Hose</strong><br>- Size: 8mm, Length: 100mm, Weight: 12kg<br><br>
+<strong>16. Commando Pressure Gas Hose</strong><br>- Size: 8mm, Length: 300f, Weight: 11.5kg<br><br>
+<strong>17. Bridgestone High Pressure Gas Hose</strong><br>- Size: 8mm, Length: 300f, Weight: 12kg<br><br>
+<strong>18. Pona Flex Gas Hose (KTL)</strong><br>- Length: 270f, Weight: 6kg<br><br>
+<strong>19. Yellow Poly National Pipes</strong><br>- Sizes: 1/2 inch, 3/4 inch, 1 inch, 2 inch<br><br>
+<strong>20. Caterpillars Gas Hose</strong><br>- Length: 300f<br><br>
+<strong>21. Pure Garden Pipes</strong><br>- Sizes: 1 inch, 1_1/4 inch, 1_1/2 inch, 2 inch, 2.5mm, 3mm<br><br>
+<strong>22. PE 100 National Pipes</strong><br>- Sizes: 1 inch to 8 inch<br>- Pressure Ratings: PN6, PN8, PN10, PN12.5, PN16<br><br>
+<strong>23. Suction and Delivery Steel Wire Hose (National)</strong><br>- Sizes: 3/4 inch, 1 inch, 1_1/4 inch, 1_2/2 inch, 2 inch, 3 inch, 4 inch`;
+}
 
 
 
