@@ -336,7 +336,7 @@ if (userText.includes("color") || userText.includes("do you have color pipes")) 
 
 }
 
-if (userText.includes("delivery charges") || (userText.includes("free delivery") || userText.includes("free")) {
+if (userText.includes("delivery charges") || userText.includes("free delivery") || userText.includes("free")) {
     return "Our delivery charges are calculated according to the delivery location and the volume of your order. We aim to provide cost-effective delivery solutions while ensuring prompt and reliable service.";
 
 }
