@@ -408,7 +408,7 @@ if (userText.includes("do you love me")) {
 
 
 // 29. Can you help me?
-if (userText.includes("can you help me")) {
+if (userText.includes("can you help me") ||  userText.includes("help")) {
   let replies = [
     "Of course! What do you need help with?",
     "I’m here to assist you anytime!",
@@ -598,7 +598,7 @@ if (userText.includes("how old are you") || userText.includes("your age")) {
 }
 
 // 13. Who created you?
-if (userText.includes("who created you") || userText.includes("your creator")) {
+if (userText.includes("who created you") || userText.includes("creator")) {
   let replies = [
     "A brilliant mind Umar Vortex coded me into existence!",
     "My creator is Umar Vortex who loves tech!",
