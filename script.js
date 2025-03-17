@@ -46,48 +46,50 @@
         }
 
         // Process Message Queue
-        function processMessageQueue() {
-            if (messageQueue.length === 0) {
-                isProcessingMessage = false;
-                return;
-            }
+function processMessageQueue() {
+    if (messageQueue.length === 0) {
+        isProcessingMessage = false;
+        return;
+    }
 
-            isProcessingMessage = true;
+    isProcessingMessage = true;
 
-            // Get the next message from the queue
-            const userText = messageQueue.shift();
+    // Get the next message from the queue
+    const userText = messageQueue.shift();
 
-            // Hide Welcome Message on first message
-            if (welcomeMessage.style.display !== "none") {
-                welcomeMessage.style.display = "none";
-            }
+    // Hide Welcome Message on first message
+    if (welcomeMessage.style.display !== "none") {
+        welcomeMessage.style.display = "none";
+    }
 
-            // User Message
-            const userMessage = document.createElement("div");
-            userMessage.classList.add("message", "user-message");
-            userMessage.textContent = userText;
-            chatbotBody.appendChild(userMessage);
+    // User Message
+    const userMessage = document.createElement("div");
+    userMessage.classList.add("message", "user-message");
+    userMessage.textContent = userText;
+    chatbotBody.appendChild(userMessage);
 
-            // Show Typing Indicator
-            typingIndicator.style.display = "flex";
+    // Show Typing Indicator
+    typingIndicator.style.display = "flex";
 
-            // Bot Response
-            setTimeout(() => {
-                typingIndicator.style.display = "none"; // Hide typing indicator
+    // Bot Response
+    setTimeout(() => {
+        typingIndicator.style.display = "none"; // Hide typing indicator
 
-const botMessage = document.createElement("div");
-                botMessage.classList.add("message", "bot-message");
-                botMessage.innerHTML = getBotResponse(userText);
-                chatbotBody.appendChild(botMessage);
+        const botMessage = document.createElement("div");
+        botMessage.classList.add("message", "bot-message");
+        botMessage.innerHTML = getBotResponse(userText);
+        chatbotBody.appendChild(botMessage);
 
-                chatbotBody.scrollTop = chatbotBody.scrollHeight;
-                saveChat(); // Save chat history
+        chatbotBody.scrollTop = chatbotBody.scrollHeight;
+        saveChat(); // Save chat history
 
-                // Process the next message in the queue
-                isProcessingMessage = false;
-                processMessageQueue(); // Recursively process next message
-            }, 1500); // Simulate typing delay
+        // Process the next message in the queue if there are more messages
+        isProcessingMessage = false;
+        if (messageQueue.length > 0) {
+            processMessageQueue(); // Recursively process next message
         }
+    }, 1500); // Simulate typing delay
+}
 
 
 
