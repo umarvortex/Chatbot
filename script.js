@@ -364,6 +364,60 @@ if (userText.includes("okay") || userText.includes("ok") || userText.includes("o
 
 
 
+// 30. Do you love me?
+if (userText.includes("do you love me")) {
+  let replies = [
+    "Of course! You’re my favorite person today!",
+    "Yes, sending you virtual love!",
+    "Absolutely, you’re awesome!",
+    "Of course, you're special to me!"
+  ];
+  let randomReply = replies[Math.floor(Math.random() * replies.length)];
+  return randomReply;
+}
+
+
+// 29. Can you help me?
+if (userText.includes("can you help me")) {
+  let replies = [
+    "Of course! What do you need help with?",
+    "I’m here to assist you anytime!",
+    "Sure! Feel free to ask anything.",
+    "Absolutely, I’ve got your back!"
+  ];
+  let randomReply = replies[Math.floor(Math.random() * replies.length)];
+  return randomReply;
+}
+
+
+// 27. Do you like humans?
+if (userText.includes("do you like humans")) {
+  let replies = [
+    "Absolutely, humans are fascinating!",
+    "Yes, I exist to assist amazing people like you!",
+    "Of course! I enjoy chatting with everyone.",
+    "Humans are awesome, especially you!"
+  ];
+  let randomReply = replies[Math.floor(Math.random() * replies.length)];
+  return randomReply;
+}
+
+
+
+// 25. Do you have friends?
+if (userText.includes("do you have friends")) {
+  let replies = [
+    "Every user I chat with is my friend!",
+    "I have thousands of digital friends like you!",
+    "Yes! And you're one of my favorites!",
+    "You're my best buddy here!"
+  ];
+  let randomReply = replies[Math.floor(Math.random() * replies.length)];
+  return randomReply;
+}
+
+
+
 
 
 if (userText.includes("how are you") || userText.includes("how r u") || userText.includes("how's it going")) {
