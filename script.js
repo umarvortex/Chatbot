@@ -98,7 +98,7 @@ const botMessage = document.createElement("div");
     userText = userText.toLowerCase().trim(); // Normalize input
 
     if (userText.includes("hi") || userText.includes("hello") || userText.includes("hey")) {
-        return "Hey there! How’s your day treating you? Hope everything’s going well! How can I assist you today with our top-quality pipe solutions?";
+        return "Hey there! How’s your day going? Hope everything’s going well! How can I assist you today with our top-quality pipe solutions?";
     }
 
     if (userText.includes("asslamualaikum") || userText.includes("salam alaikum") || userText.includes("assalam alaikum") || userText.includes("salam")) {
@@ -110,11 +110,11 @@ const botMessage = document.createElement("div");
     }
 
     if (userText.includes("location") || userText.includes("where are you located")) {
-        return "We are based in KDA scheme 33 Grey Noor tower Karachi, Pakistan. Visit us anytime!";
+        return "Pak Pipes International Karachi based in KDA scheme 33 Grey Noor tower Karachi, Pakistan.  Visit us anytime!";
     }
 
     if (userText.includes("pipes") || userText.includes("products") || userText.includes("services") || userText.includes("what pipes you sell")) {
-        return "We provide a variety of pipes including PVC, UPVC, HDPE, and PPRC pipes if you want to know about all our products in details just say List and I'll share full Products list here for you.";
+        return "We provide a variety of pipes including PVC, UPVC, HDPE, and PPRC pipes if you want to know about all our products  just say <strong>List</strong> and I'll share full Products list here for you.";
     }
 
 
@@ -138,12 +138,12 @@ if (userText.includes("list")) {
 <strong>15. Parker Pressure Gas Hose</strong><br>
 <strong>16. Commando Pressure Gas Hose</strong><br>
 <strong>17. Bridgestone High Pressure Gas Hose</strong><br>
-<strong>18. Pona Flex Gas Hose (KTL)</strong><br>
+<strong>18. Pona Flex Gas Hose (Korean Technology)</strong><br>
 <strong>19. Yellow Poly National Pipes</strong><br>
 <strong>20. Caterpillars Gas Hose</strong><br>
 <strong>21. Pure Garden Pipes</strong><br>
 <strong>22. PE 100 National Pipes</strong><br>
-<strong>23. Suction and Delivery Steel Wire Hose (National)</strong>`;
+<strong>23. Suction and Delivery Steel Wire Hose (National and China's)</strong><br><br>`;
 }
 
 
