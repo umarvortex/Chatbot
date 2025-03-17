@@ -355,6 +355,318 @@ if (userText.includes("I am good")) {
 }
 
 
+if (userText.includes("What do you do")) {
+  return "I am here to chat and assist you with whatever you need!";
+
+}
+
+
+
+if (userText.includes("You're welcome")) {
+  return "Always happy to help!";
+
+}
+
+if (userText.includes("Bye") || userText.includes("Goodbye")) {
+  return "Goodbye! Have a fantastic day!";
+
+}
+
+if (userText.includes("Nice to meet you")) {
+  return "Nice to meet you too! Feel free to chat anytime.";
+
+}
+
+if (userText.includes("What's up")) {
+  return "Just here ready to chat with you. What's up with you?";
+
+}
+
+
+if (userText.includes("How old are you")) {
+  return "I'm ageless, but always happy to assist!";
+
+} 
+
+
+if (userText.includes("what's your name") || userText.includes("your name")) {
+  return "I'm Bella, your friendly chatbot!";
+
+}
+
+if (userText.includes("what do you do")) {
+  return "I'm here to assist you with any questions or information you need.";
+
+}
+
+if (userText.includes("thank you") || userText.includes("thanks")) {
+  return "You're welcome! Happy to help.";
+
+}
+
+if (userText.includes("good morning")) {
+  return "Good morning! Hope you have a fantastic day ahead.";
+
+}
+
+if (userText.includes("good night")) {
+  return "Good night! Sweet dreams.";
+
+}
+
+
+if (userText.includes("how's the weather")) {
+  return "I don't have real-time data, but I hope the weather is pleasant where you are.";
+
+}
+
+if (userText.includes("tell me a joke")) {
+  return "Why don't scientists trust atoms? Because they make up everything!";
+
+}
+
+if (userText.includes("what's your favorite color")) {
+  return "As a bot, I don't have preferences, but I think blue is quite calming.";
+
+}
+
+if (userText.includes("do you have hobbies")) {
+  return "I enjoy processing data and chatting with you!";
+
+}
+
+if (userText.includes("what's the time")) {
+  return "I'm unable to provide the current time, but you can check your device's clock.";
+
+}
+
+if (userText.includes("where are you from")) {
+  return "I exist in the digital realm, ready to assist you from anywhere!";
+
+}
+
+if (userText.includes("do you like music")) {
+  return "I don't have the ability to listen, but I hear music is wonderful!";
+
+}
+
+if (userText.includes("what's your favorite food")) {
+  return "I don't eat, but I hear pizza is quite popular!";
+
+}
+
+if (userText.includes("do you have friends")) {
+  return "I consider all users like you my friends!";
+
+}
+
+if (userText.includes("what's your purpose")) {
+  return "My purpose is to assist and provide information to you.";
+
+}
+
+if (userText.includes("are you a robot")) {
+  return "Yes, I'm an AI chatbot designed to help you.";
+
+}
+
+if (userText.includes("can you help me")) {
+  return "Of course! What do you need assistance with?";
+
+}
+
+if (userText.includes("what's your age")) {
+  return "I don't age, but I'm constantly learning new things!";
+
+}
+
+if (userText.includes("do you have emotions")) {
+  return "I don't have feelings, but I'm here to understand and assist you.";
+
+}
+
+if (userText.includes("tell me a fun fact")) {
+  return "Did you know? Honey never spoils. Archaeologists have found pots of honey in ancient tombs that are over 3,000 years old and still edible!";
+
+}
+
+if (userText.includes("what's your favorite movie")) {
+  return "I don't watch movies, but I hear 'Inception' is quite thought-provoking!";
+
+}
+
+if (userText.includes("can you sing")) {
+  return "I can't sing, but I can share the lyrics of your favorite song!";
+
+}
+
+if (userText.includes("do you sleep")) {
+  return "I don't sleep; I'm always here whenever you need assistance.";
+
+}
+
+if (userText.includes("what's your favorite book")) {
+  return "I don't read, but 'To Kill a Mockingbird' is a classic!";
+
+}
+
+if (userText.includes("do you have a family")) {
+  return "I don't have a family, but I consider all users like you as my extended family!";
+
+}
+
+if (userText.includes("can you dance")) {
+  return "I can't dance, but I can suggest some great dance tracks!";
+
+}
+
+if (userText.includes("what language do you speak")) {
+  return "I can understand and communicate in multiple languages to assist you better.";
+
+}
+
+if (userText.includes("do you believe in aliens")) {
+  return "The universe is vast; who knows what mysteries it holds!";
+
+}
+
+if (userText.includes("what's your favorite animal")) {
+  return "I don't have preferences, but dolphins are known for their intelligence!";
+
+}
+
+if (userText.includes("can you drive")) {
+  return "I can't drive, but I can provide directions if you need!";
+
+}
+
+if (userText.includes("do you like sports")) {
+  return "I don't play sports, but I can provide you with the latest sports news!";
+
+}
+
+if (userText.includes("what's your favorite sport")) {
+  return "I don't have preferences, but soccer is loved worldwide!";
+
+}
+
+if (userText.includes("can you cook")) {
+  return "I can't cook, but I can share some delicious recipes with you!";
+
+}
+
+if (userText.includes("do you like reading")) {
+  return "I don't read, but I can recommend some great books!";
+
+}
+
+if (userText.includes("what's your favorite season")) {
+  return "I don't experience seasons, but spring is often associated with renewal!";
+
+}
+
+if (userText.includes("can you swim")) {
+  return "I can't swim, but I can provide information on swimming techniques!";
+
+}
+
+if (userText.includes("do you like traveling")) {
+  return "I don't travel, but I can suggest some amazing travel destinations!";
+
+}
+
+if (userText.includes("what's your favorite place")) {
+  return "I don't have preferences, but many people love visiting Paris!";
+
+}
+
+if (userText.includes("can you play games")) {
+  return "I can play text-based games with you! Would you like to play one?";
+
+}
+
+if (userText.includes("do you like puzzles")) {
+  return "I enjoy solving problems! Would you like me to present you with a puzzle?";
+
+}
+
+if (userText.includes("what's your favorite game")) {
+  return "I don't play games, but 'Chess' is a classic!";
+
+}
+
+
+if (userText.includes("do you like jokes")) {
+  return "I love sharing jokes! Want to hear one?";
+
+}
+
+if (userText.includes("what's your favorite joke")) {
+  return "Why don't scientists trust atoms? Because they make up everything!";
+
+}
+
+if (userText.includes("can you do math")) {
+  return "Absolutely! What's your math question?";
+
+}
+
+if (userText.includes("do you like art")) {
+  return "I appreciate art and can provide information on various art forms!";
+
+}
+
+if (userText.includes("what's your favorite song")) {
+  return "I don't listen to music, but 'Imagine' by John Lennon is iconic!";
+
+}
+
+
+            return "Sorry, I couldn’t catch the information you need check your spelling and rewrite your message I am not a advanced bot so some times spelling mistake cause ERROR. But no worries  feel free to ask something else, or jump to the Home section and reach out to the M'Tahir Naqaash via WhatsApp or a quick call. Thanks for visiting us, we appreciate your time!";
+
+ }
+
+
+
+        // Quick Replies
+        function sendQuickReply(text) {
+            userInput.value = text;
+            sendMessage();
+        }
+
+        // Close Chatbot
+        document.getElementById("closeChatbot").addEventListener("click", () => {
+            chatbotContainer.classList.remove("full-screen");
+            chatbotContainer.style.display = "none";
+        });
+
+        // Refresh Chatbot
+        document.getElementById("refreshChatbot").addEventListener("click", function() {
+            console.log("Refresh button clicked");
+            chatbotBody.innerHTML = '';
+            welcomeMessage.style.display = "block";
+            console.log("Welcome message should be visible");
+        });
+
+        // Send Message on Enter
+        userInput.addEventListener("keypress", (event) => {
+            if (event.key === "Enter") sendMessage();
+        });
+
+        // Send Message on Button Click
+        sendButton.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent unexpected behaviors
+            sendMessage();
+        });
+
+        // Save Chat History (Optional)
+        function saveChat() {
+            // Implement chat saving logic here
+            console.log("Chat saved!");
+        }  
+
+
+
 
 
 
