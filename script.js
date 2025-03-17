@@ -1,4 +1,4 @@
-// Chatbot Functions
+ Functions
         const chatbotIcon = document.getElementById("chatbotIcon");
         const chatbotContainer = document.getElementById("chatbotContainer");
         const chatbotBody = document.getElementById("chatbotBody");
