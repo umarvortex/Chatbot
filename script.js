@@ -716,6 +716,127 @@ if (userText.includes("true") || userText.includes("truue") || userText.includes
   return trueResponses[Math.floor(Math.random() * trueResponses.length)];
 }
 
+
+// 1. Response to "I have to go" or similar phrases
+if (userText.includes("I have to go") || userText.includes("I need to leave") || userText.includes("tata")) {
+  let goResponses = [
+    "Okay, take care! See you soon! 😊",
+    "Bye bye! Don’t forget to come back!",
+    "Alright, catch you later! 👋",
+    "Tata! Have a great day!",
+    "See you on the flip side!"
+  ];
+  return goResponses[Math.floor(Math.random() * goResponses.length)];
+}
+
+// 2. Response to "I think I should quit" or similar phrases
+if (userText.includes("I think I should quit") || userText.includes("I want to quit") || userText.includes("I need to quit")) {
+  let quitResponses = [
+    "Don’t give up! You’re stronger than you think! 💪",
+    "Take a break, but don’t quit!",
+    "Quitting isn’t the answer. Keep pushing forward!",
+    "You’ve got this! Don’t let go now!",
+    "Think about why you started. You can do it!"
+  ];
+  return quitResponses[Math.floor(Math.random() * quitResponses.length)];
+}
+
+// 3. Response to "I need to rest" or similar phrases
+if (userText.includes("I need to rest") || userText.includes("I need a break") || userText.includes("I’m tired")) {
+  let restResponses = [
+    "Rest is important! Take your time. 😴",
+    "Relax and recharge. You deserve it!",
+    "Take a nap, you’ll feel better!",
+    "Rest well, so you can come back stronger!",
+    "Chill for a bit. You’ve earned it!"
+  ];
+  return restResponses[Math.floor(Math.random() * restResponses.length)];
+}
+
+// 4. Response to "I’m hungry" or similar phrases
+if (userText.includes("I’m hungry") || userText.includes("I need food") || userText.includes("let’s eat")) {
+  let hungryResponses = [
+    "Let’s grab some food! 🍕",
+    "Hunger is real! What’s on the menu?",
+    "Time for a snack break!",
+    "Food is life! Let’s eat!",
+    "Don’t starve yourself. Go eat!"
+  ];
+  return hungryResponses[Math.floor(Math.random() * hungryResponses.length)];
+}
+
+// 5. Response to "I’m bored" or similar phrases
+if (userText.includes("I’m bored") || userText.includes("I need something to do") || userText.includes("this is boring")) {
+  let boredResponses = [
+    "Let’s do something fun! 🎮",
+    "How about a game?",
+    "Boredom is the enemy! Let’s fight it!",
+    "Watch a movie or read a book!",
+    "Let’s chat more! I’ll keep you entertained!"
+  ];
+  return boredResponses[Math.floor(Math.random() * boredResponses.length)];
+}
+
+// 6. Response to "I’m sad" or similar phrases
+if (userText.includes("I’m sad") || userText.includes("I’m feeling down") || userText.includes("I’m unhappy")) {
+  let sadResponses = [
+    "I’m here for you. Things will get better! ❤️",
+    "Sending you virtual hugs! 🤗",
+    "Don’t worry, this too shall pass.",
+    "You’re stronger than you think. Keep going!",
+    "Let’s talk about it. I’m all ears!"
+  ];
+  return sadResponses[Math.floor(Math.random() * sadResponses.length)];
+}
+
+// 7. Response to "I’m happy" or similar phrases
+if (userText.includes("I’m happy") || userText.includes("I’m feeling great") || userText.includes("I’m excited")) {
+  let happyResponses = [
+    "That’s awesome! Keep smiling! 😄",
+    "Happiness looks good on you!",
+    "Yay! Let’s celebrate! 🎉",
+    "I’m so glad you’re happy!",
+    "Your happiness is contagious!"
+  ];
+  return happyResponses[Math.floor(Math.random() * happyResponses.length)];
+}
+
+// 8. Response to "I’m confused" or similar phrases
+if (userText.includes("I’m confused") || userText.includes("I don’t understand") || userText.includes("I’m lost")) {
+  let confusedResponses = [
+    "Let me help you figure it out! 🤔",
+    "Take a deep breath. We’ll solve this together!",
+    "Confusion is the first step to understanding!",
+    "Don’t worry, I’ll guide you!",
+    "Let’s break it down step by step!"
+  ];
+  return confusedResponses[Math.floor(Math.random() * confusedResponses.length)];
+}
+
+// 9. Response to "I’m scared" or similar phrases
+if (userText.includes("I’m scared") || userText.includes("I’m afraid") || userText.includes("I’m nervous")) {
+  let scaredResponses = [
+    "It’s okay to be scared. You’re brave! 💪",
+    "Fear is natural. You’ve got this!",
+    "Take a deep breath. You’re stronger than your fears!",
+    "I’m here with you. Don’t be afraid!",
+    "Face your fears. You’ll come out stronger!"
+  ];
+  return scaredResponses[Math.floor(Math.random() * scaredResponses.length)];
+}
+
+// 10. Response to "I’m angry" or similar phrases
+if (userText.includes("I’m angry") || userText.includes("I’m mad") || userText.includes("I’m frustrated")) {
+  let angryResponses = [
+    "Take a deep breath. Calm down! 😤",
+    "Anger is temporary. Don’t let it control you!",
+    "Let’s talk about it. I’m here to listen.",
+    "Channel your anger into something positive!",
+    "It’s okay to feel angry. Just don’t let it consume you!"
+  ];
+  return angryResponses[Math.floor(Math.random() * angryResponses.length)];
+}
+
 // 12. Response to "false" and variations
 if (userText.includes("false") || userText.includes("faalse") || userText.includes("faaalse")) {
   let falseResponses = [
