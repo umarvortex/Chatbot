@@ -114,46 +114,20 @@ if (userText.includes("asslamualaikum") || userText.includes("asalam alaikum") |
   let randomSalam = salamResponses[Math.floor(Math.random() * salamResponses.length)];
   return randomSalam;
 }
+
+
+
+if (userText.includes("price") || userText.includes("pricing")) {
+    return "For the latest price updates and exclusive special offers, feel free to contact us directly.";
+}
     
 
-    if (userText.includes("your company name") || userText.includes("who are you")) {
-        return "We are Pak Pipes International Karachi — your trusted and reliable pipe suppliers.";
-    }
 
     if (userText.includes("location") || userText.includes("located")) {
         return "You can easily find Pak Pipes International Karachi in KDA Scheme 33, Grey Noor Tower, Karachi, Pakistan. You’re welcome to visit us anytime ☺️";
     }
 
   
-
-
-
-if (userText.includes("list") || userText.includes("List") ||  userText.includes("LIST")){
-    return `<strong>Here is the list of all available pipes:</strong><br><br>
-<strong>1. Transparent Color Zebra</strong><br>
-<strong>2. Super Green pipes</strong><br>
-<strong>3. Red Poly with White Line </strong><br>
-<strong>4. Poly Black </strong><br>
-<strong>5. Braded Bravo Dagha </strong><br>
-<strong>6. Super Transparent Garden</strong><br>
-<strong>7. All Garden </strong><br>
-<strong>8. Fire Hose</strong><br>
-<strong>9. Clear Garden Transparent Hose </strong><br>
-<strong>10. Zebra Band </strong><br>
-<strong>11. Vinyl Section (Imported)</strong><br>
-<strong>12. Parker Pressure Gas Hose</strong><br>
-<strong>13. Commando Pressure Gas Hose</strong><br>
-<strong>14. Bridgestone High Pressure Gas Hose</strong><br>
-<strong>15. Pona Flex Gas Hose (Korean Technology)</strong><br>
-<strong>16. Poly Yellow National</strong><br>
-<strong>17. Caterpillars Gas Hose</strong><br>
-<strong>18. Pure Garden </strong><br>
-<strong>19. PE 100 National </strong><br>
-<strong>20. Suction Steel Wire Hose (National and China's) </strong><br><br>
-If you'd like to know details just copy-paste the name of the pipes you need, with the correct spelling. I’ll provide all the details about size, length, width, and specifications.`;
-}
-
-
 
 
 
@@ -378,6 +352,38 @@ if (userText.includes("details") || userText.includes("full details of pipies") 
 
 
 
+if (userText.includes("list") || userText.includes("List") ||  userText.includes("LIST")){
+    return `<strong>Here is the list of all available pipes:</strong><br><br>
+<strong>1. Transparent Color Zebra</strong><br>
+<strong>2. Super Green pipes</strong><br>
+<strong>3. Red Poly with White Line </strong><br>
+<strong>4. Poly Black </strong><br>
+<strong>5. Braded Bravo Dagha </strong><br>
+<strong>6. Super Transparent Garden</strong><br>
+<strong>7. All Garden </strong><br>
+<strong>8. Fire Hose</strong><br>
+<strong>9. Clear Garden Transparent Hose </strong><br>
+<strong>10. Zebra Band </strong><br>
+<strong>11. Vinyl Section (Imported)</strong><br>
+<strong>12. Parker Pressure Gas Hose</strong><br>
+<strong>13. Commando Pressure Gas Hose</strong><br>
+<strong>14. Bridgestone High Pressure Gas Hose</strong><br>
+<strong>15. Pona Flex Gas Hose (Korean Technology)</strong><br>
+<strong>16. Poly Yellow National</strong><br>
+<strong>17. Caterpillars Gas Hose</strong><br>
+<strong>18. Pure Garden </strong><br>
+<strong>19. PE 100 National </strong><br>
+<strong>20. Suction Steel Wire Hose (National and China's) </strong><br><br>
+If you'd like to know any pipe details  just copy-paste the name of the pipes you need, with the correct spelling. I’ll provide all the details about size, length, width, and specifications.`;
+}
+
+
+
+
+
+
+
+
 if (userText.includes("contact") || userText.includes("phone number")) {
     return "You can reach us directly at +92-3192017909 or connect with us via WhatsApp. Both contact options are conveniently available in the Home section of our website.";
 }
@@ -394,14 +400,6 @@ if (userText.includes("hours") || userText.includes("timings")) {
 
 
 
-
-if (userText.includes("price") || userText.includes("pricing")) {
-    return "For the latest price updates and exclusive special offers, feel free to contact us directly.";
-}
-
-if (userText.includes("delivery") || userText.includes("do you deliver")) {
-    return "Yes, delivery within Karachi is available! I’m here to assist you  just place your order, and we’ll ensure it reaches you on time";
-}
 
 if (userText.includes("minimum order") || userText.includes("MOQ")) {
     return "Our minimum order quantity depends on the type of pipe. Contact us for details.";
@@ -432,13 +430,9 @@ if (userText.includes("discount") || userText.includes("any offer")) {
     return "Yes, we offer discounts on bulk orders. Contact us for current promotions.";
 }
 
-if (userText.includes("how to order") || userText.includes("order")) {
-    return "You can conveniently place your order through WhatsApp, phone call, email, or by visiting our office. For WhatsApp and call options, simply visit the Home section of our website — both contact methods are readily available there.";
-}
 
-if (userText.includes("about") || userText.includes("bussines info")) {
-    return "Pak Pipes International Karachi, powered by MEMON ONE TRADERS, has been proudly serving Karachi for over 2 years. Trusted by thousands of customers across the city, we welcome you to visit us anytime at Grey Noor Tower.";
-}
+
+
 
 if (userText.includes("fitting") || userText.includes("accessories")) {
     return "Yes, we provide pipe fittings and accessories along with pipes.";
@@ -565,6 +559,20 @@ if (userText.includes("job") || userText.includes("career")) {
 }
 
 
+if (userText.includes("how to order") || userText.includes("order")) {
+    return "You can conveniently place your order through WhatsApp, phone call, email, or by visiting our office. For WhatsApp and call options, simply visit the Home section of our website — both contact methods are readily available there.";
+}
+
+if (userText.includes("about") || userText.includes("bussines")) {
+    return "Pak Pipes International Karachi, powered by MEMON ONE TRADERS, has been proudly serving Karachi for over 2 years. Trusted by thousands of customers across the city, we welcome you to visit us anytime at Grey Noor Tower.";
+}
+
+
+if (userText.includes("delivery") || userText.includes("do you deliver")) {
+    return "Yes, delivery within Karachi is available! I’m here to assist you  just place your order, and we’ll ensure it reaches you on time";
+}
+
+
 if (userText.includes("hi") || userText.includes("hello") || userText.includes("hey")) {
   let greetingsResponses = [
     "Hey there! 👋 How can I assist you today with our top-quality pipe solutions?",
@@ -584,7 +592,7 @@ if (userText.includes("hi") || userText.includes("hello") || userText.includes("
 
 
   if (userText.includes("pipes") || userText.includes("product") || userText.includes("service") || userText.includes("what pipes you sell")) {
-        return "We provide a variety of pipes including PVC, UPVC, HDPE, and PPRC pipes,if you'd like to know about all our products  just massage <strong>List</strong> and I'll share all available Products list here for you.";
+        return "We provide a variety of pipes including PVC, HDPE, Importad, Chana and Korea pipes, if you'd like to know about all our products  just massage <strong>List</strong> and I'll share all available Products list here for you.";
   }
 
 
