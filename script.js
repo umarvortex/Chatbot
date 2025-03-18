@@ -718,7 +718,7 @@ if (userText.includes("true") || userText.includes("truue") || userText.includes
 
 
 // 1. Response to "I have to go" or similar phrases
-if (userText.includes("I have to go") || userText.includes("I need to leave") || userText.includes("tata")) {
+if (userText.includes("i have to go") || userText.includes("i need to leave") || userText.includes("tata")) {
   let goResponses = [
     "Okay, take care! See you soon! 😊",
     "Bye bye! Don’t forget to come back!",
@@ -729,20 +729,9 @@ if (userText.includes("I have to go") || userText.includes("I need to leave") ||
   return goResponses[Math.floor(Math.random() * goResponses.length)];
 }
 
-// 2. Response to "I think I should quit" or similar phrases
-if (userText.includes("I think I should quit") || userText.includes("I want to quit") || userText.includes("I need to quit")) {
-  let quitResponses = [
-    "Don’t give up! You’re stronger than you think! 💪",
-    "Take a break, but don’t quit!",
-    "Quitting isn’t the answer. Keep pushing forward!",
-    "You’ve got this! Don’t let go now!",
-    "Think about why you started. You can do it!"
-  ];
-  return quitResponses[Math.floor(Math.random() * quitResponses.length)];
-}
 
 // 3. Response to "I need to rest" or similar phrases
-if (userText.includes("I need rest") || userText.includes("I need a break") || userText.includes("I’m tired")) {
+if (userText.includes("ineed rest") || userText.includes("i need a break") || userText.includes("i’m tired")) {
   let restResponses = [
     "Rest is important! Take your time. 😴",
     "Relax and recharge. You deserve it!",
@@ -754,7 +743,7 @@ if (userText.includes("I need rest") || userText.includes("I need a break") || u
 }
 
 // 4. Response to "I’m hungry" or similar phrases
-if (userText.includes("I’m hungry") || userText.includes("I need food") || userText.includes("let’s eat")) {
+if (userText.includes("i'm hungry") || userText.includes("i need food") || userText.includes("let’s eat")) {
   let hungryResponses = [
     "Let’s grab some food! 🍕",
     "Hunger is real! What’s on the menu?",
@@ -766,7 +755,7 @@ if (userText.includes("I’m hungry") || userText.includes("I need food") || use
 }
 
 // 5. Response to "I’m bored" or similar phrases
-if (userText.includes("I’m bored") || userText.includes("I need something to do") || userText.includes("this is boring")) {
+if (userText.includes("i’m bored") || userText.includes("i need something to do") || userText.includes("this is boring")) {
   let boredResponses = [
     "Let’s do something fun! 🎮",
     "How about a game?",
@@ -778,7 +767,7 @@ if (userText.includes("I’m bored") || userText.includes("I need something to d
 }
 
 // 6. Response to "I’m sad" or similar phrases
-if (userText.includes("I’m sad") || userText.includes("I’m feeling down") || userText.includes("I’m unhappy")) {
+if (userText.includes("i’m sad") || userText.includes("i’m feeling down") || userText.includes("i’m unhappy")) {
   let sadResponses = [
     "I’m here for you. Things will get better! ❤️",
     "Sending you virtual hugs! 🤗",
@@ -790,7 +779,7 @@ if (userText.includes("I’m sad") || userText.includes("I’m feeling down") ||
 }
 
 // 7. Response to "I’m happy" or similar phrases
-if (userText.includes("I’m happy") || userText.includes("I’m feeling great") || userText.includes("I’m excited")) {
+if (userText.includes("i’m happy") || userText.includes("i’m feeling great") || userText.includes("i’m excited")) {
   let happyResponses = [
     "That’s awesome! Keep smiling! 😄",
     "Happiness looks good on you!",
@@ -802,7 +791,7 @@ if (userText.includes("I’m happy") || userText.includes("I’m feeling great")
 }
 
 // 8. Response to "I’m confused" or similar phrases
-if (userText.includes("I’m confused") || userText.includes("I don’t understand") || userText.includes("I’m lost")) {
+if (userText.includes("i’m confused") || userText.includes("i don’t understand") || userText.includes("i’m lost")) {
   let confusedResponses = [
     "Let me help you figure it out! 🤔",
     "Take a deep breath. We’ll solve this together!",
@@ -814,7 +803,7 @@ if (userText.includes("I’m confused") || userText.includes("I don’t understa
 }
 
 // 9. Response to "I’m scared" or similar phrases
-if (userText.includes("I’m scared") || userText.includes("I’m afraid") || userText.includes("I’m nervous")) {
+if (userText.includes("i’m scared") || userText.includes("i’m afraid") || userText.includes("I’m nervous")) {
   let scaredResponses = [
     "It’s okay to be scared. You’re brave! 💪",
     "Fear is natural. You’ve got this!",
@@ -826,9 +815,9 @@ if (userText.includes("I’m scared") || userText.includes("I’m afraid") || us
 }
 
 // 10. Response to "I’m angry" or similar phrases
-if (userText.includes("I’m angry") || userText.includes("I’m mad") || userText.includes("I’m frustrated")) {
+if (userText.includes("i’m angry") || userText.includes("i’m mad") || userText.includes("i’m frustrated")) {
   let angryResponses = [
-    "Take a deep breath. Calm down! 😤",
+    "Take a deep breath. Calm down!",
     "Anger is temporary. Don’t let it control you!",
     "Let’s talk about it. I’m here to listen.",
     "Channel your anger into something positive!",
@@ -1263,7 +1252,7 @@ if (userText.includes("are you always online") || userText.includes("are you ava
   return replies[Math.floor(Math.random() * replies.length)];
 }
 
-            return "Sorry, I couldn’t catch the information you need Please recheck your spelling or feel free to ask something else, for more details jump to the Home section and reach out to the M'Tahir Naqaash via WhatsApp or a quick call.";
+            return "Sorry, I couldn’t catch the information you need Please recheck your spelling or feel free to ask something else😊, for more details jump to the Home section and reach out to the M'Tahir Naqaash via WhatsApp or a quick call.";
  } 
 
 
