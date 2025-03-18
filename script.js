@@ -592,7 +592,7 @@ if (userText.includes("hi") || userText.includes("hello") || userText.includes("
 
 
   if (userText.includes("pipes") || userText.includes("product") || userText.includes("service") || userText.includes("what pipes you sell")) {
-        return "We provide a variety of pipes including PVC, HDPE, Importad, Chana and Korea pipes, if you'd like to know about all our products  just massage <strong>List</strong> and I'll share all available Products list here for you.";
+        return "We Provide a Wide Variety of High-Quality Pipes including <strong>PVC, HDPE, Imported, China and Korea pipes,</strong> if you'd like to know about all our products  just massage <strong>List</strong> and I'll share all available Products list here for you.";
   }
 
 
