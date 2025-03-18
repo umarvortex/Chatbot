@@ -98,7 +98,7 @@
             userText = userText.toLowerCase().trim();
 
 
-if (userText.includes("bro") || userText.includes("hello") || userText.includes("hey")) {
+if (userText.includes("hi") || userText.includes("hello") || userText.includes("hey")) {
         return "Hey there 👋, How are you? How can I assist you today with our top-quality pipe solutions.";
     }
 
