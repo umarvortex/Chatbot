@@ -180,6 +180,192 @@ If you'd like detailed information about any pipe's size, length, width, or spec
 
 
 
+
+// Transparent Color Zebra Pipes
+if (userText.includes("transparent color zebra pipes")) {
+  return `<strong>Transparent Color Zebra Pipes:</strong><br>
+          Details: Available in 2mm, 2.5mm, and 3mm.<br>
+          Perfect for versatile uses. Anything else you need to know? 😊`;
+}
+
+// Super Green Pipes
+if (userText.includes("super green pipes")) {
+  return `<strong>Super Green Pipes:</strong><br>
+          Details: Available in 3mm and 4mm.<br>
+          Ideal for heavy-duty applications. How can I assist you further? 🌟`;
+}
+
+// Red Poly with White Line Pipes
+if (userText.includes("red poly with white line pipes")) {
+  return `<strong>Red Poly with White Line Pipes:</strong><br>
+          Details: Available in 3/4 inch and 1 inch sizes.<br>
+          Great for industrial use. Need more details? 😄`;
+}
+
+// Poly Back Pipes
+if (userText.includes("poly back pipes")) {
+  return `<strong>Poly Back Pipes:</strong><br>
+          Details: Available in 1/2, 1, 1.1/2, 2, 3, 4, and 5 inch sizes.<br>
+          Perfect for high-pressure tasks. What else can I help you with? 🎉`;
+}
+
+// Braded Bravo Dagha Pipes
+if (userText.includes("braded bravo dagha pipes")) {
+  return `<strong>Braded Bravo Dagha Pipes:</strong><br>
+          Details: Available in 3/4 and 1 inch sizes.<br>
+          Durable and reliable. Anything else you’d like to know? 😊`;
+}
+
+// Super Transparent Garden Pipes
+if (userText.includes("super transparent garden pipes")) {
+  return `<strong>Super Transparent Garden Pipes:</strong><br>
+          Details: Available in 1 inch (4mm, 3mm) and 3/4 inch (3mm, 4mm).<br>
+          Perfect for gardening. How can I assist you further? 🌿`;
+}
+
+// Gas Pipes
+if (userText.includes("gas pipes")) {
+  return `<strong>Gas Pipes:</strong><br>
+          Details: Available in 2mm, 2.5mm, 3mm, and 4mm.<br>
+          Safe and efficient. Need more information? 😄`;
+}
+
+// Garden Pipes
+if (userText.includes("garden pipes")) {
+  return `<strong>Garden Pipes:</strong><br>
+          Details: Available in various sizes.<br>
+          Ideal for all gardening needs. What else can I help you with? 🌟`;
+}
+
+// Level Pipes
+if (userText.includes("level pipes")) {
+  return `<strong>Level Pipes:</strong><br>
+          Details: Available in 2 sot and 2.5 sot.<br>
+          Perfect for precise applications. Anything else you need? 😊`;
+}
+
+// Fire Hose
+if (userText.includes("fire hose")) {
+  return `<strong>Fire Hose:</strong><br>
+          Details: Available in 2 to 6 inch sizes.<br>
+          Reliable for emergency use. How can I assist you further? 🚒`;
+}
+
+// Clear Garden Transparent Hose Pipes
+if (userText.includes("clear garden transparent hose pipes")) {
+  return `<strong>Clear Garden Transparent Hose Pipes:</strong><br>
+          Details: Available in 1 and 2mm.<br>
+          Great for visibility and durability. Need more details? 😄`;
+}
+
+// Poly Pipes
+if (userText.includes("poly pipes")) {
+  return `<strong>Poly Pipes:</strong><br>
+          Details: Available in 1/2, 3/4, and 1 inch sizes.<br>
+          Versatile and strong. What else can I help you with? 🎉`;
+}
+
+// Zebra Band Pipes
+if (userText.includes("zebra band pipes")) {
+  return `<strong>Zebra Band Pipes:</strong><br>
+          Details: Available in 2mm and 2.5mm.<br>
+          Perfect for unique applications. Anything else you’d like to know? 😊`;
+}
+
+// Vinyl Section Pipes
+if (userText.includes("vinyl section pipes")) {
+  return `<strong>Vinyl Section Pipes:</strong><br>
+          Details: Imported, available in 1 and 2 inch sizes.<br>
+          High-quality and durable. How can I assist you further? 🌟`;
+}
+
+// Parker Pressure Gas Hose
+if (userText.includes("parker pressure gas hose")) {
+  return `<strong>Parker Pressure Gas Hose:</strong><br>
+          Details: Size 8mm, length 100mm, weight 12kg.<br>
+          Reliable for gas applications. Need more information? 😄`;
+}
+
+// Commando Pressure Gas Hose
+if (userText.includes("commando pressure gas hose")) {
+  return `<strong>Commando Pressure Gas Hose:</strong><br>
+          Details: Size 8mm, length 300f, weight 11.5kg.<br>
+          Perfect for heavy-duty use. What else can I help you with? 🎉`;
+}
+
+// Bridgestone High Pressure Gas Hose
+if (userText.includes("bridgestone high pressure gas hose")) {
+  return `<strong>Bridgestone High Pressure Gas Hose:</strong><br>
+          Details: Size 8mm, length 300f, weight 12kg.<br>
+          Ideal for high-pressure tasks. Anything else you need? 😊`;
+}
+
+// Pona Flex Gas Hose
+if (userText.includes("pona flex gas hose")) {
+  return `<strong>Pona Flex Gas Hose:</strong><br>
+          Details: Korean technology, length 270f, weight 6kg.<br>
+          Lightweight and efficient. How can I assist you further? 🌟`;
+}
+
+// Yellow Poly National Pipes
+if (userText.includes("yellow poly national pipes")) {
+  return `<strong>Yellow Poly National Pipes:</strong><br>
+          Details: Available in 1/2, 3/4, 1, and 2 inch sizes.<br>
+          Durable and versatile. Need more details? 😄`;
+}
+
+// Caterpillars Gas Hose
+if (userText.includes("caterpillars gas hose")) {
+  return `<strong>Caterpillars Gas Hose:</strong><br>
+          Details: Length 300f.<br>
+          Reliable for industrial use. What else can I help you with? 🎉`;
+}
+
+// Pure Garden Pipes
+if (userText.includes("pure garden pipes")) {
+  return `<strong>Pure Garden Pipes:</strong><br>
+          Details: Available in 1 inch, 1.1/4 inch, 1.1/2 inch, 2 inch, 2.5mm, and 3mm.<br>
+          Perfect for gardening. Anything else you’d like to know? 😊`;
+}
+
+// PE 100 National Pipes
+if (userText.includes("pe 100 national pipes")) {
+  return `<strong>PE 100 National Pipes:</strong><br>
+          Details: Available in 1 inch to 8 inch sizes (PN6, PN8, PN10, PN12.5, PN16).<br>
+          Ideal for high-pressure applications. How can I assist you further? 🌟`;
+}
+
+// Suction and Delivery Steel Wire Hose
+if (userText.includes("suction and delivery steel wire hose")) {
+  return `<strong>Suction and Delivery Steel Wire Hose:</strong><br>
+          Details: Available in 3/4, 1, 1.1/4, 1.1/2, 2, 3, and 4 inch sizes.<br>
+          Durable and reliable. Need more information? 😄`;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 if (userText.includes("contact") || userText.includes("phone number")) {
     return "You can reach us directly at +92-3192017909 or connect with us via WhatsApp. Both contact options are conveniently available in the Home section of our website.";
 }
@@ -1194,110 +1380,6 @@ if (userText.includes("are you always online") || userText.includes("are you ava
 
             return "Sorry, I couldn’t catch the information you need Please recheck your spelling or feel free to ask something else😊, for more details jump to the Home section and reach out to the M'Tahir Naqaash via WhatsApp or a quick call.";
  } 
-
-
-
-
-
-
-
-
-
-
-
-
-// Function to get pipe details with strong tags
-function getPipeDetails(pipeName) {
-    pipeName = pipeName.toLowerCase().trim();
-
-    if (pipeName.includes("transparent color zebra")) {
-        return `<strong>Transparent Color Zebra Pipes:</strong><br>Available in 2mm, 2.5mm, and 3mm sizes. 🟩 Perfect for colorful and creative projects!`;
-    } else if (pipeName.includes("super green")) {
-        return `<strong>Super Green Pipes:</strong><br>Available in 3mm and 4mm sizes. 🟩 Go green with these eco-friendly pipes!`;
-    } else if (pipeName.includes("red poly with white line")) {
-        return `<strong>Red Poly with White Line Pipes:</strong><br>Available in 3/4 inch and 1 inch sizes. 🟩 Add a pop of color to your setup!`;
-    } else if (pipeName.includes("poly back")) {
-        return `<strong>Poly Back Pipes:</strong><br>Available in 1/2, 1, 1.5, 2, 3, 4, and 5 inch sizes. 🟩 Durable and versatile for all your needs!`;
-    } else if (pipeName.includes("braded bravo dagha")) {
-        return `<strong>Braded Bravo Dagha Pipes:</strong><br>Available in 3/4 and 1 inch sizes. 🟩 Strong and reliable for heavy-duty applications!`;
-    } else if (pipeName.includes("super transparent garden")) {
-        return `<strong>Super Transparent Garden Pipes:</strong><br>Available in 1 inch (4mm, 3mm) and 3/4 inch (3mm, 4mm) sizes. 🟩 Perfect for gardening and outdoor use!`;
-    } else if (pipeName.includes("gas pipes")) {
-        return `<strong>Gas Pipes:</strong><br>Available in 2mm, 2.5mm, 3mm, and 4mm sizes. 🟩 Safe and efficient for gas transportation!`;
-    } else if (pipeName.includes("level pipes")) {
-        return `<strong>Level Pipes:</strong><br>Available in 2sot and 2.5sot sizes. 🟩 Ideal for leveling and alignment tasks!`;
-    } else if (pipeName.includes("fire hose")) {
-        return `<strong>Fire Hose:</strong><br>Available in 2 to 6 inch sizes. 🟩 Essential for fire safety and emergency use!`;
-    } else if (pipeName.includes("clear garden transparent hose")) {
-        return `<strong>Clear Garden Transparent Hose Pipes:</strong><br>Available in 1mm and 2mm sizes. 🟩 See-through design for easy monitoring!`;
-    } else if (pipeName.includes("poly pipes")) {
-        return `<strong>Poly Pipes:</strong><br>Available in 1/2, 3/4, and 1 inch sizes. 🟩 Lightweight and easy to handle!`;
-    } else if (pipeName.includes("zebra band")) {
-        return `<strong>Zebra Band Pipes:</strong><br>Available in 2mm and 2.5mm sizes. 🟩 Stylish and functional for unique applications!`;
-    } else if (pipeName.includes("vinyl section")) {
-        return `<strong>Vinyl Section Pipes:</strong><br>Available in 1 inch and 2 inch sizes. 🟩 Imported quality for superior performance!`;
-    } else if (pipeName.includes("parker pressure gas hose")) {
-        return `<strong>Parker Pressure Gas Hose:</strong><br>Size: 8mm, Length: 100mm, Weight: 12kg. 🟩 High-pressure handling made easy!`;
-    } else if (pipeName.includes("commando pressure gas hose")) {
-        return `<strong>Commando Pressure Gas Hose:</strong><br>Size: 8mm, Length: 300f, Weight: 11.5kg. 🟩 Built for tough conditions!`;
-    } else if (pipeName.includes("bridgestone high pressure gas hose")) {
-        return `<strong>Bridgestone High Pressure Gas Hose:</strong><br>Size: 8mm, Length: 300f, Weight: 12kg. 🟩 Trusted brand for high-pressure applications!`;
-    } else if (pipeName.includes("pona flex gas hose")) {
-        return `<strong>Pona Flex Gas Hose:</strong><br>Korean technology, Length: 270f, Weight: 6kg. 🟩 Innovative and lightweight design!`;
-    } else if (pipeName.includes("yellow poly national")) {
-        return `<strong>Yellow Poly National Pipes:</strong><br>Available in 1/2, 3/4, 1 inch, and 2 inch sizes. 🟩 Bright and easy to identify!`;
-    } else if (pipeName.includes("caterpillars gas hose")) {
-        return `<strong>Caterpillars Gas Hose:</strong><br>Length: 300f. 🟩 Heavy-duty performance for industrial use!`;
-    } else if (pipeName.includes("pure garden")) {
-        return `<strong>Pure Garden Pipes:</strong><br>Available in 1 inch, 1.25 inch, 1.5 inch, 2 inch, 2.5mm, and 3mm sizes. 🟩 Perfect for all your gardening needs!`;
-    } else if (pipeName.includes("pe 100 national")) {
-        return `<strong>PE 100 National Pipes:</strong><br>Available in 1 inch to 8 inch sizes, PN6, PN8, PN10, PN12.5, PN16. 🟩 High-quality pipes for national standards!`;
-    } else if (pipeName.includes("suction and delivery steel wire hose")) {
-        return `<strong>Suction and Delivery Steel Wire Hose:</strong><br>Available in 3/4, 1, 1.25, 1.5, 2, 3, and 4 inch sizes. 🟩 Strong and reliable for suction and delivery tasks!`;
-    } else {
-        return "Sorry, I couldn't find details for that pipe. 🟩 Let me know if you need information on other pipes!";
-    }
-}
-
-// Function to handle pipe queries separately
-function handlePipeQueries(userText) {
-    userText = userText.toLowerCase().trim();
-
-    // Check if the user is asking about pipes
-    if (userText.includes("pipe") || userText.includes("pipes")) {
-        let pipeName = userText.replace(/pipe|pipes/g, "").trim();
-        return getPipeDetails(pipeName);
-    }
-
-    // If it's not a pipe query, return null or an empty string
-    return null;
-}
-
-// Example usage in your chatbot logic
-function getBotResponse(userText) {
-    // First, check if it's a pipe query
-    let pipeResponse = handlePipeQueries(userText);
-    if (pipeResponse) {
-        return pipeResponse;
-    }
-
-    // Add other conditions here (e.g., greetings, salam, etc.)
-    // ...
-
-    // Default response
-    return "I'm here to help! Let me know if you need information about any other pipes or anything else.";
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
  
