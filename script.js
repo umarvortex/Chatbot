@@ -306,7 +306,7 @@ if (userText.includes("steel wire hose")) {
 
 
 
-if (userText.includes("give me all pipies details") || userText.includes("full details of pipies") || userText.includes("full") userText.includes("all")) {
+if (userText.includes("give me all pipies details") || userText.includes("full details of pipies") || userText.includes("full") || userText.includes("all")) {
   return `
     <strong>Transparent Color Zebra Pipes:</strong><br><br>
     Available in 2mm, 2.5mm, and 3mm.<br><br>
@@ -388,8 +388,7 @@ if (userText.includes("give me all pipies details") || userText.includes("full d
     Available in 3/4, 1, 1.1/4, 1.1/2, 2, 3, and 4 inch sizes.<br><br>
     Durable and reliable.<br><br><br>
 
-    <strong>Anything else you need to know? 😊</strong>
-  `;
+    <strong>Anything else you need to know? 😊</strong>`;
 }
 
 
