@@ -164,14 +164,14 @@ if (userText.includes("list") || userText.includes("List") ||  userText.includes
 <strong>11. Vinyl Section (Imported)</strong><br>
 <strong>12. Parker Pressure Gas Hose</strong><br>
 <strong>13. Commando Pressure Gas Hose</strong><br>
-<strong>14. Bridgestone Pressure Gas Hose</strong><br>
+<strong>14. Bridgestone Extreme Pressure Gas Hose</strong><br>
 <strong>15. Pona Flex Gas Hose (Korean Technology)</strong><br>
 <strong>16. Poly Yellow National</strong><br>
 <strong>17. Caterpillars Gas Hose</strong><br>
 <strong>18. Pure Garden </strong><br>
 <strong>19. PE 100 National </strong><br>
 <strong>20. Suction Steel Wire Hose (National and China's)</strong><br><br>
-If you'd like detailed information about any pipe's size, length, width, or specifications, just copy paste the pipe’s name with me, and I’ll provide you with all the details!`;
+Just copy-paste the name of the pipes you need, with the correct spelling. I’ll provide all the details about size, length, width, and specifications!";
 }
 
 
@@ -276,9 +276,9 @@ if (userText.includes("commando pressure gas hose")) {
           Perfect for heavy-duty use. What else can I help you with? 🎉`;
 }
 
-// 14 Bridgestone Pressure Gas Hose
-if (userText.includes("bridgestone pressure gas hose")) {
-  return `<strong>Bridgestone High Pressure Gas Hose:</strong><br>
+// 14 Bridgestone Extreme Pressure Gas Hose
+if (userText.includes("bridgestone extreme pressure gas hose")) {
+  return `<strong>Bridgestone Extreme Pressure Gas Hose:</strong><br>
           Details: Size 8mm, length 300f, weight 12kg.<br>
           Ideal for high-pressure tasks. Anything else you need? 😊`;
 }
