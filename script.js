@@ -97,25 +97,6 @@
         function getBotResponse(userText) {
             userText = userText.toLowerCase().trim();
 
-if (userText.includes("hi") || userText.includes("hello") || userText.includes("hey")) {
-  let greetingsResponses = [
-    "Hey there! 👋 How can I assist you today with our top-quality pipe solutions?",
-    "Hello! 😊 What can I do for you regarding our premium pipe products?",
-    "Hi! 🎉 How are you? Let me know how I can help with our pipe solutions!",
-    "Hey! 👋 Need any help with our high-quality pipe systems?",
-    "Hi there! 😄 How’s your day going? Let me assist you with our pipe solutions!",
-    "Hello! 🌟 How can I make your day better with our pipe expertise?",
-    "Hey! 👋 What’s up? Let’s talk about how our pipe solutions can help you!",
-    "Hi! 😊 Ready to explore our top-notch pipe products?",
-    "Hello! 🎉 How can I assist you with our reliable pipe solutions today?",
-    "Hey there! 👋 Let me know how I can help with our premium pipe systems!"
-  ];
-  let randomGreeting = greetingsResponses[Math.floor(Math.random() * greetingsResponses.length)];
-  return randomGreeting;
-}
-
-
-
 
 if (userText.includes("asslamualaikum") || userText.includes("asalam alaikum") || userText.includes("aslamu alaimum") || userText.includes("salam")) {
   let salamResponses = [
@@ -291,7 +272,7 @@ if (userText.includes("pona flex gas hose")) {
 }
 
 // 16 Yellow Poly National Pipes
-if (userText.includes("poly yellow national pipes")) {
+if (userText.includes("poly yellow national")) {
   return `<strong>Poly Yellow National Pipes:</strong><br>
           Details: Available in 1/2, 3/4, 1, and 2 inch sizes.<br>
           Durable and versatile. Need more details? 😄`;
@@ -324,21 +305,6 @@ if (userText.includes("suction steel wire hose")) {
           Details: Available in 3/4, 1, 1.1/4, 1.1/2, 2, 3, and 4 inch sizes.<br>
           Durable and reliable. Need more information? 😄`;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -533,6 +499,24 @@ if (userText.includes("showroom") || userText.includes("visit")) {
 
 if (userText.includes("job") || userText.includes("career")) {
     return "If you are interested in joining our team, you can email your CV to umarvortex@gmail.com.  we actively review all applications and will contact you if any suitable job openings are available.";
+}
+
+
+if (userText.includes("hi") || userText.includes("hello") || userText.includes("hey")) {
+  let greetingsResponses = [
+    "Hey there! 👋 How can I assist you today with our top-quality pipe solutions?",
+    "Hello! 😊 What can I do for you regarding our premium pipe products?",
+    "Hi! 🎉 How are you? Let me know how I can help with our pipe solutions!",
+    "Hey! 👋 Need any help with our high-quality pipe systems?",
+    "Hi there! 😄 How’s your day going? Let me assist you with our pipe solutions!",
+    "Hello! 🌟 How can I make your day better with our pipe expertise?",
+    "Hey! 👋 What’s up? Let’s talk about how our pipe solutions can help you!",
+    "Hi! 😊 Ready to explore our top-notch pipe products?",
+    "Hello! 🎉 How can I assist you with our reliable pipe solutions today?",
+    "Hey there! 👋 Let me know how I can help with our premium pipe systems!"
+  ];
+  let randomGreeting = greetingsResponses[Math.floor(Math.random() * greetingsResponses.length)];
+  return randomGreeting;
 }
 
 
