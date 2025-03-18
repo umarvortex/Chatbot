@@ -563,10 +563,6 @@ if (userText.includes("how to order") || userText.includes("order")) {
     return "You can conveniently place your order through WhatsApp, phone call, email, or by visiting our office. For WhatsApp and call options, simply visit the Home section of our website — both contact methods are readily available there.";
 }
 
-if (userText.includes("about") || userText.includes("bussines")) {
-    return "Pak Pipes International Karachi, powered by MEMON ONE TRADERS, has been proudly serving Karachi for over 2 years. Trusted by thousands of customers across the city, we welcome you to visit us anytime at Grey Noor Tower.";
-}
-
 
 if (userText.includes("delivery") || userText.includes("do you deliver")) {
     return "Yes, delivery within Karachi is available! I’m here to assist you  just place your order, and we’ll ensure it reaches you on time";
@@ -594,6 +590,20 @@ if (userText.includes("hi") || userText.includes("hello") || userText.includes("
   if (userText.includes("pipes") || userText.includes("product") || userText.includes("service") || userText.includes("what pipes you sell")) {
         return "We Provide a Wide Variety of High-Quality Pipes including <strong>PVC, HDPE, Imported, China and Korea pipes,</strong> if you'd like to know about all our products  just massage <strong>List</strong> and I'll share all available Products list here for you.";
   }
+
+
+if (userText.includes("about") || userText.includes("bussines")) {
+    return "Pak Pipes International Karachi, powered by MEMON ONE TRADERS, has been proudly serving Karachi for over 2 years. Trusted by thousands of customers across the city, we welcome you to visit us anytime at Grey Noor Tower.";
+}
+
+
+
+
+
+
+
+
+
 
 
 
