@@ -183,6 +183,90 @@ If you'd like detailed information about any pipe's size, length, width, or spec
 
 
 
+
+
+
+function getPipeDetails(pipeName) {
+    const messages = [
+        "Anything else you need to know? 😊",
+        "Let me know if you need more details! 👋",
+        "How can I assist you further? 😄",
+        "Feel free to ask for more information! 👍",
+        "Is there anything else I can help you with? 😊",
+    ];
+
+    // Randomly select a message
+    const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+
+    // Pipe details and conditions
+    if (pipeName.includes("Transparent color zebra pipes")) {
+        return `<strong>Transparent color zebra pipes</strong><br>Available in 2mm, 2.5mm, and 3mm sizes. ${randomMessage}`;
+    } else if (pipeName.includes("super green")) {
+        return `<strong>Super green pipes</strong><br>Available in 3mm and 4mm sizes. ${randomMessage}`;
+    } else if (pipeName.includes("red poly with white line")) {
+        return `<strong>Red poly with white line pipes</strong><br>Available in 3/4 inch and 1 inch sizes. ${randomMessage}`;
+    } else if (pipeName.includes("Poly back")) {
+        return `<strong>Poly back pipes</strong><br>Available in 1/2, 1, 1"1"2, 3, 4, and 5 inch sizes. ${randomMessage}`;
+    } else if (pipeName.includes("braded bravo dagha pipes")) {
+        return `<strong>Braded bravo dagha pipes</strong><br>Available in 3/4 and 1 inch sizes. ${randomMessage}`;
+    } else if (pipeName.includes("super transparent garden pipes")) {
+        return `<strong>Super transparent garden pipes</strong><br>Available in 1 inch (4mm, 3mm) and 3/4 inch (3mm, 4mm) sizes. ${randomMessage}`;
+    } else if (pipeName.includes("gas pipes")) {
+        return `<strong>Gas pipes</strong><br>Available in 2mm, 2.5mm, 3mm, and 4mm sizes. ${randomMessage}`;
+    } else if (pipeName.includes("garden pipes")) {
+        return `<strong>Garden pipes</strong><br>Available in various sizes. ${randomMessage}`;
+    } else if (pipeName.includes("level pipes")) {
+        return `<strong>Level pipes</strong><br>Available in 2sot and 2.5sot sizes. ${randomMessage}`;
+    } else if (pipeName.includes("fire hose")) {
+        return `<strong>Fire hoses</strong><br>Available in 2 to 6 inch sizes. ${randomMessage}`;
+    } else if (pipeName.includes("clear garden transparent hose pipes")) {
+        return `<strong>Clear garden transparent hose pipes</strong><br>Available in 1 and 2mm sizes. ${randomMessage}`;
+    } else if (pipeName.includes("Poly Pipes")) {
+        return `<strong>Poly pipes</strong><br>Available in 1/2, 3/4, and 1 inch sizes. ${randomMessage}`;
+    } else if (pipeName.includes("zebra band pipes")) {
+        return `<strong>Zebra band pipes</strong><br>Available in 2mm and 2.5mm sizes. ${randomMessage}`;
+    } else if (pipeName.includes("vinyl section pipes importad")) {
+        return `<strong>Vinyl section pipes (imported)</strong><br>Available in 1" and 2" sizes. ${randomMessage}`;
+    } else if (pipeName.includes("Parker pressure gas hose")) {
+        return `<strong>Parker pressure gas hose</strong><br>Size: 8mm, Length: 100mm, Weight: 12kg. ${randomMessage}`;
+    } else if (pipeName.includes("commando pressure gas hose")) {
+        return `<strong>Commando pressure gas hose</strong><br>Size: 8mm, Length: 300f, Weight: 11.5kg. ${randomMessage}`;
+    } else if (pipeName.includes("Bridgestone high pressure gas hose")) {
+        return `<strong>Bridgestone high pressure gas hose</strong><br>Size: 8mm, Length: 300f, Weight: 12kg. ${randomMessage}`;
+    } else if (pipeName.includes("pona flex gas hose Korean technology")) {
+        return `<strong>Pona flex gas hose (Korean technology)</strong><br>Length: 270f, Weight: 6kg. ${randomMessage}`;
+    } else if (pipeName.includes("yellow poly national pipes")) {
+        return `<strong>Yellow poly national pipes</strong><br>Available in 1/2, 3/4, 1", and 2" sizes. ${randomMessage}`;
+    } else if (pipeName.includes("caterpillars gas hose")) {
+        return `<strong>Caterpillars gas hose</strong><br>Length: 300f. ${randomMessage}`;
+    } else if (pipeName.includes("pure garden pipes")) {
+        return `<strong>Pure garden pipes</strong><br>Available in 1", 1_1_4", 1_1_2", 2", 2.5mm, and 3mm sizes. ${randomMessage}`;
+    } else if (pipeName.includes("pe 100 national pipes")) {
+        return `<strong>PE 100 national pipes</strong><br>Available in 1 inch to 8 inch sizes (PN6, PN8, PN10, PN12.5, PN16). ${randomMessage}`;
+    } else if (pipeName.includes("suction and delivery steel wire hose")) {
+        return `<strong>Suction and delivery steel wire hoses</strong><br>Available in 3/4, 1", 1_1_4", 1_2_2", 2", 3", and 4" sizes. ${randomMessage}`;
+    } else {
+        return `Sorry, I couldn't find details for "${pipeName}". Let me know if you need help with anything else! 😊`;
+    }
+}
+
+// Example usage:
+const pipeName = "Transparent color zebra pipes";
+console.log(getPipeDetails(pipeName));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 if (userText.includes("contact") || userText.includes("phone number")) {
     return "You can reach us directly at +92-3192017909 or connect with us via WhatsApp. Both contact options are conveniently available in the Home section of our website.";
 }
