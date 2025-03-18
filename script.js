@@ -171,7 +171,7 @@ if (userText.includes("list") || userText.includes("List") ||  userText.includes
 <strong>18. Pure Garden </strong><br>
 <strong>19. PE 100 National </strong><br>
 <strong>20. Suction Steel Wire Hose (National and China's)</strong><br><br>
-Just copy-paste the name of the pipes you need, with the correct spelling. I’ll provide all the details about size, length, width, and specifications!";
+Just copy-paste the name of the pipes you need, with the correct spelling. I’ll provide all the details about size, length, width, and specifications.`;
 }
 
 
