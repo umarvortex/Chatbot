@@ -117,10 +117,23 @@ if (userText.includes("hi") || userText.includes("hello") || userText.includes("
 
 
 
-
-    if (userText.includes("asslamualaikum") || userText.includes("asalam alaikum") || userText.includes("aslamu alaimum") || userText.includes("salam")) {
-        return "Assalamualaikum 😊 Hope you’re having a wonderful day by Allah’s blessings. How can I help you today regarding our top-quality pipe solutions?";
-    }
+if (userText.includes("asslamualaikum") || userText.includes("asalam alaikum") || userText.includes("aslamu alaimum") || userText.includes("salam")) {
+  let salamResponses = [
+    "Assalamualaikum! 😊 Hope you’re having a wonderful day by Allah’s blessings. How can I help you today regarding our top-quality pipe solutions?",
+    "Wa Alaikum Assalam! 🌟 May your day be filled with barakah. How can I assist you with our premium pipe products?",
+    "Assalamualaikum! 😊 How are you today? Let me know how I can help with our pipe solutions!",
+    "Wa Alaikum Assalam! 👋 May Allah’s peace be upon you. How can I assist you with our high-quality pipe systems?",
+    "Assalamualaikum! 😊 I hope you’re doing well. Let me know how I can help with our pipe expertise!",
+    "Wa Alaikum Assalam! 🌟 How can I make your day better with our reliable pipe solutions?",
+    "Assalamualaikum! 😊 What’s on your mind? Let’s talk about how our pipe solutions can help you!",
+    "Wa Alaikum Assalam! 👋 Ready to explore our top-notch pipe products?",
+    "Assalamualaikum! 😊 How can I assist you with our premium pipe systems today?",
+    "Wa Alaikum Assalam! 🌟 Let me know how I can help with our pipe solutions. May Allah bless your day!"
+  ];
+  let randomSalam = salamResponses[Math.floor(Math.random() * salamResponses.length)];
+  return randomSalam;
+}
+    
 
     if (userText.includes("your company name") || userText.includes("who are you")) {
         return "We are Pak Pipes International Karachi — your trusted and reliable pipe suppliers.";
