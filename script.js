@@ -151,17 +151,15 @@ if (userText.includes("asslamualaikum") || userText.includes("asalam alaikum") |
 
 if (userText.includes("list") || userText.includes("List") ||  userText.includes("LIST")){
     return `<strong>Here is the list of all available pipes:</strong><br><br>
-<strong>1. Transparent Color Zebra Pipes</strong><br>
-<strong>2. Super Green Pipes</strong><br>
-<strong>3. Red Poly with White Line Pipes</strong><br>
-<strong>4. Poly Black Pipes</strong><br>
-<strong>5. Braded Bravo Dagha Pipes</strong><br>
-<strong>6. Super Transparent Garden Pipes</strong><br>
-<strong>7. Gas Pipes</strong><br>
-<strong>8. Garden Pipes</strong><br>
-<strong>9. Level Pipes</strong><br>
+<strong>1. Transparent Color Zebra </strong><br>
+<strong>2. Super Green </strong><br>
+<strong>3. Red Poly with White Line </strong><br>
+<strong>4. Poly Black </strong><br>
+<strong>5. Braded Bravo Dagha </strong><br>
+<strong>6. Super Transparent Garden</strong><br>
+<strong>8. All types of Garden </strong><br>
 <strong>10. Fire Hose</strong><br>
-<strong>11. Clear Garden Transparent Hose Pipes</strong><br>
+<strong>11. Clear Garden Transparent Hose </strong><br>
 <strong>12. Poly Pipes</strong><br>
 <strong>13. Zebra Band Pipes</strong><br>
 <strong>14. Vinyl Section Pipes (Imported)</strong><br>
