@@ -1361,7 +1361,7 @@ if (userText.includes("are you always online") || userText.includes("are you ava
   return replies[Math.floor(Math.random() * replies.length)];
 }
 
-            return "Sorry, I couldn’t catch the information you need Please recheck your spelling or feel free to ask something else😊, for more details jump to the Home section and reach out to the M'Tahir Naqaash via WhatsApp or a quick call.";
+            return "Sorry, I couldn’t find the details you need. Please double-check the spelling or ask something else! 😊 For more info, visit the Home section or contact <strong>M'Tahir Naqaash</strong> on WhatsApp or call.";
  } 
 
 
