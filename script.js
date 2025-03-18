@@ -152,7 +152,7 @@ if (userText.includes("list") || userText.includes("List") ||  userText.includes
 <strong>18. Pure Garden </strong><br>
 <strong>19. PE 100 National </strong><br>
 <strong>20. Suction Steel Wire Hose (National and China's)</strong><br><br>
-Just copy-paste the name of the pipes you need, with the correct spelling. I’ll provide all the details about size, length, width, and specifications.`;
+If you'd like to know details just copy-paste the name of the pipes you need, with the correct spelling. I’ll provide all the details about size, length, width, and specifications.`;
 }
 
 
@@ -161,43 +161,43 @@ Just copy-paste the name of the pipes you need, with the correct spelling. I’l
 
 // 1 Transparent Color Zebra Pipes
 if (userText.includes("zebra")) {
-  return `<strong>Transparent Color Zebra Pipes:</strong><br>
-          Details: Available in 2mm, 2.5mm, and 3mm.<br>
+  return `<strong>Transparent Color Zebra Pipes:</strong><br><br>
+          Available in 2mm, 2.5mm, and 3mm.<br><br>
           Perfect for versatile uses. Anything else you need to know? 😊`;
 }
 
 // 2 Super Green Pipes
 if (userText.includes("super green")) {
-  return `<strong>Super Green Pipes:</strong><br>
-          Details: Available in 3mm and 4mm.<br>
+  return `<strong>Super Green Pipes:</strong><br><br>
+          Available in 3mm and 4mm.<br><br>
           Ideal for heavy-duty applications. How can I assist you further? 🌟`;
 }
 
 // 3 Red Poly with White Line Pipes
 if (userText.includes("red poly")) {
-  return `<strong>Red Poly with White Line Pipes:</strong><br>
-          Details: Available in 3/4 inch and 1 inch sizes.<br>
+  return `<strong>Red Poly with White Line Pipes:</strong><br><br>
+          Available in 3/4 inch and 1 inch sizes.<br><br>
           Great for industrial use. Need more details? 😄`;
 }
 
 // 4 Poly Black Pipes
 if (userText.includes("poly black")) {
-  return `<strong>Poly Back Pipes:</strong><br>
-          Details: Available in 1/2, 1, 1.1/2, 2, 3, 4, and 5 inch sizes.<br>
+  return `<strong>Poly Back Pipes:</strong><br><br>
+          Available in 1/2, 1, 1.1/2, 2, 3, 4, and 5 inch sizes.<br><br>
           Perfect for high-pressure tasks. What else can I help you with? 🎉`;
 }
 
 // 5 Braded Bravo Dagha Pipes
 if (userText.includes("braded bravo dagha")) {
-  return `<strong>Braded Bravo Dagha Pipes:</strong><br>
-          Details: Available in 3/4 and 1 inch sizes.<br>
+  return `<strong>Braded Bravo Dagha Pipes:</strong><br><br>
+          Available in 3/4 and 1 inch sizes.<br><br>
           Durable and reliable. Anything else you’d like to know? 😊`;
 }
 
 // 6 Super Transparent Garden Pipes
 if (userText.includes("super transparent garden")) {
-  return `<strong>Super Transparent Garden Pipes:</strong><br>
-          Details: Available in 1 inch (4mm, 3mm) and 3/4 inch (3mm, 4mm).<br>
+  return `<strong>Super Transparent Garden Pipes:</strong><br><br>
+          Available in 1 inch (4mm, 3mm) and 3/4 inch (3mm, 4mm).<br><br>
           Perfect for gardening. How can I assist you further? 🌿`;
 }
 
@@ -205,8 +205,8 @@ if (userText.includes("super transparent garden")) {
 
 // 7 Garden Pipes
 if (userText.includes("all garden")) {
-  return `<strong>Garden Pipes:</strong><br>
-          Details: Available in various sizes.<br>
+  return `<strong>Garden Pipes:</strong><br><br>
+          Available in various sizes.<br><br>
           Ideal for all gardening needs. What else can I help you with? 🌟`;
 }
 
@@ -214,15 +214,15 @@ if (userText.includes("all garden")) {
 
 // 8 Fire Hose
 if (userText.includes("fire hose")) {
-  return `<strong>Fire Hose:</strong><br>
-          Details: Available in 2 to 6 inch sizes.<br>
+  return `<strong>Fire Hose:</strong><br><br>
+         Available in 2 to 6 inch sizes.<br><br>
           Reliable for emergency use. How can I assist you further? 🚒`;
 }
 
 // 9 Clear Garden Transparent Hose Pipes
 if (userText.includes("clear garden transparent hose")) {
-  return `<strong>Clear Garden Transparent Hose Pipes:</strong><br>
-          Details: Available in 1 and 2mm.<br>
+  return `<strong>Clear Garden Transparent Hose Pipes:</strong><br><br>
+          Available in 1mm and 2mm.<br><br>
           Great for visibility and durability. Need more details? 😄`;
 }
 
@@ -231,79 +231,79 @@ if (userText.includes("clear garden transparent hose")) {
 
 // 10 Zebra Band Pipes
 if (userText.includes("zebra band")) {
-  return `<strong>Zebra Band Pipes:</strong><br>
-          Details: Available in 2mm and 2.5mm.<br>
+  return `<strong>Zebra Band Pipes:</strong><br><br>
+          Available in 2mm and 2.5mm.<br><br>
           Perfect for unique applications. Anything else you’d like to know? 😊`;
 }
 
 // 11 Vinyl Section Pipes
 if (userText.includes("vinyl section")) {
-  return `<strong>Vinyl Section Pipes:</strong><br>
-          Details: Imported, available in 1 and 2 inch sizes.<br>
+  return `<strong>Vinyl Section Pipes:</strong><br><br>
+        Imported, available in 1 and 2 inch sizes.<br><br>
           High-quality and durable. How can I assist you further? 🌟`;
 }
 
 // 12 Parker Pressure Gas Hose
 if (userText.includes("parker pressure gas hose")) {
-  return `<strong>Parker Pressure Gas Hose:</strong><br>
-          Details: Size 8mm, length 100mm, weight 12kg.<br>
+  return `<strong>Parker Pressure Gas Hose:</strong><br><br>
+          Available in Size 8mm, length 100mm, weight 12kg.<br><br>
           Reliable for gas applications. Need more information? 😄`;
 }
 
 // 13 Commando Pressure Gas Hose
 if (userText.includes("commando pressure gas hose")) {
-  return `<strong>Commando Pressure Gas Hose:</strong><br>
-          Details: Size 8mm, length 300f, weight 11.5kg.<br>
+  return `<strong>Commando Pressure Gas Hose:</strong><br><br>
+          Available in Size 8mm, length 300f, weight 11.5kg.<br><br>
           Perfect for heavy-duty use. What else can I help you with? 🎉`;
 }
 
 // 14 Bridgestone Extreme Pressure Gas Hose
 if (userText.includes("bridgestone extreme pressure gas hose")) {
-  return `<strong>Bridgestone Extreme Pressure Gas Hose:</strong><br>
-          Details: Size 8mm, length 300f, weight 12kg.<br>
+  return `<strong>Bridgestone Extreme Pressure Gas Hose:</strong><br><br>
+          Available in Size 8mm, length 300f, weight 12kg.<br><br>
           Ideal for high-pressure tasks. Anything else you need? 😊`;
 }
 
 // 15 Pona Flex Gas Hose
 if (userText.includes("pona flex gas hose")) {
-  return `<strong>Pona Flex Gas Hose:</strong><br>
-          Details: Korean technology, length 270f, weight 6kg.<br>
+  return `<strong>Pona Flex Gas Hose:</strong><br><br>
+          Available in Korean technology, length 270f, weight 6kg.<br><br>
           Lightweight and efficient. How can I assist you further? 🌟`;
 }
 
 // 16 Yellow Poly National Pipes
 if (userText.includes("poly yellow national")) {
-  return `<strong>Poly Yellow National Pipes:</strong><br>
-          Details: Available in 1/2, 3/4, 1, and 2 inch sizes.<br>
-          Durable and versatile. Need more details? 😄`;
+  return `<strong>Poly Yellow National Pipes:</strong><br><br>
+          Available in 1/2, 3/4, 1, and 2 inch sizes.<br><br>
+          Durable and versatile. Need more details?`;
 }
 
 // 17 Caterpillars Gas Hose
 if (userText.includes("caterpillars gas hose")) {
-  return `<strong>Caterpillars Gas Hose:</strong><br>
-          Details: Length 300f.<br>
+  return `<strong>Caterpillars Gas Hose:</strong><br><br>
+          Available in Length 300f.<br><br>
           Reliable for industrial use. What else can I help you with? 🎉`;
 }
 
 // 18 Pure Garden Pipes
 if (userText.includes("pure garden")) {
-  return `<strong>Pure Garden Pipes:</strong><br>
-          Details: Available in 1 inch, 1.1/4 inch, 1.1/2 inch, 2 inch, 2.5mm, and 3mm.<br>
+  return `<strong>Pure Garden Pipes:</strong><br><br>
+         Available in 1 inch, 1.1/4 inch, 1.1/2 inch, 2 inch, 2.5mm, and 3mm.<br><br>
           Perfect for gardening. Anything else you’d like to know? 😊`;
 }
 
 // 19 PE 100 National Pipes
 if (userText.includes("pe 100 national")) {
-  return `<strong>PE 100 National Pipes:</strong><br>
-          Details: Available in 1 inch to 8 inch sizes (PN6, PN8, PN10, PN12.5, PN16).<br>
+  return `<strong>PE 100 National Pipes:</strong><br><br>
+          Available in 1 inch to 8 inch sizes (PN6, PN8, PN10, PN12.5, PN16).<br><br>
           Ideal for high-pressure applications. How can I assist you further? 🌟`;
 }
 
 // 20 Suction Steel Wire Hose
-if (userText.includes("suction steel wire hose")) {
-  return `<strong>Suction and Delivery Steel Wire Hose:</strong><br>
-          Details: Available in 3/4, 1, 1.1/4, 1.1/2, 2, 3, and 4 inch sizes.<br>
-          Durable and reliable. Need more information? 😄`;
+if (userText.includes("steel wire hose")) {
+  return `<strong>Suction Steel Wire Hose (National and China's)</strong><br><br>
+           Available in 3/4, 1, 1.1/4, 1.1/2, 2, 3, and 4 inch sizes.<br><br>
+          Durable and reliable. Need more information?`;
 }
 
 
