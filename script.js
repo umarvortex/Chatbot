@@ -97,10 +97,26 @@
         function getBotResponse(userText) {
             userText = userText.toLowerCase().trim();
 
-
 if (userText.includes("hi") || userText.includes("hello") || userText.includes("hey")) {
-        return "Hey there 👋, How are you? How can I assist you today with our top-quality pipe solutions.";
-    }
+  let greetingsResponses = [
+    "Hey there! 👋 How can I assist you today with our top-quality pipe solutions?",
+    "Hello! 😊 What can I do for you regarding our premium pipe products?",
+    "Hi! 🎉 How are you? Let me know how I can help with our pipe solutions!",
+    "Hey! 👋 Need any help with our high-quality pipe systems?",
+    "Hi there! 😄 How’s your day going? Let me assist you with our pipe solutions!",
+    "Hello! 🌟 How can I make your day better with our pipe expertise?",
+    "Hey! 👋 What’s up? Let’s talk about how our pipe solutions can help you!",
+    "Hi! 😊 Ready to explore our top-notch pipe products?",
+    "Hello! 🎉 How can I assist you with our reliable pipe solutions today?",
+    "Hey there! 👋 Let me know how I can help with our premium pipe systems!"
+  ];
+  let randomGreeting = greetingsResponses[Math.floor(Math.random() * greetingsResponses.length)];
+  return randomGreeting;
+}
+
+
+
+
 
     if (userText.includes("asslamualaikum") || userText.includes("asalam alaikum") || userText.includes("aslamu alaimum") || userText.includes("salam")) {
         return "Assalamualaikum 😊 Hope you’re having a wonderful day by Allah’s blessings. How can I help you today regarding our top-quality pipe solutions?";
@@ -110,8 +126,8 @@ if (userText.includes("hi") || userText.includes("hello") || userText.includes("
         return "We are Pak Pipes International Karachi — your trusted and reliable pipe suppliers.";
     }
 
-    if (userText.includes("location") || userText.includes("where are you located")) {
-        return "Pak Pipes International is proudly based in KDA Scheme 33, Grey Noor Tower, Karachi, Pakistan. You’re welcome to visit us anytime.";
+    if (userText.includes("location") || userText.includes("located")) {
+        return "You can easily find Pak Pipes International Karachi in KDA Scheme 33, Grey Noor Tower, Karachi, Pakistan. You’re welcome to visit us anytime ☺️";
     }
 
     if (userText.includes("pipes") || userText.includes("product") || userText.includes("service") || userText.includes("what pipes you sell")) {
