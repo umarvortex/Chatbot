@@ -99,11 +99,11 @@
 
 
 if (userText.includes("bro") || userText.includes("hello") || userText.includes("hey")) {
-        return "Hey there, How are you How can I assist you today with our top-quality pipe solutions?";
+        return "Hey there 👋, How are you? How can I assist you today with our top-quality pipe solutions.";
     }
 
-    if (userText.includes("asslamualaikum") || userText.includes("salam alaikum") || userText.includes("assalam alaikum") || userText.includes("salam")) {
-        return "Assalamualaikum! Hope you’re having a wonderful day by Allah’s blessings. How can I be of service to you today regarding our top-quality pipe solutions?";
+    if (userText.includes("asslamualaikum") || userText.includes("asalam alaikum") || userText.includes("aslamu alaimum") || userText.includes("salam")) {
+        return "Assalamualaikum 😊 Hope you’re having a wonderful day by Allah’s blessings. How can I help you today regarding our top-quality pipe solutions?";
     }
 
     if (userText.includes("your company name") || userText.includes("who are you")) {
@@ -115,7 +115,7 @@ if (userText.includes("bro") || userText.includes("hello") || userText.includes(
     }
 
     if (userText.includes("pipes") || userText.includes("product") || userText.includes("service") || userText.includes("what pipes you sell")) {
-        return "We provide a variety of pipes including PVC, UPVC, HDPE, and PPRC pipes,if you want to know about all our products  just massage <strong>List</strong> and I'll share all available Products list here for you.";
+        return "We provide a variety of pipes including PVC, UPVC, HDPE, and PPRC pipes,if you'd like to know about all our products  just massage <strong>List</strong> and I'll share all available Products list here for you.";
   }
 
 
@@ -348,7 +348,7 @@ if (userText.includes("okay") || userText.includes("ok") || userText.includes("o
   let okReplies = [
     "Hmm nice, you are great!",
     "Alright, noted!",
-    "Okay, you are wonderful!",
+    "you are wonderful, let me know if anything else you want to know",
     "Perfect! Let me know if you need anything else.",
     "Cool, I appreciate that!",
     "You are really cool, thank you!"
@@ -742,7 +742,7 @@ if (userText.includes("I think I should quit") || userText.includes("I want to q
 }
 
 // 3. Response to "I need to rest" or similar phrases
-if (userText.includes("I need to rest") || userText.includes("I need a break") || userText.includes("I’m tired")) {
+if (userText.includes("I need rest") || userText.includes("I need a break") || userText.includes("I’m tired")) {
   let restResponses = [
     "Rest is important! Take your time. 😴",
     "Relax and recharge. You deserve it!",
@@ -838,13 +838,13 @@ if (userText.includes("I’m angry") || userText.includes("I’m mad") || userTe
 }
 
 // 12. Response to "false" and variations
-if (userText.includes("false") || userText.includes("faalse") || userText.includes("faaalse")) {
+if (userText.includes("you are great") || userText.includes("you too") || userText.includes("you are great too")) {
   let falseResponses = [
-    "Nope, not false! ❌",
-    "False? Think again!",
-    "Actually, it’s true!",
-    "False alarm!",
-    "Let’s prove it!"
+    "Thank you so much! 😊 How can I assist you today?",
+    "Thank you! 😊 I'm here to help with anything you need. What can I do for you today?",
+    "Thanks for complimenting me😍",
+    "Great vortex always ready to help 😀",
+    "Thanks, would you like to know more about our bussines info or our bussines location!"
   ];
   return falseResponses[Math.floor(Math.random() * falseResponses.length)];
 }
