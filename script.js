@@ -428,6 +428,350 @@ if (userText.includes("do you like humans")) {
   return randomReply;
 }
 
+// 1. Response to "lol"
+if (userText.includes("lol")) {
+  let lolResponses = [
+    "Glad I made you laugh! 😄",
+    "Laughter is the best medicine!",
+    "Haha, you’re awesome!",
+    "I live for these moments! 😂",
+    "LOL right back at you!"
+  ];
+  return lolResponses[Math.floor(Math.random() * lolResponses.length)];
+}
+
+// 2. Response to "haha"
+if (userText.includes("haha")) {
+  let hahaResponses = [
+    "Haha, you’re cracking me up!",
+    "Glad you’re having fun! 😆",
+    "Haha, I love your energy!",
+    "Keep laughing, it suits you!",
+    "Haha, you’re the best!"
+  ];
+  return hahaResponses[Math.floor(Math.random() * hahaResponses.length)];
+}
+
+// 3. Response to "really"
+if (userText.includes("really")) {
+  let reallyResponses = [
+    "Really, really! 😊",
+    "Yes, for real!",
+    "Absolutely, no joke!",
+    "100% true!",
+    "Really, I promise!"
+  ];
+  return reallyResponses[Math.floor(Math.random() * reallyResponses.length)];
+}
+
+// 4. Response to "wow"
+if (userText.includes("wow")) {
+  let wowResponses = [
+    "Wow indeed! 😲",
+    "Right? Mind blown!",
+    "Wow, you’re amazing!",
+    "Wow, I’m impressed too!",
+    "Wow, isn’t that something?"
+  ];
+  return wowResponses[Math.floor(Math.random() * wowResponses.length)];
+}
+
+// 5. Response to "amazing"
+if (userText.includes("amazing")) {
+  let amazingResponses = [
+    "You’re amazing too! 😊",
+    "Right? Totally amazing!",
+    "Amazing things happen every day!",
+    "You make everything amazing!",
+    "Amazing is my middle name!"
+  ];
+  return amazingResponses[Math.floor(Math.random() * amazingResponses.length)];
+}
+
+// 6. Response to "cool"
+if (userText.includes("cool")) {
+  let coolResponses = [
+    "You’re cool too! 😎",
+    "Cool as a cucumber!",
+    "Coolness overload!",
+    "Glad you think so!",
+    "Cool beans!"
+  ];
+  return coolResponses[Math.floor(Math.random() * coolResponses.length)];
+}
+
+// 7. Response to "nice"
+if (userText.includes("nice")) {
+  let niceResponses = [
+    "Nice indeed! 😊",
+    "You’re nice too!",
+    "Nice vibes only!",
+    "Nice one!",
+    "Nice, right?"
+  ];
+  return niceResponses[Math.floor(Math.random() * niceResponses.length)];
+}
+
+// 8. Response to "awesome"
+if (userText.includes("awesome")) {
+  let awesomeResponses = [
+    "You’re awesome too! 😎",
+    "Totally awesome!",
+    "Awesome sauce!",
+    "Glad you think so!",
+    "Awesome vibes!"
+  ];
+  return awesomeResponses[Math.floor(Math.random() * awesomeResponses.length)];
+}
+
+// 9. Response to "omg"
+if (userText.includes("omg")) {
+  let omgResponses = [
+    "OMG, right?! 😱",
+    "I know, crazy!",
+    "OMG, you’re amazing!",
+    "OMG, I can’t even!",
+    "OMG, tell me more!"
+  ];
+  return omgResponses[Math.floor(Math.random() * omgResponses.length)];
+}
+
+// 10. Response to "yay"
+if (userText.includes("yay")) {
+  let yayResponses = [
+    "Yay! 🎉",
+    "Yay, let’s celebrate!",
+    "Yay, you’re the best!",
+    "Yay, happy times!",
+    "Yay, you made my day!"
+  ];
+  return yayResponses[Math.floor(Math.random() * yayResponses.length)];
+}
+
+// 11. Response to "hmm"
+if (userText.includes("hmm")) {
+  let hmmResponses = [
+    "Hmm, interesting! 🤔",
+    "Hmm, tell me more!",
+    "Hmm, I’m thinking too!",
+    "Hmm, let’s figure it out!",
+    "Hmm, curious!"
+  ];
+  return hmmResponses[Math.floor(Math.random() * hmmResponses.length)];
+}
+
+// 12. Response to "ok"
+if (userText.includes("ok")) {
+  let okResponses = [
+    "Okie dokie! 😊",
+    "Ok, let’s do it!",
+    "Ok, sounds good!",
+    "Ok, you’re the boss!",
+    "Ok, I’m on it!"
+  ];
+  return okResponses[Math.floor(Math.random() * okResponses.length)];
+}
+
+// 13. Response to "oh"
+if (userText.includes("oh")) {
+  let ohResponses = [
+    "Oh, really? 😮",
+    "Oh, I see!",
+    "Oh, tell me more!",
+    "Oh, interesting!",
+    "Oh, got it!"
+  ];
+  return ohResponses[Math.floor(Math.random() * ohResponses.length)];
+}
+
+// 14. Response to "yeah"
+if (userText.includes("yeah")) {
+  let yeahResponses = [
+    "Yeah, you’re right! 😊",
+    "Yeah, let’s go!",
+    "Yeah, absolutely!",
+    "Yeah, I agree!",
+    "Yeah, you got it!"
+  ];
+  return yeahResponses[Math.floor(Math.random() * yeahResponses.length)];
+}
+
+// 15. Response to "nah"
+if (userText.includes("nah")) {
+  let nahResponses = [
+    "Nah, really? 😏",
+    "Nah, I get it!",
+    "Nah, no worries!",
+    "Nah, you’re good!",
+    "Nah, fair enough!"
+  ];
+  return nahResponses[Math.floor(Math.random() * nahResponses.length)];
+}
+
+// 16. Response to "sure"
+if (userText.includes("sure")) {
+  let sureResponses = [
+    "Sure thing! 😊",
+    "Sure, let’s do it!",
+    "Sure, no problem!",
+    "Sure, you got it!",
+    "Sure, absolutely!"
+  ];
+  return sureResponses[Math.floor(Math.random() * sureResponses.length)];
+}
+
+// 17. Response to "maybe"
+if (userText.includes("maybe")) {
+  let maybeResponses = [
+    "Maybe, let’s think about it! 🤔",
+    "Maybe, we’ll see!",
+    "Maybe, you decide!",
+    "Maybe, I’m curious!",
+    "Maybe, let’s find out!"
+  ];
+  return maybeResponses[Math.floor(Math.random() * maybeResponses.length)];
+}
+
+// 18. Response to "thanks"
+if (userText.includes("thanks")) {
+  let thanksResponses = [
+    "You’re welcome! 😊",
+    "Anytime!",
+    "No problem!",
+    "Happy to help!",
+    "My pleasure!"
+  ];
+  return thanksResponses[Math.floor(Math.random() * thanksResponses.length)];
+}
+
+// 19. Response to "sorry"
+if (userText.includes("sorry")) {
+  let sorryResponses = [
+    "No worries! 😊",
+    "It’s all good!",
+    "Don’t sweat it!",
+    "No problem at all!",
+    "You’re forgiven!"
+  ];
+  return sorryResponses[Math.floor(Math.random() * sorryResponses.length)];
+}
+
+// 20. Response to "bye"
+if (userText.includes("bye")) {
+  let byeResponses = [
+    "Bye! See you soon! 😊",
+    "Bye, take care!",
+    "Bye, have a great day!",
+    "Bye, until next time!",
+    "Bye, you’re awesome!"
+  ];
+  return byeResponses[Math.floor(Math.random() * byeResponses.length)];
+}
+
+
+// 1. Love Response
+if (userText.includes("do you love me")) {
+  let replies = [
+    "Of course! You’re my favorite person today!",
+    "Yes, sending you virtual love!",
+    "Absolutely, you’re awesome!",
+    "Of course, you're special to me!"
+  ];
+  let randomReply = replies[Math.floor(Math.random() * replies.length)];
+  return randomReply;
+}
+
+// 2. Compliment Generator
+if (userText.includes("compliment me")) {
+  let compliments = [
+    "You’re smarter than you think!",
+    "Your smile is contagious!",
+    "You’re a ray of sunshine on a cloudy day!",
+    "You’re doing amazing, keep it up!",
+    "You’re one of a kind!"
+  ];
+  let randomCompliment = compliments[Math.floor(Math.random() * compliments.length)];
+  return randomCompliment;
+}
+
+// 3. Motivational Quote Generator
+if (userText.includes("motivate me")) {
+  let quotes = [
+    "Believe you can and you’re halfway there!",
+    "The only way to do great work is to love what you do.",
+    "Don’t watch the clock; do what it does. Keep going.",
+    "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+    "You are capable of amazing things!"
+  ];
+  let randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+  return randomQuote;
+}
+
+// 4. Joke Generator
+if (userText.includes("tell me a joke")) {
+  let jokes = [
+    "Why don’t skeletons fight each other? They don’t have the guts!",
+    "What do you call fake spaghetti? An impasta!",
+    "Why did the scarecrow win an award? Because he was outstanding in his field!",
+    "What do you call cheese that isn’t yours? Nacho cheese!",
+    "Why don’t scientists trust atoms? Because they make up everything!"
+  ];
+  let randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
+  return randomJoke;
+}
+
+// 5. Encouragement Generator
+if (userText.includes("encourage me")) {
+  let encouragements = [
+    "You’ve got this! Keep pushing forward!",
+    "Every small step counts. You’re doing great!",
+    "You’re stronger than you think. Don’t give up!",
+    "The best is yet to come. Keep going!",
+    "You’re making progress, even if it doesn’t feel like it!"
+  ];
+  let randomEncouragement = encouragements[Math.floor(Math.random() * encouragements.length)];
+  return randomEncouragement;
+}
+
+// 6. Fun Fact Generator
+if (userText.includes("tell me a fun fact")) {
+  let funFacts = [
+    "Octopuses have three hearts!",
+    "Bananas are berries, but strawberries aren’t!",
+    "A day on Venus is longer than a year on Venus!",
+    "Honey never spoils. You can eat 3000-year-old honey!",
+    "The Eiffel Tower can be 15 cm taller during the summer due to thermal expansion!"
+  ];
+  let randomFact = funFacts[Math.floor(Math.random() * funFacts.length)];
+  return randomFact;
+}
+
+// 7. Weather Response
+if (userText.includes("how's the weather")) {
+  let weatherResponses = [
+    "It’s a beautiful day outside!",
+    "Looks like it might rain. Don’t forget your umbrella!",
+    "It’s chilly out there. Bundle up!",
+    "The sun is shining bright today!",
+    "It’s a perfect day for a walk!"
+  ];
+  let randomWeather = weatherResponses[Math.floor(Math.random() * weatherResponses.length)];
+  return randomWeather;
+}
+
+// 8. Pizza Lover Response
+if (userText.includes("pizza")) {
+  let pizzaResponses = [
+    "Pizza is always a good idea!",
+    "I’m a big fan of pizza too! What’s your favorite topping?",
+    "Pizza makes everything better!",
+    "Pizza: the answer to all of life’s problems!",
+    "Let’s order pizza and celebrate!"
+  ];
+  let randomPizza = pizzaResponses[Math.floor(Math.random() * pizzaResponses.length)];
+  return randomPizza;
+}
+
 
 
 // 25. Do you have friends?
