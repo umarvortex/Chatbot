@@ -363,10 +363,10 @@ if (userText.includes("okay") || userText.includes("ok") || userText.includes("o
 
   let okReplies = [
     "Hmm nice, you are great!",
-    "Alright, noted!",
+    "Alright, let me know if you want to know more!",
     "you are wonderful, let me know if anything else you want to know",
     "Perfect! Let me know if you need anything else.",
-    "Cool, I appreciate that!",
+    "Cool, I appreciate that feel free ask more about our business!",
     "You are really cool, thank you!"
   ];
 
@@ -576,17 +576,7 @@ if (userText.includes("hmm")) {
   return hmmResponses[Math.floor(Math.random() * hmmResponses.length)];
 }
 
-// 12. Response to "ok"
-if (userText.includes("ok")) {
-  let okResponses = [
-    "Okie dokie! 😊",
-    "Ok, let’s do it!",
-    "Ok, sounds good!",
-    "Ok, you’re the boss!",
-    "Ok, I’m on it!"
-  ];
-  return okResponses[Math.floor(Math.random() * okResponses.length)];
-}
+
 
 // 13. Response to "oh"
 if (userText.includes("oh")) {
@@ -612,17 +602,7 @@ if (userText.includes("seriously") || userText.includes("seriouusly") || userTex
   return seriouslyResponses[Math.floor(Math.random() * seriouslyResponses.length)];
 }
 
-// 2. Response to "no way" and variations
-if (userText.includes("no way") || userText.includes("noo way") || userText.includes("nooo way")) {
-  let noWayResponses = [
-    "Yes way! 😎",
-    "Way way!",
-    "Believe it!",
-    "It’s true!",
-    "No way? Yes way!"
-  ];
-  return noWayResponses[Math.floor(Math.random() * noWayResponses.length)];
-}
+
 
 // 3. Response to "why" and variations
 if (userText.includes("why") || userText.includes("whyy") || userText.includes("whyyyy")) {
@@ -637,76 +617,30 @@ if (userText.includes("why") || userText.includes("whyy") || userText.includes("
 }
 
 // 4. Response to "how" and variations
-if (userText.includes("how") || userText.includes("hoow") || userText.includes("hooow")) {
+if (userText.includes("no") || userText.includes("nah") || userText.includes("it's ok")) {
   let howResponses = [
-    "Magic! ✨",
-    "With a little help from you!",
-    "Step by step!",
-    "How do you think?",
-    "Let me show you!"
+    "Ok feel free to ask something else.",
+    "No problem let me know if you want to ask anything else.",
+    "Allright, would you like to know more about our email, social media, bussines etc!",
+    "No worries let's change the topic would you like me to help you to find products details?",
+    "Noted, Let me know if you have any questions!"
   ];
   return howResponses[Math.floor(Math.random() * howResponses.length)];
 }
 
-// 5. Response to "what" and variations
-if (userText.includes("what") || userText.includes("whaat") || userText.includes("whaaat")) {
-  let whatResponses = [
-    "What do you think? 🤔",
-    "What’s on your mind?",
-    "What if I told you...?",
-    "What a great question!",
-    "What’s next?"
-  ];
-  return whatResponses[Math.floor(Math.random() * whatResponses.length)];
-}
 
-// 6. Response to "who" and variations
-if (userText.includes("who") || userText.includes("whoo") || userText.includes("whooo")) {
-  let whoResponses = [
-    "You, of course! 😊",
-    "Who do you think?",
-    "Someone awesome!",
-    "Maybe it’s you!",
-    "Let’s find out together!"
-  ];
-  return whoResponses[Math.floor(Math.random() * whoResponses.length)];
-}
 
-// 7. Response to "when" and variations
-if (userText.includes("when") || userText.includes("wheen") || userText.includes("wheeen")) {
-  let whenResponses = [
-    "Soon! ⏳",
-    "When the time is right!",
-    "When you’re ready!",
-    "When the stars align!",
-    "Let’s decide together!"
-  ];
-  return whenResponses[Math.floor(Math.random() * whenResponses.length)];
-}
 
 // 8. Response to "where" and variations
-if (userText.includes("where") || userText.includes("wheere") || userText.includes("wheeeere")) {
+if (userText.includes("yes") || userText.includes("yeah") || userText.includes("absolutely")) {
   let whereResponses = [
-    "Wherever you are! 🌍",
-    "Where dreams come true!",
-    "Where do you think?",
-    "Where the magic happens!",
-    "Let’s go there together!"
+    "Nice just massage me any pipe name I'll give you full details",
+    "Got it, just type any pipe name and send I'll provide you full information",
+    "Good just write and send me any pipe name that you want to know about I'll share full details",
   ];
   return whereResponses[Math.floor(Math.random() * whereResponses.length)];
 }
 
-// 9. Response to "tell me" and variations
-if (userText.includes("tell me") || userText.includes("tell mee") || userText.includes("tell meee")) {
-  let tellMeResponses = [
-    "I’ll tell you a secret... 🤫",
-    "What do you want to know?",
-    "Let me think...",
-    "Here’s something interesting!",
-    "Tell me first!"
-  ];
-  return tellMeResponses[Math.floor(Math.random() * tellMeResponses.length)];
-}
 
 // 10. Response to "guess" and variations
 if (userText.includes("guess") || userText.includes("gues") || userText.includes("guuess")) {
@@ -747,7 +681,7 @@ if (userText.includes("i have to go") || userText.includes("i need to leave") ||
 
 
 // 3. Response to "I need to rest" or similar phrases
-if (userText.includes("ineed rest") || userText.includes("i need a break") || userText.includes("i’m tired")) {
+if (userText.includes("i need rest") || userText.includes("i need a break") || userText.includes("i’m tired")) {
   let restResponses = [
     "Rest is important! Take your time. 😴",
     "Relax and recharge. You deserve it!",
@@ -842,7 +776,7 @@ if (userText.includes("i’m angry") || userText.includes("i’m mad") || userTe
   return angryResponses[Math.floor(Math.random() * angryResponses.length)];
 }
 
-// 12. Response to "false" and variations
+// 12. Response to "great" and variations
 if (userText.includes("you are great") || userText.includes("you too") || userText.includes("you are great too")) {
   let falseResponses = [
     "Thank you so much! 😊 How can I assist you today?",
@@ -882,29 +816,9 @@ if (userText.includes("idc") || userText.includes("idcc") || userText.includes("
 
 
 
-// 14. Response to "yeah"
-if (userText.includes("yeah")) {
-  let yeahResponses = [
-    "Yeah, you’re right! 😊",
-    "Yeah, let’s go!",
-    "Yeah, absolutely!",
-    "Yeah, I agree!",
-    "Yeah, you got it!"
-  ];
-  return yeahResponses[Math.floor(Math.random() * yeahResponses.length)];
-}
 
-// 15. Response to "nah"
-if (userText.includes("nah")) {
-  let nahResponses = [
-    "Nah, really? 😏",
-    "Nah, I get it!",
-    "Nah, no worries!",
-    "Nah, you’re good!",
-    "Nah, fair enough!"
-  ];
-  return nahResponses[Math.floor(Math.random() * nahResponses.length)];
-}
+
+
 
 // 16. Response to "sure"
 if (userText.includes("sure")) {
@@ -1186,7 +1100,7 @@ if (userText.includes("what's your goal") || userText.includes("your aim")) {
     "My goal is to assist and make life easier!",
     "Helping you is my top mission!",
     "To be the best virtual assistant for you!",
-    "To serve and support you 24/7, that’s my goal!"
+    "To  support you 24/7, that’s my goal!"
   ];
   return replies[Math.floor(Math.random() * replies.length)];
 }
