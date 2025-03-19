@@ -24,6 +24,8 @@
     font-size: 0.5em; 
     margin-bottom: 9px; 
     text-align: center;
+    animation: fadeIn 0.4s ease-in-out;
+    filter: drop-shadow(0 0 3px #c421fe);
 }
 
 
@@ -137,7 +139,7 @@
     height: 95px;
     margin-bottom: -14px;
     position: relative;
-   filter: drop-shadow(0 0 2px #c421fe);
+   filter: drop-shadow(0 0 3px #c421fe);
 }
 
 
@@ -190,7 +192,7 @@
     font-family: 'Arial', sans-serif;
     font-size: 14px;
     line-height: 1.5;
-    animation: fadeIn 0.3s ease-in-out;
+    animation: fadeIn 0.4s ease-in-out;
 }
 
 .bot-message:hover {
@@ -327,7 +329,7 @@
     font-family: 'Arial', sans-serif;
     font-size: 12px;
 
-    animation: fadeIn 0.3s ease-in-out;
+    animation: fadeIn 0.4s ease-in-out;
         }
 
         .quick-replies button:hover {
