@@ -63,15 +63,15 @@
 
 .chatbot-container {
     width: 300px;
-    height: 430px;
-    display: none;
-    flex-direction: column;
+    height: 430px;   
     position: fixed;
     bottom: 80px;
     right: 12px;
     background-color: #000000;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.6);
     border-radius: 10px;
+    display: none;
+    flex-direction: column;
     z-index: 9999;
     transition: all 0.4s ease;
 }
