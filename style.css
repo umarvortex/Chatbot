@@ -23,7 +23,7 @@
     background: transparent;
     border: none; /* Thin border for neat look */    
     color: #c4c8cb;               /* Bright text */
-    font-size: 9px;           /* Slightly smaller, readable */
+    font-size: 8px;           /* Slightly smaller, readable */
     text-align: center;   
     filter: drop-shadow(0 0 3px #c421fe);
     animation: fadeIn 0.4s ease-in-out;
