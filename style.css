@@ -10,6 +10,12 @@
             background-color: #f0f0f0;
         }
 
+
+    a {
+  color: #00ffff;
+  text-decoration: underline;
+}
+
         /* Chatbot Icon */
         .chatbot-icon {
             position: fixed;
