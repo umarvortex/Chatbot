@@ -64,19 +64,16 @@
        /* Default styles for larger screens (desktop) */
 .chatbot-container {
     width: 300px;
-    display: none;
-    flex-direction: column 
     height: 430px;
     display: none; /* Initially hidden */
     position: fixed;
     bottom: 80px;
     right: 12px;
     background-color: #000000;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 2px;
-    overflow: hidden;
-    z-index: 1000;
-   transition: all 0.4s ease
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.6);
+    border-radius: 0px;
+    z-index: 9999;
+   transition: all 0.4s ease;
 }
 
 /* Styles for mobile devices (full screen) */
