@@ -16,6 +16,20 @@
   text-decoration: underline;
 }
 
+
+
+  
+.quick-guide {
+    color: #ccc; 
+    font-size: 0.8em; 
+    margin-bottom: 10px; 
+}
+
+
+
+
+
+
         /* Chatbot Icon */
         .chatbot-icon {
             position: fixed;
