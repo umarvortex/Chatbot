@@ -1464,13 +1464,7 @@ if (userText.includes("are you always online") || userText.includes("are you ava
             chatbotContainer.style.display = "none";
         });
 
-        // Refresh Chatbot
-        document.getElementById("refreshChatbot").addEventListener("click", function() {
-            console.log("Refresh button clicked");
-            chatbotBody.innerHTML = '';
-            welcomeMessage.style.display = "block";
-            console.log("Welcome message should be visible");
-        });
+  
 
         // Send Message on Enter
         userInput.addEventListener("keypress", (event) => {
