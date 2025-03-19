@@ -1,4 +1,4 @@
-,       * {
+   * {
             font-family: 'Arial', sans-serif;
             font-style: normal;
             margin: 0;
@@ -19,7 +19,7 @@
 
 .quick-guide {
     margin: 10px;    /* Center and smaller margins */
-    padding: 4px 13px;        /* Slim padding */
+    padding: 10px 15px;        /* Slim padding */
     width: 100%;   
     display: block;           
     background: transparent;
