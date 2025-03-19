@@ -1464,7 +1464,7 @@ if (userText.includes("do you like helping people") || userText.includes("you en
   return replies[Math.floor(Math.random() * replies.length)];
 }
 
-// Fallback message with 10 random variations
+// Fallback message with random variations
 let fallbackReplies = [
   "Sorry, I couldn’t find the details you need. Please double-check the spelling or ask something else!",
   "Oops! I don’t have that information right now. Maybe try rephrasing your question.",
@@ -1473,7 +1473,46 @@ let fallbackReplies = [
   "I’m sorry, that answer isn’t in my memory yet. Try asking something else or contact our support!",
   "Unfortunately, I don't have details on that. But you can always contact <strong>M'Tahir Naqaash</strong> on WhatsApp or call.",
   "I couldn’t understand that. Maybe it's something I haven't learned yet!",
-
+  "That information seems to be missing. Could you double-check the details for me?",
+"Sorry, I couldn’t locate that. Maybe there’s a small typo?",
+"Looks like I’m unable to find what you’re searching for. Want to try rephrasing it?",
+"Apologies, nothing came up. Could you clarify your query a bit more?",
+"That slipped past me. Could you check the spelling once again?",
+"I couldn’t catch that detail. Mind giving it another shot?",
+"Oops! No match found. Maybe simplify your question a little?",
+"I’m not seeing anything on that. Could you provide more specifics?",
+"Unfortunately, I’m unable to pull that up right now. Want to retype it differently?",
+"Seems like that information is out of reach. Maybe re-check the terms you used?",
+"Sorry, nothing showed up on my end. Try phrasing it another way?",
+"That doesn’t seem familiar to me. Could you please confirm the details?",
+"Ah, I might’ve missed something. Can you double-check what you typed?",
+"I couldn’t track down that info. Could you give me a bit more context?",
+"Oops! That detail isn’t coming through. Care to retry with clearer words?",
+"Sorry, seems blank from my side. You could also try narrowing it down a little.",
+"Looks like I hit a dead end. Maybe tweak the wording and try again?",
+"That didn’t return anything useful. How about phrasing it a bit differently?",
+"Sadly, I couldn’t fetch that data. Could you try rephrasing the question?",
+"Not finding anything at the moment. Could you add more details?",
+"Seems like something’s missing. Do you mind confirming it once more?",
+"Hmm, no results on that one. Want to simplify or reword it?",
+"Apologies, couldn’t find anything related. Can you make it more specific?",
+"I might be off track here. Would you kindly double-check your request?",
+"Unfortunately, I couldn’t pull that up. Maybe adjust the wording?",
+"That term doesn’t seem to match anything. Want to try a different approach?",
+"Oops! I’m drawing a blank. Could you retry using different words?",
+"Sorry, not getting any results. Can you rephrase or give more detail?",
+"Looks like I didn’t catch that. Feel free to simplify and try again.",
+"Couldn’t locate the info. Maybe a quick recheck will help?",
+"Hmm, that seems unfamiliar. Would you mind giving it another go?",
+"No luck finding that. Could you possibly use a different term?",
+"Sorry, but I didn’t find any matching data. Want to retry differently?",
+"I couldn’t seem to process that. Maybe check your input once more?",
+"That didn't return anything. How about making your request more specific?",
+"I might’ve misunderstood that. Could you double-check for me?",
+"Seems like that info isn’t in my database. Would you mind retyping?",
+"Oops, nothing relevant found. Feel free to try a simpler phrase.",
+"Sorry, that’s not something I can fetch. Could you describe it another way?",
+"I’m not able to locate that. Care to double-check or rephrase?"
   "That information seems to be missing. Please check the spelling or visit our Home section for guidance.",
   "Sorry! I couldn’t catch that. Try asking differently or reach out to <strong>M'Tahir Naqaash</strong> anytime.",
   "Oh no! I don’t have that answer currently. You can also call us or WhatsApp <strong>M'Tahir Naqaash</strong> for assistance."
