@@ -18,18 +18,19 @@
 
 
 .quick-guide {
-    margin: 17px;    /* Center and smaller margins */
-    padding: 10px 13px;        /* Slim padding */
-    width: 80%;                          
+    margin: 10px;    /* Center and smaller margins */
+    padding: 6px 12px;        /* Slim padding */
+    width: 100%;   
+    display: block;           
     background: transparent;
     border: none; /* Thin border for neat look */    
     color: #c4c8cb;               /* Bright text */
-     font-size: 8px;           /* Slightly smaller, readable */
+    font-size: 8px;           /* Slightly smaller, readable */
     text-align: center;    
-   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: opacity 0.5s ease;
-   filter: drop-shadow(0 0 3px #c421fe);
-   animation: fadeIn 0.4s ease-in-out;
+    filter: drop-shadow(0 0 3px #c421fe);
+    animation: fadeIn 0.4s ease-in-out;
 }
 
 
