@@ -129,11 +129,13 @@ if (userText.includes("price") || userText.includes("pricing")) {
 
   
 if (userText.includes("email") || userText.includes("contact email")) {
-  return 'You can reach us at <a href="mailto:umarvortex@gmail.com">umarvortex@gmail.com</a> however please note that this is a temporary email address and we will add official email address latter.';
+    console.log("Email condition triggered");
+    return 'You can reach us at <a href="mailto:umarvortex@gmail.com">umarvortex@gmail.com</a> however please note that this is a temporary email address and we will add official email address later.';
 }
 
-if (userText.includes("website") || userText.includes("official site")) {
-  return 'Visit our official website at <a href="https://umarvortex.github.io/Pak-Pipes-International-Karachi/" target="_blank">Pak Pipes International Karachi</a> Alternatively, you can simply search <strong>Pak Pipes International Karachi</strong> on Google to locate us.';
+if (userText.includes("web") || userText.includes("official site")) {
+    console.log("Website condition triggered");
+    return 'Visit our official website at <a href="https://umarvortex.github.io/Pak-Pipes-International-Karachi/" target="_blank">Pak Pipes International Karachi</a> Alternatively, you can simply search for "Pak Pipes International Karachi" on your preferred search engine.';
 }
 
 
