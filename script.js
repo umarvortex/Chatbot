@@ -170,7 +170,7 @@ if (userText.includes("red poly")) {
 
 // 4 Poly Black Pipes
 if (userText.includes("poly black")) {
-  return `<strong>Poly Back Pipes:</strong><br><br>
+  return `<strong>Poly Black Pipes:</strong><br><br>
           Available in 1/2, 1, 1.1/2, 2, 3, 4, and 5 inch sizes.<br><br>
           Perfect for high-pressure tasks. What else can I help you with? 🎉`;
 }
@@ -309,7 +309,7 @@ if (userText.includes("details") || userText.includes("full details of pipies") 
     <strong>3. Red Poly with White Line Pipes:</strong><br><br>
     Available in 3/4 inch and 1 inch sizes.<br><br><br>
 
-    <strong>4. Poly Back Pipes:</strong><br><br>
+    <strong>4. Poly Black Pipes:</strong><br><br>
     Available in 1/2, 1, 1.1/2, 2, 3, 4, and 5 inch sizes.<br><br><br>
 
     <strong>5. Braded Bravo Dagha Pipes:</strong><br><br>
@@ -345,7 +345,7 @@ if (userText.includes("details") || userText.includes("full details of pipies") 
     <strong>15. Pona Flex Gas Hose:</strong><br><br>
     Available in Korean technology, length 270f, weight 6kg.<br><br><br>
 
-    <strong>16. Yellow Poly National Pipes:</strong><br><br>
+    <strong>16. Poly Yellow National Pipes:</strong><br><br>
     Available in 1/2, 3/4, 1, and 2 inch sizes.<br><br><br>
 
     <strong>17. Caterpillars Gas Hose:</strong><br><br>
@@ -371,9 +371,9 @@ if (userText.includes("details") || userText.includes("full details of pipies") 
 if (userText.includes("list") || userText.includes("List") ||  userText.includes("LIST")){
     return `<strong>Here is the list of all available pipes:</strong><br><br>
 <strong>1. Transparent Color Zebra</strong><br>
-<strong>2. Super Green pipes</strong><br>
+<strong>2. Super Green Pipes</strong><br>
 <strong>3. Red Poly with White Line </strong><br>
-<strong>4. Poly Black </strong><br>
+<strong>4. Poly Black Pipes</strong><br>
 <strong>5. Braded Bravo Dagha </strong><br>
 <strong>6. Super Transparent Garden</strong><br>
 <strong>7. All Garden </strong><br>
@@ -385,7 +385,7 @@ if (userText.includes("list") || userText.includes("List") ||  userText.includes
 <strong>13. Commando Pressure Gas Hose</strong><br>
 <strong>14. Bridgestone High Pressure Gas Hose</strong><br>
 <strong>15. Pona Flex Gas Hose (Korean Technology)</strong><br>
-<strong>16. Poly Yellow National</strong><br>
+<strong>16. Poly Yellow National Pipes</strong><br>
 <strong>17. Caterpillars Gas Hose</strong><br>
 <strong>18. Pure Garden </strong><br>
 <strong>19. PE 100 National </strong><br>
