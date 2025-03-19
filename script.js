@@ -129,7 +129,7 @@ if (userText.includes("price") || userText.includes("pricing")) {
 
   
 if (userText.includes("email") || userText.includes("contact email")) {
-  return 'You can reach us at <a href="mailto:umarvortex@gmail.com">umarvortex@gmail.com</a>however please note that this is a temporary email address and we will add official email address latter.';
+  return 'You can reach us at <a href="mailto:umarvortex@gmail.com">umarvortex@gmail.com</a> however please note that this is a temporary email address and we will add official email address latter.';
 }
 
 if (userText.includes("website") || userText.includes("official site")) {
