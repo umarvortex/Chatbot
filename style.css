@@ -23,31 +23,19 @@
     justify-content: center;
     align-items: center;
     color: #f2f2f2;
-    font-size: 0.8em;
-    padding: 12px 20px;
+    font-size: 0.6em;
+    padding: 8px 11px;
     margin-bottom: 10px;
     text-align: center;
     border-radius: 25px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     background: linear-gradient(90deg, rgba(196,33,254,0.1) 0%, rgba(255,255,255,0.05) 100%);
     box-shadow: 0 4px 15px rgba(196, 33, 254, 0.4), inset 0 0 8px rgba(196, 33, 254, 0.6);
-    animation: fadeIn 0.5s ease-in-out, glowPulse 2s infinite ease-in-out;
     filter: drop-shadow(0 0 6px #c421fe);
     font-family: 'Segoe UI', sans-serif;
     word-wrap: break-word;
 }
 
-@keyframes glowPulse {
-  0% {
-    box-shadow: 0 4px 15px rgba(196, 33, 254, 0.4), inset 0 0 8px rgba(196, 33, 254, 0.6);
-  }
-  50% {
-    box-shadow: 0 6px 20px rgba(196, 33, 254, 0.7), inset 0 0 12px rgba(196, 33, 254, 0.8);
-  }
-  100% {
-    box-shadow: 0 4px 15px rgba(196, 33, 254, 0.4), inset 0 0 8px rgba(196, 33, 254, 0.6);
-  }
-}
 
 
 .hidden {
