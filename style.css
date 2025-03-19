@@ -20,6 +20,7 @@
 
   
 .quick-guide {
+    display: flex;
     color: #ccc; 
     font-size: 0.5em; 
     margin-bottom: 7px; 
@@ -28,13 +29,12 @@
     animation: fadeIn 0.4s ease-in-out;
     filter: drop-shadow(0 0 4px #c421fe);
      background-color: rgba(255, 255, 255, 0.1);
-    
-    
-    padding: 10px 15px;
+    justify-content: center;
+    padding: 8px 12px;
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     
-    max-width: 90%;
+    
     word-wrap: break-word;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     font-family: 'Arial', sans-serif;
