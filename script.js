@@ -13,20 +13,33 @@
         let isProcessingMessage = false;
 
         // Show/Hide Chatbot
-        chatbotIcon.addEventListener("click", () => {
-            if (chatbotContainer.style.display === "none" || chatbotContainer.style.display === "") {
-                chatbotContainer.style.display = "flex";
-                chatbotContainer.classList.add("full-screen");
-            } else {
-                chatbotContainer.style.display = "none";
-                chatbotContainer.classList.remove("full-screen");
-            }
-        });
+chatbotIcon.addEventListener("click", () => {
+    if (window.innerWidth <= 768) {
+        // For mobile devices
+        chatbotContainer.style.display = "flex";
+        chatbotContainer.classList.add("full-screen");
+    } else {
+        // For larger screens (desktop)
+        if (chatbotContainer.style.display === "none" || chatbotContainer.style.display === "") {
+            chatbotContainer.style.display = "flex";
+        } else {
+            chatbotContainer.style.display = "none";
+        }
+    }
+});
 
-        // Full Screen Toggle
-        document.getElementById("fullScreenButton").addEventListener("click", () => {
-            chatbotContainer.classList.toggle("full-screen");
-        });
+// Full Screen Toggle for Desktop
+document.getElementById("fullScreenButton").addEventListener("click", () => {
+    if (window.innerWidth > 768) {
+        chatbotContainer.classList.toggle("full-screen");
+    }
+});
+
+// Close Chatbot
+document.getElementById("closeChatbot").addEventListener("click", () => {
+    chatbotContainer.classList.remove("full-screen");
+    chatbotContainer.style.display = "none";
+});
 
         // Send message function
         function sendMessage() {
@@ -1458,11 +1471,7 @@ if (userText.includes("are you always online") || userText.includes("are you ava
             sendMessage();
         }
 
-        // Close Chatbot
-        document.getElementById("closeChatbot").addEventListener("click", () => {
-            chatbotContainer.classList.remove("full-screen");
-            chatbotContainer.style.display = "none";
-        });
+        
 
   
 
