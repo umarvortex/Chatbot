@@ -18,21 +18,18 @@
 
 
 .quick-guide {
-    margin: 15px;
-    margin-bottom: 7px;       /* Center and smaller margins */
-    padding: 7px 14px;        /* Slim padding */
-    width: 80%;                /* Fit well inside the container */
-    background: transparent;/* Soft translucent effect */
-    border: none; /* Thin border for neat look */
-          /* Smooth rounded edges */
+    margin: 17px;    /* Center and smaller margins */
+    padding: 10px 13px;        /* Slim padding */
+    width: 80%;                          
+    background: transparent;
+    border: none; /* Thin border for neat look */    
     color: #c4c8cb;               /* Bright text */
-    font-size: 8px;           /* Slightly smaller, readable */
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);/* Soft outer glow */
+     font-size: 8px;           /* Slightly smaller, readable */
+    text-align: center;    
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: opacity 0.5s ease;
    filter: drop-shadow(0 0 3px #c421fe);
    animation: fadeIn 0.4s ease-in-out;
-
 }
 
 
