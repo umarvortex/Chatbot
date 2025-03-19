@@ -3,21 +3,20 @@
         const chatbotContainer = document.getElementById("chatbotContainer");
         const chatbotBody = document.getElementById("chatbotBody");
         const userInput = document.getElementById("userInput");
-        const sendButton = document.getElementById("sendButton");
-        const refreshChatbot = document.getElementById("refreshChatbot");
+        const sendButton = document.getElementById("sendButton");        
         const welcomeMessage = document.getElementById("welcomeMessage");
         const typingIndicator = document.getElementById("typingIndicator");
         const quickReplies = document.getElementById("quickReplies");
+        const fullScreenButton = document.getElementById("fullScreenButton");
+        const closeChatbot = document.getElementById("closeChatbot");
 
         let messageQueue = [];
         let isProcessingMessage = false;
 
        
-// Elements
-const chatbotIcon = document.getElementById("chatbotIcon");
-const chatbotContainer = document.getElementById("chatbotContainer");
-const fullScreenButton = document.getElementById("fullScreenButton");
-const closeChatbot = document.getElementById("closeChatbot");
+
+
+
 
 // Show/Hide Chatbot (Mobile + Desktop)
 chatbotIcon.addEventListener("click", () => {
