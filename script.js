@@ -7,8 +7,7 @@
         const welcomeMessage = document.getElementById("welcomeMessage");
         const typingIndicator = document.getElementById("typingIndicator");
         const quickReplies = document.getElementById("quickReplies");
-        const fullScreenButton = document.getElementById("fullScreenButton");
-        const closeChatbot = document.getElementById("closeChatbot");
+        
 
         let messageQueue = [];
         let isProcessingMessage = false;
@@ -18,36 +17,6 @@
 
 
 
-// Show/Hide Chatbot (Mobile + Desktop)
-chatbotIcon.addEventListener("click", () => {
-    if (chatbotContainer.style.display === "flex") {
-        // Hide if already open
-        chatbotContainer.style.display = "none";
-        chatbotContainer.classList.remove("full-screen");
-    } else {
-        // Show chatbot
-        chatbotContainer.style.display = "flex";
-        if (window.innerWidth <= 768) {
-            // Full screen for mobile
-            chatbotContainer.classList.add("full-screen");
-        } else {
-            chatbotContainer.classList.remove("full-screen");
-        }
-    }
-});
-
-// Full Screen Toggle (Desktop Only)
-fullScreenButton.addEventListener("click", () => {
-    if (window.innerWidth > 768) {
-        chatbotContainer.classList.toggle("full-screen");
-    }
-});
-
-// Close Chatbot (Both Mobile + Desktop)
-closeChatbot.addEventListener("click", () => {
-    chatbotContainer.classList.remove("full-screen");
-    chatbotContainer.style.display = "none";
-});
 
 
 
