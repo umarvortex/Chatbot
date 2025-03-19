@@ -142,16 +142,17 @@
 
 
         .welcome-message strong {
-            font-size: 19px;
+            font-size: 18px;
             font-weight: 500;
             color: white;
             line-height: 2;
         }
 
         .welcome-message p {
-            font-size: 13px;
+            font-size: 14px;
             color: #c4c8cb; 
             line-height: 2;
+            font-weight: 200;
         }
 
         /* Messages */
