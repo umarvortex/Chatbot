@@ -19,7 +19,7 @@
 
 .quick-guide {
     margin: 10px;    /* Center and smaller margins */
-    padding: 5px 9;        /* Slim padding */
+    padding: 5px 9px;        /* Slim padding */
     width: 100%;   
     display: block;           
     background: transparent;
@@ -158,7 +158,7 @@
         }
 
         .welcome-message p {
-            font-size: 14px;
+            font-size: 13.5px;
             color: #c4c8cb; 
             line-height: 2;
         }
