@@ -128,7 +128,13 @@ if (userText.includes("price") || userText.includes("pricing")) {
     }
 
   
+if (userText.includes("email") || userText.includes("contact email")) {
+  return 'You can reach us at <a href="mailto:umarvortex@gmail.com">umarvortex@gmail.com</a>.';
+}
 
+if (userText.includes("website") || userText.includes("official site")) {
+  return 'Visit our official website at <a href="https://umarvortex.github.io/Pak-Pipes-International-Karachi/" target="_blank">Pak Pipes International Karachi</a>.';
+}
 
 
 // 1 Transparent Color Zebra Pipes
@@ -388,9 +394,7 @@ if (userText.includes("contact") || userText.includes("phone number")) {
     return "You can reach us directly at +92-3192017909 or connect with us via WhatsApp. Both contact options are conveniently available in the Home section of our website.";
 }
 
-if (userText.includes("email") || userText.includes("email address")) {
-    return "Our current email is umarvortex@gmail.com; however, please note that this is not the official business email address of Pak Pipes International Karachi.";
-}
+
 
 
 if (userText.includes("hours") || userText.includes("timings")) {
@@ -460,9 +464,7 @@ if (userText.includes("choose") || userText.includes("benefits")) {
     return "We offer high-quality products, competitive pricing, and excellent customer service.";
 }
 
-if (userText.includes("website") || userText.includes("official site")) {
-    return "Visit our official website at https://umarvortex.github.io/Pak-Pipes-International-Karachi/. Alternatively, you can simply search <strong>Pak Pipes International Karachi</strong> on Google to locate us quickly.";
-}
+
 
 if (userText.includes("ISO certified") || userText.includes("certification")) {
     return "Yes, we deal in ISO certified products only.";
