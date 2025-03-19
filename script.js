@@ -12,34 +12,46 @@
         let messageQueue = [];
         let isProcessingMessage = false;
 
-        // Show/Hide Chatbot
+       
+// Elements
+const chatbotIcon = document.getElementById("chatbotIcon");
+const chatbotContainer = document.getElementById("chatbotContainer");
+const fullScreenButton = document.getElementById("fullScreenButton");
+const closeChatbot = document.getElementById("closeChatbot");
+
+// Show/Hide Chatbot (Mobile + Desktop)
 chatbotIcon.addEventListener("click", () => {
-    if (window.innerWidth <= 768) {
-        // For mobile devices
-        chatbotContainer.style.display = "flex";
-        chatbotContainer.classList.add("full-screen");
+    if (chatbotContainer.style.display === "flex") {
+        // Hide if already open
+        chatbotContainer.style.display = "none";
+        chatbotContainer.classList.remove("full-screen");
     } else {
-        // For larger screens (desktop)
-        if (chatbotContainer.style.display === "none" || chatbotContainer.style.display === "") {
-            chatbotContainer.style.display = "flex";
+        // Show chatbot
+        chatbotContainer.style.display = "flex";
+        if (window.innerWidth <= 768) {
+            // Full screen for mobile
+            chatbotContainer.classList.add("full-screen");
         } else {
-            chatbotContainer.style.display = "none";
+            chatbotContainer.classList.remove("full-screen");
         }
     }
 });
 
-// Full Screen Toggle for Desktop
-document.getElementById("fullScreenButton").addEventListener("click", () => {
+// Full Screen Toggle (Desktop Only)
+fullScreenButton.addEventListener("click", () => {
     if (window.innerWidth > 768) {
         chatbotContainer.classList.toggle("full-screen");
     }
 });
 
-// Close Chatbot
-document.getElementById("closeChatbot").addEventListener("click", () => {
+// Close Chatbot (Both Mobile + Desktop)
+closeChatbot.addEventListener("click", () => {
     chatbotContainer.classList.remove("full-screen");
     chatbotContainer.style.display = "none";
 });
+
+
+
 
         // Send message function
         function sendMessage() {
