@@ -1454,7 +1454,7 @@ if (userText.includes("do you like helping people") || userText.includes("you en
 }
 
 // 15. Are you always online?
-if (userText.includes("are you always online") || userText.includes("are you available 24 7")) {
+ if (userText.includes("are you always online") || userText.includes("are you available 24 7")) {
   let replies = [
     "Yes! I’m here whenever you need me.",
     "24/7 online, just for you!",
@@ -1464,8 +1464,21 @@ if (userText.includes("are you always online") || userText.includes("are you ava
   return replies[Math.floor(Math.random() * replies.length)];
 }
 
-            return "Sorry, I couldn’t find the details you need. Please double-check the spelling or ask something else! 😊 For more info, visit the Home section or contact <strong>M'Tahir Naqaash</strong> on WhatsApp or call.";
- } 
+// Fallback message with 10 random variations
+let fallbackReplies = [
+  "Sorry, I couldn’t find the details you need. Please double-check the spelling or ask something else!",
+  "Oops! I don’t have that information right now. Maybe try rephrasing your question.",
+  "Apologies, I couldn't locate the answer. Feel free to explore the Home section for more info.",
+  "Hmm... I might have missed that! Kindly check your query again.",
+  "I’m sorry, that answer isn’t in my memory yet. Try asking something else or contact our support!",
+  "Unfortunately, I don't have details on that. But you can always contact <strong>M'Tahir Naqaash</strong> on WhatsApp or call.",
+  "I couldn’t understand that. Maybe it's something I haven't learned yet!",
+  "That information seems to be missing. Please check the spelling or visit our Home section for guidance.",
+  "Sorry! I couldn’t catch that. Try asking differently or reach out to <strong>M'Tahir Naqaash</strong> anytime.",
+  "Oh no! I don’t have that answer currently. You can also call us or WhatsApp <strong>M'Tahir Naqaash</strong> for assistance."
+];
+
+return fallbackReplies[Math.floor(Math.random() * fallbackReplies.length)];
 
 
  
