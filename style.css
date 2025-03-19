@@ -18,14 +18,14 @@
 
 
 .quick-guide {
-    margin: 15px auto;         /* Center and smaller margins */
-    padding: 10px 20px;        /* Slim padding */
-    width: 70%;                /* Fit well inside the container */
-    background: rgba(255, 0, 255, 0.1); /* Soft translucent effect */
-    border: 1px solid #d200ff; /* Thin border for neat look */
-    border-radius: 30px;       /* Smooth rounded edges */
+    margin: 14px auto;         /* Center and smaller margins */
+    padding: 8px 17px;        /* Slim padding */
+    width: 80%;                /* Fit well inside the container */
+    background: transparent;/* Soft translucent effect */
+    border: none; /* Thin border for neat look */
+          /* Smooth rounded edges */
     color: #c4c8cb;               /* Bright text */
-    font-size: 8px;           /* Slightly smaller, readable */
+    font-size: 7px;           /* Slightly smaller, readable */
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);/* Soft outer glow */
     transition: opacity 0.5s ease;
