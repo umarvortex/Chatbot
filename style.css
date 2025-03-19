@@ -18,7 +18,8 @@
 
 
 .quick-guide {
-    margin-bottom: 10px;       /* Center and smaller margins */
+    margin: 15px;
+    margin-bottom: 7px;       /* Center and smaller margins */
     padding: 7px 14px;        /* Slim padding */
     width: 80%;                /* Fit well inside the container */
     background: transparent;/* Soft translucent effect */
