@@ -17,30 +17,23 @@
 }
 
 
-
-  .quick-guide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #f2f2f2;
-    font-size: 0.6em;
-    padding: 8px 11px;
-    margin-bottom: 10px;
+.quick-guide {
+    margin: 15px auto;         /* Center and smaller margins */
+    padding: 10px 20px;        /* Slim padding */
+    width: 70%;                /* Fit well inside the container */
+    background: rgba(255, 0, 255, 0.1); /* Soft translucent effect */
+    border: 1px solid #ff00ff; /* Thin border for neat look */
+    border-radius: 30px;       /* Smooth rounded edges */
+    color: #fff;               /* Bright text */
+    font-size: 14px;           /* Slightly smaller, readable */
     text-align: center;
-    border-radius: 25px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    background: linear-gradient(90deg, rgba(196,33,254,0.1) 0%, rgba(255,255,255,0.05) 100%);
-    box-shadow: 0 4px 15px rgba(196, 33, 254, 0.4), inset 0 0 8px rgba(196, 33, 254, 0.6);
-    filter: drop-shadow(0 0 6px #c421fe);
-    font-family: 'Segoe UI', sans-serif;
-    word-wrap: break-word;
+    box-shadow: 0 0 12px rgba(255, 0, 255, 0.4); /* Soft outer glow */
+    transition: opacity 0.5s ease;
 }
 
 
 
-.hidden {
-    display: none;
-}
+
 
 
 
