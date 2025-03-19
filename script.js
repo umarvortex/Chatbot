@@ -125,6 +125,19 @@ if (userText.includes("asslamualaikum") || userText.includes("asalam alaikum") |
 
 
 
+// 3. Response to "really"
+if (userText.includes("really")) {
+  let reallyResponses = [
+    "Really, really! 😊",
+    "Yes, for real!",
+    "Absolutely, no joke!",
+    "100% true!",
+    "Really, I promise!"
+  ];
+  return reallyResponses[Math.floor(Math.random() * reallyResponses.length)];
+}
+
+
 if (userText.includes("price") || userText.includes("pricing")) {
     return "For the latest price updates and exclusive special offers, feel free to contact us directly.";
 }
@@ -728,17 +741,6 @@ if (userText.includes("haha")) {
   return hahaResponses[Math.floor(Math.random() * hahaResponses.length)];
 }
 
-// 3. Response to "really"
-if (userText.includes("really")) {
-  let reallyResponses = [
-    "Really, really! 😊",
-    "Yes, for real!",
-    "Absolutely, no joke!",
-    "100% true!",
-    "Really, I promise!"
-  ];
-  return reallyResponses[Math.floor(Math.random() * reallyResponses.length)];
-}
 
 // 4. Response to "wow"
 if (userText.includes("wow")) {
