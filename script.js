@@ -63,6 +63,14 @@
                 welcomeMessage.style.display = "none";
             }
 
+
+            // Hide Welcome Message on first message
+            if (quickGuide.style.display !== "none") {
+                quickGuide.style.display = "none";
+            }
+
+
+
             // User Message
             const userMessage = document.createElement("div");
             userMessage.classList.add("message", "user-message");
@@ -1480,26 +1488,8 @@ if (userText.includes("are you always online") || userText.includes("are you ava
         }  
 
 
-    // Target the message input and quick-guide div
-    const messageInput = document.querySelector('input[type="text"]');
-    const quickGuide = document.querySelector('.quick-guide');
-
-    // Listen for Enter key or Send button click
-    messageInput.addEventListener('keypress', function(e) {
-        if (e.key === 'Enter' && messageInput.value.trim() !== '') {
-            quickGuide.style.display = 'none';
-        }
-    });
-
-    // Optional: If you have a Send button (like paper plane icon), hide quick-guide on click too
-    const sendButton = document.querySelector('.send-button'); // replace with your button class or ID
-    if (sendButton) {
-        sendButton.addEventListener('click', function() {
-            if (messageInput.value.trim() !== '') {
-                quickGuide.style.display = 'none';
-            }
-        });
-    }
+ 
+    
 
 
     
