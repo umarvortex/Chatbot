@@ -499,7 +499,7 @@ if (userText.includes("return") || userText.includes("can I return")) {
 
 
 
-if (userText.includes("installation") || userText.includes("do you install")) {
+if (userText.includes("installation") || userText.includes("install")) {
     return "We can connect you with trusted installation partners.";
 }
 
@@ -914,11 +914,11 @@ if (userText.includes("no") || userText.includes("nah") || userText.includes("it
 
 
 // 8. Response to "where" and variations
-if (userText.includes("yes") || userText.includes("yeah") || userText.includes("absolutely")) {
+if (userText.includes("yes") || userText.includes("yeah") || userText.includes("ye")) {
   let whereResponses = [
-    "Nice just massage me any pipe name I'll give you full details",
-    "Got it, just type any pipe name and send I'll provide you full information",
-    "Good just write and send me any pipe name that you want to know about I'll share full details",
+    "Nice just massage me any available pipes name I'll give you full details",
+    "Got it, just provide me any available products name I'll share full information",
+    "Good just write and send me any available pipes name that you want to know about I'll share full details",
   ];
   return whereResponses[Math.floor(Math.random() * whereResponses.length)];
 }
@@ -1062,10 +1062,10 @@ if (userText.includes("i’m angry") || userText.includes("i’m mad") || userTe
 if (userText.includes("you are great") || userText.includes("you too") || userText.includes("you are great too")) {
   let falseResponses = [
     "Thank you so much! 😊 How can I assist you today?",
-    "Thank you! 😊 I'm here to help with anything you need. What can I do for you today?",
+    "Thank you! 😊 I'm here to help with anything you need. What can I do for you?",
     "Thanks for complimenting me😍",
-    "Great vortex always ready to help 😀",
-    "Thanks, would you like to know more about our bussines info or our bussines location!"
+    "Great Nova always ready to help 😀",
+    "Thanks, would you like to know more about our product or pipes details!"
   ];
   return falseResponses[Math.floor(Math.random() * falseResponses.length)];
 }
@@ -1176,7 +1176,7 @@ if (userText.includes("do you love me")) {
 }
 
 // 2. Compliment Generator
-if (userText.includes("compliment me")) {
+if (userText.includes("compliment")) {
   let compliments = [
     "You’re smarter than you think!",
     "Your smile is contagious!",
@@ -1473,6 +1473,7 @@ let fallbackReplies = [
   "I’m sorry, that answer isn’t in my memory yet. Try asking something else or contact our support!",
   "Unfortunately, I don't have details on that. But you can always contact <strong>M'Tahir Naqaash</strong> on WhatsApp or call.",
   "I couldn’t understand that. Maybe it's something I haven't learned yet!",
+
   "That information seems to be missing. Please check the spelling or visit our Home section for guidance.",
   "Sorry! I couldn’t catch that. Try asking differently or reach out to <strong>M'Tahir Naqaash</strong> anytime.",
   "Oh no! I don’t have that answer currently. You can also call us or WhatsApp <strong>M'Tahir Naqaash</strong> for assistance."
