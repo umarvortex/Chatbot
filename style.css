@@ -21,8 +21,9 @@
   
 .quick-guide {
     color: #ccc; 
-    font-size: 0.8em; 
+    font-size: 0.4em; 
     margin-bottom: 10px; 
+    align-items: center;
 }
 
 
@@ -152,7 +153,6 @@
             font-size: 14px;
             color: #c4c8cb; 
             line-height: 2;
-            font-weight: 200;
         }
 
         /* Messages */
