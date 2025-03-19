@@ -1479,6 +1479,14 @@ if (userText.includes("are you always online") || userText.includes("are you ava
             console.log("Chat saved!");
         }  
 
+
+
+document.getElementById("sendButton").addEventListener("click", function() {
+  var quickGuide = document.querySelector(".quick-guide");
+  if (quickGuide) {
+    quickGuide.classList.add("hidden");
+  }
+});
     
 
 
