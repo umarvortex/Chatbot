@@ -12,7 +12,9 @@
         let messageQueue = [];
         let isProcessingMessage = false;
 
-       
+     
+
+
 
 
 // Show/Hide Chatbot
@@ -31,18 +33,14 @@ chatbotIcon.addEventListener("click", () => {
     }
 });
 
-// Full Screen Toggle for Desktop
-document.getElementById("fullScreenButton").addEventListener("click", () => {
-    if (window.innerWidth > 768) {
-        chatbotContainer.classList.toggle("full-screen");
-    }
-});
-
 // Close Chatbot
 document.getElementById("closeChatbot").addEventListener("click", () => {
     chatbotContainer.classList.remove("full-screen");
     chatbotContainer.style.display = "none";
 });
+
+
+
 
 
 
