@@ -1512,7 +1512,7 @@ let fallbackReplies = [
 "Seems like that info isn’t in my database. Would you mind retyping?",
 "Oops, nothing relevant found. Feel free to try a simpler phrase.",
 "Sorry, that’s not something I can fetch. Could you describe it another way?",
-"I’m not able to locate that. Care to double-check or rephrase?"
+"I’m not able to locate that. Care to double-check or rephrase?", 
   "That information seems to be missing. Please check the spelling or visit our Home section for guidance.",
   "Sorry! I couldn’t catch that. Try asking differently or reach out to <strong>M'Tahir Naqaash</strong> anytime.",
   "Oh no! I don’t have that answer currently. You can also call us or WhatsApp <strong>M'Tahir Naqaash</strong> for assistance."
