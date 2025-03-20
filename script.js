@@ -157,9 +157,7 @@ if (userText.includes("really")) {
 
 
 if (userText.includes("price") || userText.includes("pricing")) {
-    return "sincerely apologize, but I currently don’t have access to the latest price details. For the most accurate and updated pricing, I recommend reaching out to our team directly. You’ll find easy options to contact us via WhatsApp or Call in the Home section. Our team will be happy to assist you with the perfect rates and exclusive special offers!<br><br><br>
-
-is there anything else I can assist you with? Would you like me to tell you   detailed information about our products? Just let me know—I’m here to help!";
+    return 'sincerely apologize, but I currently don’t have access to the latest price details. For the most accurate and updated pricing, I recommend reaching out to our team directly. You’ll find easy options to contact us via WhatsApp or Call in the Home section. Our team will be happy to assist you with the perfect rates and exclusive special offers!<br><br> is there anything else I can assist you with? Would you like me to tell you detailed information about our products? Just let me know—I’m here to help!';
 }
     
 
