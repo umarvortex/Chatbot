@@ -63,8 +63,8 @@
 
 .chatbot-container {
     position: fixed; 
-    width: 330px;
-    height: 470px;    
+    width: 340px;
+    height: 500px;    
     bottom: 80px;
     right: 12px;
     background-color: #000000;
@@ -431,8 +431,8 @@
 
   /* Make Chat Messages Bigger */
   .bot-message, .user-message {
-    font-size: 18px;
-    padding: 15px;
+    font-size: 15px;
+    padding: 12px;
     max-width: 90%; 
      word-wrap: break-word; 
      white-space: normal; 
