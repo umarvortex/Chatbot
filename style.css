@@ -405,58 +405,37 @@
 
 
 
+@media screen and (min-width: 768px) {
+  /* Make Header Bigger */
+  #chatboard header {
+    font-size: 24px;
+    padding: 20px;
+  }
 
-
-/* Default Styling (Mobile Friendly First) */
-.chat-header {
-    font-size: 16px;
+  /* Make Input Box Bigger */
+  #user-input {
+    font-size: 18px;
     padding: 12px;
+    width: 80%;
+  }
+
+  /* Make Send Button Bigger */
+  #send-btn {
+    font-size: 18px;
+    padding: 12px 16px;
+  }
+
+  /* Make Chat Messages Bigger */
+  .bot-message, .user-message {
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  /* Adjust Quick Replies Buttons */
+  .quick-reply-btn {
+    font-size: 16px;
+    padding: 10px 14px;
+    margin: 5px;
+  }
 }
 
-.chatbot-icon img {
-    width: 40px;
-    height: 40px;
-}
-
-.input-box {
-    font-size: 14px;
-    padding: 10px;
-}
-
-.send-button {
-    font-size: 14px;
-    padding: 8px 16px;
-}
-
-/* Media Query for Large Screens (Computer) */
-@media screen and (min-width: 1024px) {
-    .chat-header {
-        font-size: 24px;
-        padding: 20px;
-    }
-
-    .chatbot-icon img {
-        width: 60px;
-        height: 60px;
-    }
-
-    .input-box {
-        font-size: 18px;
-        padding: 14px;
-    }
-
-    .send-button {
-        font-size: 18px;
-        padding: 12px 24px;
-    }
-}
-
-
-@media screen and (min-width: 1024px) {
-    .chatbox {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 30px;
-    }
-}
-    
