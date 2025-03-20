@@ -181,7 +181,7 @@
             align-self: flex-end;     
             line-height: 1.5;
             margin-bottom: 20px;
-            font-size: 14px;
+            font-size: 12px;
             filter: drop-shadow(0 0 3px #c421fe);
         }
 
@@ -199,7 +199,7 @@
     word-wrap: break-word;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     font-family: 'Arial', sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.5;
     animation: fadeIn 0.3s ease-in-out;
 }
@@ -431,7 +431,7 @@
 
   /* Make Chat Messages Bigger */
   .bot-message, .user-message {
-    font-size: 15px;
+    font-size: 12px;
     padding: 12px;
     max-width: 90%; 
      word-wrap: break-word; 
