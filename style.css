@@ -18,12 +18,12 @@
 
 
 .quick-guide {
-    margin-bottom: 11px;
+    margin-bottom: 9px;
     width: 100%;             
     background: transparent;
     border: none; /* Thin border for neat look */    
     color: #c4c8cb;               /* Bright text */
-    font-size: 9.3px;        /* Slightly smaller, readable */
+    font-size: 9px;        /* Slightly smaller, readable */
     text-align: center;   
     filter: drop-shadow(0 0 3px #c421fe);
     animation: fadeIn 0.4s ease-in-out;
@@ -63,8 +63,8 @@
 
 .chatbot-container {
     position: fixed; 
-    width: 300px;
-    height: 430px;    
+    width: 330px;
+    height: 470px;    
     bottom: 80px;
     right: 12px;
     background-color: #000000;
