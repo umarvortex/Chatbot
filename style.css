@@ -164,13 +164,12 @@
 
         /* Messages */
         .message {
-            max-width: 95%;
-            padding: 8px 12px;
+            padding: 10px 15px;
             border-radius: 15px;
             margin: 5px 0;
             margin: 10px 0;
-            font-size: 14px;
-            word-wrap: break-word;
+            
+            
         }
 
         .user-message {
@@ -434,6 +433,9 @@
   .bot-message, .user-message {
     font-size: 18px;
     padding: 15px;
+    max-width: 90%; 
+     word-wrap: break-word; 
+     white-space: normal; 
   }
 
   /* Adjust Quick Replies Buttons */
