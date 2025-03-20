@@ -93,7 +93,7 @@ document.getElementById("closeChatbot").addEventListener("click", () => {
             const userMessage = document.createElement("div");
             userMessage.classList.add("message", "user-message");
             userMessage.textContent = userText;
-            chatbotBody.appendChild(userMessage);
+            chatbotBody.insertBefore(userMessage, chatbotBody.firstChild);
 
             // Show Typing Indicator
             typingIndicator.style.display = "flex";
@@ -105,7 +105,7 @@ document.getElementById("closeChatbot").addEventListener("click", () => {
                 const botMessage = document.createElement("div");
                 botMessage.classList.add("message", "bot-message");
                 botMessage.innerHTML = getBotResponse(userText);
-                chatbotBody.appendChild(botMessage);
+               chatbotBody.insertBefore(botMessage, chatbotBody.firstChild);
 
                 chatbotBody.scrollTop = chatbotBody.scrollHeight;
                 saveChat(); // Save chat history
