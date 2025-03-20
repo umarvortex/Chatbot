@@ -397,4 +397,66 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+/* Default Styling (Mobile Friendly First) */
+.chat-header {
+    font-size: 16px;
+    padding: 12px;
+}
+
+.chatbot-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.input-box {
+    font-size: 14px;
+    padding: 10px;
+}
+
+.send-button {
+    font-size: 14px;
+    padding: 8px 16px;
+}
+
+/* Media Query for Large Screens (Computer) */
+@media screen and (min-width: 1024px) {
+    .chat-header {
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    .chatbot-icon img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .input-box {
+        font-size: 18px;
+        padding: 14px;
+    }
+
+    .send-button {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .chatbox {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 30px;
+    }
+}
     
