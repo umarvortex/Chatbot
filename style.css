@@ -40,8 +40,8 @@
             position: fixed;
             bottom: 20px;
             right: 20px;
-            width: 50px;
-            height: 50px;
+            width: 53px;
+            height: 53px;
             border-radius: 50%;
             background-color: #d200ff;
             cursor: pointer;
@@ -49,13 +49,13 @@
             align-items: center;
             filter: drop-shadow(0 0 2px #c421fe);
             justify-content: center;
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             z-index: 9999;
         }
 
         .chatbot-icon img {
-            width: 50px;
-            height: 50px;
+            width: 53px;
+            height: 53px;
             border-radius: 50%;
         }
 
@@ -63,8 +63,8 @@
 
 .chatbot-container {
     position: fixed; 
-    width: 340px;
-    height: 500px;    
+    width: 350px;
+    height: 560px;    
     bottom: 80px;
     right: 12px;
     background-color: #000000;
