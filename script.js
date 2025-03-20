@@ -896,7 +896,7 @@ if (userText.includes("why") || userText.includes("whyy") || userText.includes("
   return whyResponses[Math.floor(Math.random() * whyResponses.length)];
 }
 
-// 4. Response to "how" and variations
+// 4. Response to "no" and variations
 if (userText.includes("no") || userText.includes("nah") || userText.includes("it's ok")) {
   let howResponses = [
     "Ok feel free to ask something else.",
@@ -912,7 +912,7 @@ if (userText.includes("no") || userText.includes("nah") || userText.includes("it
 
 
 // 8. Response to "where" and variations
-if (userText.includes("yes") || userText.includes("yeah") || userText.includes("ye")) {
+if (userText.includes("yes") || userText.includes("yeah") || userText.includes("yea")) {
   let whereResponses = [
     "Nice just massage me any available pipes name I'll give you full details",
     "Got it, just provide me any available products name I'll share full information",
@@ -1100,17 +1100,7 @@ if (userText.includes("idc") || userText.includes("idcc") || userText.includes("
 
 
 
-// 16. Response to "sure"
-if (userText.includes("sure")) {
-  let sureResponses = [
-    "Sure thing! 😊",
-    "Sure, let’s do it!",
-    "Sure, no problem!",
-    "Sure, you got it!",
-    "Sure, absolutely!"
-  ];
-  return sureResponses[Math.floor(Math.random() * sureResponses.length)];
-}
+
 
 // 17. Response to "maybe"
 if (userText.includes("maybe")) {
@@ -1149,7 +1139,7 @@ if (userText.includes("sorry")) {
 }
 
 // 20. Response to "bye"
-if (userText.includes("bye")) {
+if (userText.includes("bye") || userText.includes("by")) {
   let byeResponses = [
     "Bye! See you soon! 😊",
     "Bye, take care!",
