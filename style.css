@@ -176,28 +176,33 @@
         .user-message {
             background-color: #d200ff;
             color: #fff;
+           max-width: 90%; 
+           word-wrap: break-word; 
+           white-space: normal; 
             align-self: flex-end;     
             line-height: 1.5;
             margin-bottom: 20px;
-            filter: drop-shadow(0 0 4px #c421fe);
+            font-size: 14px;
+            filter: drop-shadow(0 0 3px #c421fe);
         }
 
 
      .bot-message {
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
+    white-space: normal; 
     align-self: flex-start;
     padding: 10px 15px;
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     margin: 10px 0 20px;
-    max-width: 95%;
+    max-width: 90%;
     word-wrap: break-word;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     font-family: 'Arial', sans-serif;
     font-size: 14px;
     line-height: 1.5;
-    animation: fadeIn 0.4s ease-in-out;
+    animation: fadeIn 0.3s ease-in-out;
 }
 
 .bot-message:hover {
