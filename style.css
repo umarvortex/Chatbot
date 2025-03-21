@@ -155,14 +155,14 @@
 
 
         .welcome-message strong {
-            font-size: 16px;
-            font-weight: 400;
+            font-size: 16.5px;
+            font-weight: 600;
             color: white;
             line-height: 2.3;
         }
 
         .welcome-message p {
-            font-size: 12px;
+            font-size: 10.5px;
             color: #c4c8cb; 
             line-height: 2.3;
         }
