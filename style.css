@@ -145,9 +145,9 @@
         }
 
         .welcome-logo {
-    width: 83px;
+    width: 84px;
     height: 80px;
-    margin-bottom: -14px;
+    margin-bottom: -7px;
     position: relative;
    filter: drop-shadow(0 0 3px #c421fe);
 }
@@ -155,16 +155,16 @@
 
 
         .welcome-message strong {
-            font-size: 18px;
-            font-weight: 500;
+            font-size: 16px;
+            font-weight: 400;
             color: white;
-            line-height: 2;
+            line-height: 2.3;
         }
 
         .welcome-message p {
-            font-size: 13.5px;
+            font-size: 14px;
             color: #c4c8cb; 
-            line-height: 2;
+            line-height: 2.3;
         }
 
         /* Messages */
@@ -187,7 +187,7 @@
             line-height: 1.5;
             margin-bottom: 20px;
             font-size: 12px;
-            filter: drop-shadow(0 0 3px #c421fe);
+            filter: drop-shadow(0 0 2px #c421fe);
         }
 
 
