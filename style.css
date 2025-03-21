@@ -54,7 +54,7 @@
         }
 
         .chatbot-icon img {
-            width: 80px;
+            width: 83px;
             height: 80px;
             border-radius: 50%;
         }
@@ -140,8 +140,8 @@
         }
 
         .welcome-logo {
-    width: 90px;
-    height: 90px;
+    width: 83px;
+    height: 80px;
     margin-bottom: -14px;
     position: relative;
    filter: drop-shadow(0 0 3px #c421fe);
