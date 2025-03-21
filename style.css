@@ -194,7 +194,7 @@
     .bot-message {
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
-    white-space: nowrap; /* Prevent line break */
+    white-space: normal; /* Prevent line break */
     align-self: flex-start;
     padding: 10px 15px;
     border-radius: 15px;
