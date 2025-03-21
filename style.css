@@ -39,8 +39,8 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background-color: transparent;
     cursor: pointer;
@@ -56,25 +56,11 @@
     width: 83.5px;
     height: 80px;
     border-radius: 50%;
-    transition: all 0.4s ease-in-out;
-    animation: shine 1.5s infinite linear;
-    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;  
 }
 
 
 
-/* Shine Animation */
-@keyframes shine {
-    0% {
-        filter: brightness(1) drop-shadow(0 0 5px gold);
-    }
-    50% {
-        filter: brightness(1.4) drop-shadow(0 0 10px gold);
-    }
-    100% {
-        filter: brightness(1) drop-shadow(0 0 5px gold);
-    }
-}
 
 
 
