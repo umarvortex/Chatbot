@@ -35,29 +35,51 @@
 
 
 
-        /* Chatbot Icon */
         .chatbot-icon {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background-color: transparent;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            filter: drop-shadow(0 0 2px #c421fe);
-            justify-content: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            z-index: 9999;
-        }
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    transition: all 0.4s ease-in-out;
+}
 
-        .chatbot-icon img {
-            width: 83px;
-            height: 80px;
-            border-radius: 50%;
-        }
+.chatbot-icon img {
+    width: 83.5px;
+    height: 80px;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+}
+
+/* Hover effect */
+.chatbot-icon:hover {
+    box-shadow: 0 0 20px gold, 0 0 30px gold, 0 0 40px #ffcc00;
+    animation: shine 1.5s infinite linear;
+    transform: scale(1.1);
+}
+
+/* Shine Animation */
+@keyframes shine {
+    0% {
+        filter: brightness(1) drop-shadow(0 0 5px gold);
+    }
+    50% {
+        filter: brightness(1.4) drop-shadow(0 0 15px gold);
+    }
+    100% {
+        filter: brightness(1) drop-shadow(0 0 5px gold);
+    }
+}
+
+
 
     
 
