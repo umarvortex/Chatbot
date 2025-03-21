@@ -297,18 +297,11 @@
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        filter: drop-shadow(0 0 4px #c421fe);
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: transform 0.2s ease;
+   filter: drop-shadow(0 0 2px #c421fe);      
     }
 
 
 
-
-    #sendButton:hover {
-        color: #d200ff;
-
-    }
 
 
 
@@ -346,10 +339,7 @@
     animation: fadeIn 0.4s ease-in-out;
         }
 
-        .quick-replies button:hover {
-            background-color: rgba(210, 0, 255, 0.4); /* Full Color on Hover */
-            color: #ffffff;
-        } 
+         
 
 
 .typing-indicator {
