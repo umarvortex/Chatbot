@@ -162,7 +162,7 @@
         }
 
         .welcome-message p {
-            font-size: 14px;
+            font-size: 13.4px;
             color: #c4c8cb; 
             line-height: 2.3;
         }
@@ -171,7 +171,6 @@
         .message {
             padding: 10px 15px;
             border-radius: 15px;
-            margin: 5px 0;
             margin: 10px 0;
             
             
@@ -180,7 +179,8 @@
         .user-message {
             background-color: #d200ff;
             color: #fff;
-           max-width: 90%; 
+          padding: 10px 15px;
+           max-width: 95%; 
            word-wrap: break-word; 
            white-space: normal; 
             align-self: flex-end;     
@@ -200,7 +200,7 @@
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     margin: 10px 0 20px;
-    max-width: 90%;
+    max-width: 95%;
     word-wrap: break-word;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     font-family: 'Arial', sans-serif;
