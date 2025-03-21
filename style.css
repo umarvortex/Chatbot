@@ -180,34 +180,35 @@
     background-color: #d200ff;
     color: #fff;
     padding: 10px 15px;
-    max-width: 90%; 
+    max-width: 80%; 
     word-wrap: break-word; 
-    white-space: nowrap; /* Prevent breaking */
+    white-space: pre-wrap; /* FIXED - allows wrapping */
     align-self: flex-end;     
-    line-height: 1.5;
-    margin-bottom: 20px;
-    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    font-size: 13px;
     filter: drop-shadow(0 0 2px #c421fe);
+    border-radius: 15px;
 }
 
-
-    .bot-message {
+.bot-message {
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
-    white-space: normal; /* Prevent line break */
+    white-space: pre-wrap;  /* changed from normal to pre-wrap */
     align-self: flex-start;
     padding: 10px 15px;
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    margin: 10px 0 20px;
-    max-width: 90%; /* Reduced max-width for balance */
+    margin: 10px 0 15px;
+    max-width: 80%;
     word-wrap: break-word;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     font-family: 'Arial', sans-serif;
-    font-size: 12px;
-    line-height: 1.5;
+    font-size: 13px;
+    line-height: 1.6;
     animation: fadeIn 0.3s ease-in-out;
 }
+
 
 .bot-message:hover {
     background-color: rgba(255, 255, 255, 0.2);
