@@ -162,7 +162,7 @@
         }
 
         .welcome-message p {
-            font-size: 13.4px;
+            font-size: 13px;
             color: #c4c8cb; 
             line-height: 2.3;
         }
@@ -180,9 +180,9 @@
     background-color: #d200ff;
     color: #fff;
     padding: 10px 15px;
-    max-width: 80%; 
+    max-width: 90%; 
     word-wrap: break-word; 
-    white-space: pre-wrap; /* FIXED - allows wrapping */
+    white-space: normal; /* FIXED - allows wrapping */
     align-self: flex-end;     
     line-height: 1.6;
     margin-bottom: 12px;
@@ -194,14 +194,12 @@
 .bot-message {
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
-    white-space: pre-wrap;  /* changed from normal to pre-wrap */
     align-self: flex-start;
     padding: 10px 15px;
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     margin: 10px 0 15px;
-    max-width: 80%;
-    word-wrap: break-word;
+    max-width: 90%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     font-family: 'Arial', sans-serif;
     font-size: 13px;
