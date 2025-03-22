@@ -172,24 +172,28 @@
             padding: 10px 15px;
             border-radius: 15px;
             margin: 10px 0;
-            
-            
         }
 
-        .user-message {
+
+          .user-message {
     background-color: #d200ff;
     color: #fff;
+    min-width: 40px;
+    text-align: center;
     padding: 10px 15px;
-    max-width: 90%; 
-    word-wrap: break-word; 
-    white-space: normal; /* FIXED - allows wrapping */
-    align-self: flex-end;     
+    max-width: 70%;  /* 70% better */
+    word-wrap: break-word;
+    white-space: pre-wrap; /* prevents unnecessary breaking */
+    align-self: flex-end;
     line-height: 1.6;
     margin-bottom: 12px;
     font-size: 13px;
     filter: drop-shadow(0 0 2px #c421fe);
     border-radius: 15px;
+    display: inline-block;  /* KEY */
 }
+
+
 
 .bot-message {
     background-color: rgba(255, 255, 255, 0.1);
