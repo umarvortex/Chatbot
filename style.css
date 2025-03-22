@@ -167,30 +167,22 @@
             line-height: 2.3;
         }
 
-        /* Messages */
-        .message {
-            padding: 10px 15px;
-            border-radius: 15px;
-            margin: 10px 0;
-        }
 
 
           .user-message {
     background-color: #d200ff;
-    color: #fff;
-    min-width: 40px;
-    text-align: center;
-    padding: 10px 15px;
-    max-width: 70%;  /* 70% better */
-    word-wrap: break-word;
-    white-space: pre-wrap; /* prevents unnecessary breaking */
+    color: white;
     align-self: flex-end;
-    line-height: 1.6;
-    margin-bottom: 12px;
-    font-size: 13px;
-    filter: drop-shadow(0 0 2px #c421fe);
+    padding: 10px 15px;
     border-radius: 15px;
-    display: inline-block;  /* KEY */
+    filter: drop-shadow(0 0 2px #c421fe);
+    margin: 10px 0 15px;
+    max-width: 90%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    animation: fadeIn 0.1s ease-in-out;
 }
 
 
