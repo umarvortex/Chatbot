@@ -39,15 +39,6 @@ document.getElementById("closeChatbot").addEventListener("click", () => {
 
 
 
-// Close Chatbot
-document.getElementById("closeChatbot").addEventListener("click", () => {
-    chatbotContainer.classList.remove("full-screen");
-    chatbotContainer.style.display = "none";
-});
-
-
-
-
 
 
 
