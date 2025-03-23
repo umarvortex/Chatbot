@@ -68,8 +68,8 @@
 
 .chatbot-container {
     position: fixed; 
-    width: 350px;
-    height: 560px;    
+    width: 600px;
+    height: 900px;    
     bottom: 80px;
     right: 12px;
     background-color: #000000;
