@@ -7,13 +7,7 @@
         const welcomeMessage = document.getElementById("welcomeMessage");
         const typingIndicator = document.getElementById("typingIndicator");
         const quickReplies = document.getElementById("quickReplies");
-        
-
-        let messageQueue = [];
-        let isProcessingMessage = false;
-
-     
-
+      
 
 
 // Show/Hide Chatbot
@@ -40,6 +34,12 @@ document.getElementById("closeChatbot").addEventListener("click", () => {
 
 
 
+  
+
+        let messageQueue = [];
+        let isProcessingMessage = false;
+
+     
 
 
 
