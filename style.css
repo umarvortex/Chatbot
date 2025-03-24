@@ -30,48 +30,14 @@
 }
 
 
-
-
-.chatbot-icon {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: transparent;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    z-index: 9999;
-    transition: all 0.4s ease-in-out;
-}
-
-.chatbot-icon img {
-    width: 83.5px;
-    height: 80px;
-    border-radius: 50%;
-    transition: all 0.4s ease-in-out;  
-}
-
-
-   
-
-
-
-
-
-
     
 
 .chatbot-container {
     position: fixed; 
-    width: 350px;
-    height: 530px;    
-    bottom: 80px;
-    right: 12px;
+    width: 330px;
+    height: 500px;    
+    bottom: 5px;
+    right: 5px;
     background-color: #000000;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.6);
     border-radius: 10px;
