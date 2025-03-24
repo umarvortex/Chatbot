@@ -1,14 +1,12 @@
-        // Chatbot Functions
-        const chatbotIcon = document.getElementById("chatbotIcon");
-        const chatbotContainer = document.getElementById("chatbotContainer");
-        const chatbotBody = document.getElementById("chatbotBody");
-        const userInput = document.getElementById("userInput");
-        const sendButton = document.getElementById("sendButton");        
-        const welcomeMessage = document.getElementById("welcomeMessage");
-        const typingIndicator = document.getElementById("typingIndicator");
-        const quickReplies = document.getElementById("quickReplies");
-      
-
+// Chatbot Functions
+const chatbotIcon = document.getElementById("chatbotIcon");
+const chatbotContainer = document.getElementById("chatbotContainer");
+const chatbotBody = document.getElementById("chatbotBody");
+const userInput = document.getElementById("userInput");
+const sendButton = document.getElementById("sendButton");        
+const welcomeMessage = document.getElementById("welcomeMessage");
+const typingIndicator = document.getElementById("typingIndicator");
+const quickReplies = document.getElementById("quickReplies");
 
 // Show/Hide Chatbot
 chatbotIcon.addEventListener("click", () => {
