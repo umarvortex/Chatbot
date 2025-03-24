@@ -16,7 +16,27 @@
 
 
 
+// Show/Hide Chatbot
+chatbotIcon.addEventListener("click", () => {
+    if (window.innerWidth <= 768) {
+        // For mobile devices
+        chatbotContainer.style.display = "flex";
+        chatbotContainer.classList.add("full-screen");
+    } else {
+        // For larger screens (desktop)
+        if (chatbotContainer.style.display === "none" || chatbotContainer.style.display === "") {
+            chatbotContainer.style.display = "flex";
+        } else {
+            chatbotContainer.style.display = "none";
+        }
+    }
+});
 
+// Close Chatbot
+document.getElementById("closeChatbot").addEventListener("click", () => {
+    chatbotContainer.classList.remove("full-screen");
+    chatbotContainer.style.display = "none";
+});
 
 
 
