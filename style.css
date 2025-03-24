@@ -61,8 +61,8 @@
     position: fixed; 
     width: 300px;
     height: 520px;    
-    bottom: 1px;
-    right: 1px;
+    bottom: 80px;
+    right: 20px;
     background-color: #000000;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.6);
     border-radius: 10px;
