@@ -159,12 +159,12 @@ a {
 }
 
 .bot-message {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(50, 50, 50, 0.9); /* Changed to a darker, user-message-like background */
     color: white;
     align-self: flex-start;
     padding: 10px 15px;
     border-radius: 3px 15px 3px 15px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(150, 150, 150, 0.5); /* Adjusted border to a subtle gray */
     margin: 10px 0 15px;
     max-width: 90%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
