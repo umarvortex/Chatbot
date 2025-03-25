@@ -159,12 +159,12 @@ a {
 }
 
 .bot-message {
-    background-color: #0c151b;
+    background-color: #15232e;
     color: white;
     align-self: flex-start;
     padding: 10px 15px;
     border-radius: 15px 3px 3px 15px;
-    border: 1px solid #040709;
+    border: 1px solid #15232e;
     margin: 10px 0 15px;
     max-width: 90%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -175,7 +175,7 @@ a {
 }
 
 .bot-message:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #1f3b4d;
     border-color: rgba(255, 255, 255, 0.3);
 }
 
