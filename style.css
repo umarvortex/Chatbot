@@ -176,7 +176,7 @@ a {
 
 .bot-message:hover {
     background-color: #1f3b4d;
-    border-color: rgba(255, 255, 255, 0.3);
+    border-color: #1f3b4d;
 }
 
 @keyframes fadeIn {
