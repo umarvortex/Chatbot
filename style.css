@@ -147,7 +147,7 @@ a {
     color: white;
     align-self: flex-end;
     padding: 10px 15px;
-    border-radius: 15px 15px 15px 5px;
+    border-radius: 15px 15px 3px 15px;
     filter: drop-shadow(0 0 2px #c421fe);
     margin: 10px 0 15px;
     max-width: 90%;
