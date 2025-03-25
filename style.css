@@ -75,7 +75,7 @@ a {
 }
 
 .chatbot-header {
-       background: linear-gradient(90deg, #45ffca, #d200ff);
+       background: linear-gradient(45deg, #d200ff, #45ffca);
     color: #fff;
     padding: 12px;
     border-top-left-radius: 0px;
@@ -143,7 +143,7 @@ a {
 }
 
 .user-message {
-    background: linear-gradient(90deg, #45ffca, #d200ff);
+    background: linear-gradient(45deg, #d200ff, #45ffca);
     color: white;
     align-self: flex-end;
     padding: 10px 15px;
@@ -159,7 +159,7 @@ a {
 }
 
 .bot-message {
-    background-color: rgba(50, 50, 50, 0.9); /* Changed to a darker, user-message-like background */
+    background-color: #202020;
     color: white;
     align-self: flex-start;
     padding: 10px 15px;
@@ -220,7 +220,7 @@ a {
 
     /* Gradient border trick */
     background-image: linear-gradient(#1a1a1a, #1a1a1a), 
-                      linear-gradient(90deg, #45ffca, #d200ff);
+                      linear-gradient(45deg, #d200ff, #45ffca);
     background-origin: border-box;
     background-clip: padding-box, border-box;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
@@ -229,7 +229,7 @@ a {
 .chatbot-input input:focus {
     border-color: transparent; /* Remove solid purple */
     background-image: linear-gradient(#1a1a1a, #1a1a1a), 
-                      linear-gradient(90deg, #45ffca, #d200ff); /* Keep gradient border */
+                      linear-gradient(45deg, #d200ff, #45ffca); /* Keep gradient border */
     background-origin: border-box;
     background-clip: padding-box, border-box;
     box-shadow: 0 0 8px #45ffca, 0 0 8px #d200ff;
@@ -257,7 +257,7 @@ a {
     filter: drop-shadow(0 0 2px #c421fe);
     
     /* Gradient Text Trick */
-    background: linear-gradient(90deg, #45ffca, #d200ff);
+    background: linear-gradient(45deg, #d200ff, #45ffca);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -273,7 +273,7 @@ a {
 
 .quick-replies button {
     padding: 8px 12px;
-    background: linear-gradient(90deg, #45ffca, #d200ff); /* Gradient Background */
+    background: linear-gradient(45deg, #d200ff, #45ffca); /* Gradient Background */
     color: white;
     border-radius: 15px;
     border: none; /* Remove default border */
