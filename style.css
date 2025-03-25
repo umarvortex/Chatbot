@@ -305,7 +305,7 @@ a {
     background-color: #1f3b4d;
     border-radius: 50%;
     margin-right: 4px;
-    animation: typing 2s infinite;
+    animation: typing 3s infinite;
 }
 
 .typing-indicator span:last-child {
