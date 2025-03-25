@@ -159,7 +159,7 @@ a {
 }
 
 .bot-message {
-    background-color: #202020;
+    background-color: #212930;
     color: white;
     align-self: flex-start;
     padding: 10px 15px;
@@ -285,11 +285,7 @@ a {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Optional: Hover effect */
-.quick-replies button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(69, 255, 202, 0.5), 0 4px 12px rgba(210, 0, 255, 0.5);
-}
+
 
 .typing-indicator {
     display: none;
