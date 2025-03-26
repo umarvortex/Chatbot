@@ -54,8 +54,8 @@ a {
 .chatbot-container {
     display: flex;
     position: fixed; 
-    width: 600px;
-    height: 900px;    
+    width: 500px;
+    height: 800px;    
     bottom: 80px;
     right: 12px;
     background-color: #000000;
@@ -227,9 +227,9 @@ a {
 }
 
 .chatbot-input input:focus {
-    border-color: transparent; /* Remove solid purple */
-    background-image: linear-gradient(#1a1a1a, #1a1a1a), 
-                      linear-gradient(45deg, #d200ff, #45ffca); /* Keep gradient border */
+ border-color: transparent; 
+ background-image: linear-gradient(#1a1a1a, #1a1a1a), 
+   linear-gradient(40deg, #d200ff, #45ffca); 
     background-origin: border-box;
     background-clip: padding-box, border-box;
     box-shadow: 0 0 8px #45ffca, 0 0 8px #d200ff;
@@ -300,12 +300,12 @@ a {
 
 .typing-indicator span {
     display: inline-block;
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
     background-color: #1f3b4d;
     border-radius: 50%;
     margin-right: 4px;
-    animation: typing 5s infinite;
+    animation: typing 8s infinite;
 }
 
 .typing-indicator span:last-child {
@@ -335,7 +335,7 @@ a {
 
 @media screen and (min-width: 768px) {
     /* Make Header Bigger */
-    #chatboard header {
+    #chatbot-header {
         font-size: 24px;
         padding: 20px;
     }
