@@ -17,9 +17,9 @@ a {
 
 
 ol {
-    padding-left: 25px; /* List ko andar shift karega */
-    margin-left: 10px; /* Thodi aur alignment improve karega */
-    list-style-position: inside; /* Numbers ko andar lane ke liye */
+    padding-left: 40px;
+    margin-left: 10px; 
+    
 }
 
 
