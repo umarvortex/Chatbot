@@ -312,34 +312,28 @@ if (
   <strong>Here are the details of all available products:</strong><br><br>
 
   <ol>
-    <li><strong>Transparent Color Zebra Pipes:</strong> Available in 2mm, 2.5mm, and 3mm.</li>
-    <li><strong>Super Green Pipes:</strong> Available in 3mm and 4mm.</li>
-    <li><strong>Red Poly with White Line Pipes:</strong> Available in 3/4 inch and 1 inch sizes.</li>
-    <li><strong>Poly Black Pipes:</strong> Available in 1/2, 1, 1.5, 2, 3, 4, and 5 inch sizes.</li>
-    <li><strong>Braded Bravo Dagha Pipes:</strong> Available in 3/4 inch and 1 inch.</li>
-    <li><strong>Super Transparent Garden Pipes:</strong> Available in 1 inch (4mm, 3mm) and 3/4 inch (3mm, 4mm).</li>
-    <li><strong>Garden Pipes:</strong> Available in various sizes.</li>
-    <li><strong>Fire Hose:</strong> Available in 2 to 6 inches.</li>
-    <li><strong>Clear Garden Transparent Hose Pipes:</strong> Available in 1mm and 2mm.</li>
-    <li><strong>Zebra Band Pipes:</strong> Available in 2mm and 2.5mm.</li>
-    <li><strong>Vinyl Section Pipes:</strong> Imported, available in 1 and 2 inches.</li>
-    <li><strong>Parker Pressure Gas Hose:</strong> 8mm size, 100mm length, 12kg weight.</li>
-    <li><strong>Commando Pressure Gas Hose:</strong> 8mm size, 300ft length, 11.5kg weight.</li>
-    <li><strong>Bridgestone High Pressure Gas Hose:</strong> 8mm size, 300ft length, 12kg weight.</li>
-    <li><strong>Pona Flex Gas Hose:</strong> Korean technology, 270ft length, 6kg weight.</li>
-    <li><strong>Poly Yellow National Pipes:</strong> Sizes: 1/2, 3/4, 1, and 2 inches.</li>
-    <li><strong>Caterpillars Gas Hose:</strong> 300ft length.</li>
-    <li><strong>Pure Garden Pipes:</strong> Sizes: 1 inch, 1.25 inch, 1.5 inch, 2 inch, 2.5mm, and 3mm.</li>
-    <li><strong>PE 100 National Pipes:</strong> Sizes from 1 inch to 8 inches (PN6 to PN16).</li>
-    <li><strong>HDPE 100 Water Supply Pipes:</strong> Available in various sizes (PN6 to PN16).</li>
-    <li><strong>MDPE National Gas Pipes:</strong> Available in various sizes.</li>
-    <li><strong>PE 100 Poly Water Pipes:</strong> Available in 1-inch to 4-inch sizes.</li>
-    <li><strong>High-Pressure Hydraulic Hose:</strong> Available in different sizes and capacities.</li>
-    <li><strong>Rubber Gas Hose:</strong> Flexible and durable, suitable for gas applications.</li>
-    <li><strong>National Water Supply Pipes:</strong> Available in 1-inch to 6-inch sizes.</li>
-    <li><strong>Soft PVC Garden Pipe:</strong> Durable and available in multiple sizes.</li>
-  </ol>
-  `;
+    <li><strong>Transparent Color Zebra Pipes:</strong> Available in 2mm, 2.5mm, and 3mm.</li><br>
+    <li><strong>Super Green Pipes:</strong> Available in 3mm and 4mm.</li><br>
+    <li><strong>Red Poly with White Line Pipes:</strong> Available in 3/4 inch and 1 inch sizes.</li><br>
+    <li><strong>Poly Black Pipes:</strong> Available in 1/2, 1, 1.5, 2, 3, 4, and 5 inch sizes.</li><br>
+    <li><strong>Braded Bravo Dagha Pipes:</strong> Available in 3/4 inch and 1 inch.</li><br>
+    <li><strong>Super Transparent Garden Pipes:</strong> Available in 1 inch (4mm, 3mm) and 3/4 inch (3mm, 4mm).</li><br>
+    <li><strong>Garden Pipes:</strong> Available in various sizes.</li><br>
+    <li><strong>Fire Hose:</strong> Available in 2 to 6 inches.</li><br>
+    <li><strong>Clear Garden Transparent Hose Pipes:</strong> Available in 1mm and 2mm.</li><br>
+    <li><strong>Zebra Band Pipes:</strong> Available in 2mm and 2.5mm.</li><br>
+    <li><strong>Vinyl Section Pipes:</strong> Imported, available in 1 and 2 inches.</li><br>
+    <li><strong>Parker Pressure Gas Hose:</strong> 8mm size, 100mm length, 12kg weight.</li><br>
+    <li><strong>Commando Pressure Gas Hose:</strong> 8mm size, 300ft length, 11.5kg weight.</li><br>
+    <li><strong>Bridgestone High Pressure Gas Hose:</strong> 8mm size, 300ft length, 12kg weight.</li><br>
+    <li><strong>Pona Flex Gas Hose:</strong> Korean technology, 270ft length, 6kg weight.</li><br>
+    <li><strong>Poly Yellow National Pipes:</strong> Sizes: 1/2, 3/4, 1, and 2 inches.</li><br>
+    <li><strong>Caterpillars Gas Hose:</strong> 300ft length.</li><br>
+    <li><strong>Pure Garden Pipes:</strong> Sizes: 1 inch, 1.25 inch, 1.5 inch, 2 inch, 2.5mm, and 3mm.</li><br>
+    <li><strong>PE 100 National Pipes:</strong> Sizes from 1 inch to 8 inches (PN6 to PN16).</li><br>
+    <li><strong>Suction Steel Wire Hose:</strong> Available in 3/4 inch, 1 inch, 1.25 inch, 1.5 inch, 2 inch, 3 inch, and 4 inches. </li>
+  </ol><br><br>
+<strong>Anything else you need to know?</strong>`;
 }
 
 
