@@ -312,26 +312,26 @@ if (
   <strong>Here are the details of all available products:</strong><br><br>
 
   <ol>
-    <li><strong>Transparent Color Zebra Pipes:</strong> Available in 2mm, 2.5mm, and 3mm.</li><br>
-    <li><strong>Super Green Pipes:</strong> Available in 3mm and 4mm.</li><br>
-    <li><strong>Red Poly with White Line Pipes:</strong> Available in 3/4 inch and 1 inch sizes.</li><br>
-    <li><strong>Poly Black Pipes:</strong> Available in 1/2, 1, 1.5, 2, 3, 4, and 5 inch sizes.</li><br>
-    <li><strong>Braded Bravo Dagha Pipes:</strong> Available in 3/4 inch and 1 inch.</li><br>
-    <li><strong>Super Transparent Garden Pipes:</strong> Available in 1 inch (4mm, 3mm) and 3/4 inch (3mm, 4mm).</li><br>
-    <li><strong>Garden Pipes:</strong> Available in various sizes.</li><br>
-    <li><strong>Fire Hose:</strong> Available in 2 to 6 inches.</li><br>
-    <li><strong>Clear Garden Transparent Hose Pipes:</strong> Available in 1mm and 2mm.</li><br>
-    <li><strong>Zebra Band Pipes:</strong> Available in 2mm and 2.5mm.</li><br>
-    <li><strong>Vinyl Section Pipes:</strong> Imported, available in 1 and 2 inches.</li><br>
-    <li><strong>Parker Pressure Gas Hose:</strong> 8mm size, 100mm length, 12kg weight.</li><br>
-    <li><strong>Commando Pressure Gas Hose:</strong> 8mm size, 300ft length, 11.5kg weight.</li><br>
-    <li><strong>Bridgestone High Pressure Gas Hose:</strong> 8mm size, 300ft length, 12kg weight.</li><br>
-    <li><strong>Pona Flex Gas Hose:</strong> Korean technology, 270ft length, 6kg weight.</li><br>
-    <li><strong>Poly Yellow National Pipes:</strong> Sizes: 1/2, 3/4, 1, and 2 inches.</li><br>
-    <li><strong>Caterpillars Gas Hose:</strong> 300ft length.</li><br>
-    <li><strong>Pure Garden Pipes:</strong> Sizes: 1 inch, 1.25 inch, 1.5 inch, 2 inch, 2.5mm, and 3mm.</li><br>
-    <li><strong>PE 100 National Pipes:</strong> Sizes from 1 inch to 8 inches (PN6 to PN16).</li><br>
-    <li><strong>Suction Steel Wire Hose:</strong> Available in 3/4 inch, 1 inch, 1.25 inch, 1.5 inch, 2 inch, 3 inch, and 4 inches. </li>
+    <li><strong>Transparent Color Zebra Pipes:</strong> <br>Available in 2mm, 2.5mm, and 3mm.</li><br>
+    <li><strong>Super Green Pipes:</strong> <br>Available in 3mm and 4mm.</li><br>
+    <li><strong>Red Poly with White Line Pipes:</strong><br> Available in 3/4 inch and 1 inch sizes.</li><br>
+    <li><strong>Poly Black Pipes:</strong> <br>Available in 1/2, 1, 1.5, 2, 3, 4, and 5 inch sizes.</li><br>
+    <li><strong>Braded Bravo Dagha Pipes:</strong><br> Available in 3/4 inch and 1 inch.</li><br>
+    <li><strong>Super Transparent Garden Pipes:</strong> <br>Available in 1 inch (4mm, 3mm) and 3/4 inch (3mm, 4mm).</li><br>
+    <li><strong>Garden Pipes:</strong> <br>Available in various sizes.</li><br>
+    <li><strong>Fire Hose:</strong> <br> Available in 2 to 6 inches.</li><br>
+    <li><strong>Clear Garden Transparent Hose Pipes:</strong><br> Available in 1mm and 2mm.</li><br>
+    <li><strong>Zebra Band Pipes:</strong> <br>Available in 2mm and 2.5mm.</li><br>
+    <li><strong>Vinyl Section Pipes:</strong><br> Imported, available in 1 and 2 inches.</li><br>
+    <li><strong>Parker Pressure Gas Hose:</strong> <br> 8mm size, 100mm length, 12kg weight.</li><br>
+    <li><strong>Commando Pressure Gas Hose:</strong><br> 8mm size, 300ft length, 11.5kg weight.</li><br>
+    <li><strong>Bridgestone High Pressure Gas Hose:</strong><br> 8mm size, 300ft length, 12kg weight.</li><br>
+    <li><strong>Pona Flex Gas Hose:</strong> <br>Korean technology, 270ft length, 6kg weight.</li><br>
+    <li><strong>Poly Yellow National Pipes:</strong><br> Sizes: 1/2, 3/4, 1, and 2 inches.</li><br>
+    <li><strong>Caterpillars Gas Hose:</strong> <br> Available in 300ft length.</li><br>
+    <li><strong>Pure Garden Pipes:</strong> <br>Sizes: 1 inch, 1.25 inch, 1.5 inch, 2 inch, 2.5mm, and 3mm.</li><br>
+    <li><strong>PE 100 National Pipes:</strong> <br>Sizes from 1 inch to 8 inches (PN6 to PN16).</li><br>
+    <li><strong>Suction Steel Wire Hose:</strong> <br>Available in 3/4 inch, 1 inch, 1.25 inch, 1.5 inch, 2 inch, 3 inch, and 4 inches. </li>
   </ol><br><br>
 <strong>Anything else you need to know?</strong>`;
 }
@@ -343,28 +343,28 @@ if (
 if (userText.includes("list") || userText.includes("List") || userText.includes("LIST")) {
     return `<strong>Here is the list of all available pipes:</strong><br><br>
     <ol>
-        <li><strong>Transparent Color Zebra</strong></li>
-        <li><strong>Super Green Pipes</strong></li>
-        <li><strong>Red Poly with White Line</strong></li>
-        <li><strong>Poly Black Pipes</strong></li>
-        <li><strong>Braded Bravo Dagha</strong></li>
-        <li><strong>Super Transparent Garden</strong></li>
-        <li><strong>All Garden</strong></li>
-        <li><strong>Fire Hose</strong></li>
-        <li><strong>Clear Garden Transparent Hose</strong></li>
-        <li><strong>Zebra Band</strong></li>
-        <li><strong>Vinyl Section (Imported)</strong></li>
-        <li><strong>Parker Pressure Gas Hose</strong></li>
-        <li><strong>Commando Pressure Gas Hose</strong></li>
-        <li><strong>Bridgestone High Pressure Gas Hose</strong></li>
-        <li><strong>Pona Flex Gas Hose (Korean Technology)</strong></li>
-        <li><strong>Poly Yellow National Pipes</strong></li>
-        <li><strong>Caterpillars Gas Hose</strong></li>
-        <li><strong>Pure Garden</strong></li>
-        <li><strong>PE 100 National</strong></li>
+        <li><strong>Transparent Color Zebra</strong></li><br>
+        <li><strong>Super Green Pipes</strong></li><br>
+        <li><strong>Red Poly with White Line</strong></li><br>
+        <li><strong>Poly Black Pipes</strong></li><br>
+        <li><strong>Braded Bravo Dagha</strong></li><br>
+        <li><strong>Super Transparent Garden</strong></li><br>
+        <li><strong>All Garden</strong></li><br>
+        <li><strong>Fire Hose</strong></li><br>
+        <li><strong>Clear Garden Transparent Hose</strong></li><br>
+        <li><strong>Zebra Band</strong></li><br>
+        <li><strong>Vinyl Section (Imported)</strong></li><br>
+        <li><strong>Parker Pressure Gas Hose</strong></li><br>
+        <li><strong>Commando Pressure Gas Hose</strong></li><br>
+        <li><strong>Bridgestone High Pressure Gas Hose</strong></li><br>
+        <li><strong>Pona Flex Gas Hose (Korean Technology)</strong></li><br>
+        <li><strong>Poly Yellow National Pipes</strong></li><br>
+        <li><strong>Caterpillars Gas Hose</strong></li><br>
+        <li><strong>Pure Garden</strong></li><br>
+        <li><strong>PE 100 National</strong></li><br>
         <li><strong>Suction Steel Wire Hose (National and China's)</strong></li>
     </ol>
-    <br>
+    <br><br>
     If you'd like to know any pipe details, just copy-paste the name of the pipe you need, with the correct spelling. I’ll provide all the details about size, length, width, and specifications.`;
 }
 
