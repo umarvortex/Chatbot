@@ -370,9 +370,32 @@ if (userText.includes("details") || userText.includes("full details of pipies") 
 }
 
 
-
-if (userText.includes("list") || userText.includes("List") ||  userText.includes("LIST")){
-return <strong>Here is the list of all available pipes:</strong><br><br>   <strong>1. Transparent Color Zebra</strong><br>   <strong>2. Super Green Pipes</strong><br>   <strong>3. Red Poly with White Line </strong><br>   <strong>4. Poly Black Pipes</strong><br>   <strong>5. Braded Bravo Dagha </strong><br>   <strong>6. Super Transparent Garden</strong><br>   <strong>7. All Garden </strong><br>   <strong>8. Fire Hose</strong><br>   <strong>9. Clear Garden Transparent Hose </strong><br>   <strong>10. Zebra Band </strong><br>   <strong>11. Vinyl Section (Imported)</strong><br>   <strong>12. Parker Pressure Gas Hose</strong><br>   <strong>13. Commando Pressure Gas Hose</strong><br>   <strong>14. Bridgestone High Pressure Gas Hose</strong><br>   <strong>15. Pona Flex Gas Hose (Korean Technology)</strong><br>   <strong>16. Poly Yellow National Pipes</strong><br>   <strong>17. Caterpillars Gas Hose</strong><br>   <strong>18. Pure Garden </strong><br>   <strong>19. PE 100 National </strong><br>   <strong>20. Suction Steel Wire Hose (National and China's) </strong><br><br>   If you'd like to know any pipe details  just copy-paste the name of the pipes you need, with the correct spelling. I’ll provide all the details about size, length, width, and specifications.;
+if (userText.includes("list") || userText.includes("List") || userText.includes("LIST")) {
+    return `<strong>Here is the list of all available pipes:</strong><br><br>
+    <ol>
+        <li><strong>Transparent Color Zebra</strong></li>
+        <li><strong>Super Green Pipes</strong></li>
+        <li><strong>Red Poly with White Line</strong></li>
+        <li><strong>Poly Black Pipes</strong></li>
+        <li><strong>Braded Bravo Dagha</strong></li>
+        <li><strong>Super Transparent Garden</strong></li>
+        <li><strong>All Garden</strong></li>
+        <li><strong>Fire Hose</strong></li>
+        <li><strong>Clear Garden Transparent Hose</strong></li>
+        <li><strong>Zebra Band</strong></li>
+        <li><strong>Vinyl Section (Imported)</strong></li>
+        <li><strong>Parker Pressure Gas Hose</strong></li>
+        <li><strong>Commando Pressure Gas Hose</strong></li>
+        <li><strong>Bridgestone High Pressure Gas Hose</strong></li>
+        <li><strong>Pona Flex Gas Hose (Korean Technology)</strong></li>
+        <li><strong>Poly Yellow National Pipes</strong></li>
+        <li><strong>Caterpillars Gas Hose</strong></li>
+        <li><strong>Pure Garden</strong></li>
+        <li><strong>PE 100 National</strong></li>
+        <li><strong>Suction Steel Wire Hose (National and China's)</strong></li>
+    </ol>
+    <br>
+    If you'd like to know any pipe details, just copy-paste the name of the pipe you need, with the correct spelling. I’ll provide all the details about size, length, width, and specifications.`;
 }
 
 
