@@ -63,8 +63,8 @@ ol {
 .chatbot-container {
     display: flex;
     position: fixed; 
-    width: 500px;
-    height: 800px;    
+    width: 380px;
+    height: 580px;    
     bottom: 80px;
     right: 12px;
     background-color: #000000;
